@@ -1,0 +1,23 @@
+2023-02-27 00:14:55,459 INFO    MainThread:20124 [wandb_setup.py:_flush():71] setting env: {}
+2023-02-27 00:14:55,459 INFO    MainThread:20124 [wandb_setup.py:_flush():71] setting login settings: {}
+2023-02-27 00:14:55,459 INFO    MainThread:20124 [wandb_init.py:_log_setup():371] Logging user logs to /home/sohui/code/SSL_brats/code/wandb/run-20230227_001455-37f0fg3i/logs/debug.log
+2023-02-27 00:14:55,459 INFO    MainThread:20124 [wandb_init.py:_log_setup():372] Logging internal logs to /home/sohui/code/SSL_brats/code/wandb/run-20230227_001455-37f0fg3i/logs/debug-internal.log
+2023-02-27 00:14:55,459 INFO    MainThread:20124 [wandb_init.py:init():404] calling init triggers
+2023-02-27 00:14:55,459 INFO    MainThread:20124 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {}
+2023-02-27 00:14:55,460 INFO    MainThread:20124 [wandb_init.py:init():460] starting backend
+2023-02-27 00:14:55,460 INFO    MainThread:20124 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-27 00:14:55,480 INFO    MainThread:20124 [backend.py:ensure_launched():216] starting backend process...
+2023-02-27 00:14:55,489 INFO    MainThread:20124 [backend.py:ensure_launched():221] started backend process with pid: 20290
+2023-02-27 00:14:55,492 INFO    MainThread:20124 [wandb_init.py:init():469] backend started and connected
+2023-02-27 00:14:55,498 INFO    MainThread:20124 [wandb_init.py:init():533] updated telemetry
+2023-02-27 00:14:55,499 INFO    MainThread:20124 [wandb_init.py:init():563] communicating current version
+2023-02-27 00:14:56,507 INFO    MainThread:20124 [wandb_init.py:init():568] got version response upgrade_message: "wandb version 0.13.10 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-02-27 00:14:56,507 INFO    MainThread:20124 [wandb_init.py:init():578] communicating run to backend with 30 second timeout
+2023-02-27 00:14:56,782 INFO    MainThread:20124 [wandb_init.py:init():606] starting run threads in backend
+2023-02-27 00:15:01,794 INFO    MainThread:20124 [wandb_run.py:_console_start():1810] atexit reg
+2023-02-27 00:15:01,795 INFO    MainThread:20124 [wandb_run.py:_redirect():1684] redirect: SettingsConsole.REDIRECT
+2023-02-27 00:15:01,796 INFO    MainThread:20124 [wandb_run.py:_redirect():1689] Redirecting console.
+2023-02-27 00:15:01,801 INFO    MainThread:20124 [wandb_run.py:_redirect():1745] Redirects installed.
+2023-02-27 00:15:01,801 INFO    MainThread:20124 [wandb_init.py:init():633] run started, returning control to user process

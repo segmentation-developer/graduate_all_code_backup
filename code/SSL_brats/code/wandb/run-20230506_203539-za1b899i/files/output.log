@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "Brats2_GDT_MT_kfold.py", line 322, in <module>
+    shutil.copytree('.', snapshot_path + '/code',
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 557, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 495, in _copytree
+    copytree(srcobj, dstname, symlinks, ignore, copy_function,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 557, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 495, in _copytree
+    copytree(srcobj, dstname, symlinks, ignore, copy_function,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 557, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 499, in _copytree
+    copy_function(srcobj, dstname)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 435, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 275, in copyfile
+    _fastcopy_sendfile(fsrc, fdst)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/shutil.py", line 152, in _fastcopy_sendfile
+    sent = os.sendfile(outfd, infd, offset, blocksize)
+KeyboardInterrupt

@@ -1,0 +1,8 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', fold=None, gpu='2,3', labeled_bs=1, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[256, 256, 128], root_path='/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200', seed=1337, total_labeled_num=290)
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 409, in _apply
+    param_applied = fn(param)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 671, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.91 GiB total capacity; 57.53 MiB already allocated; 5.94 MiB free; 70.00 MiB reserved in total by PyTorch)

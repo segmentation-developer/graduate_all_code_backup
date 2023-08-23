@@ -1,0 +1,119 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=1.0, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='kfold/GDT-MT_woSDM', fold=5, gpu='3', labeled_bs=2, labeled_num=28, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=268)
+  0%|                                        | 0/2143 [00:00<?, ?it/s]
+total 268 samples
+14 iterations per epoch
+iteration 1 : loss : 0.451585, loss_ce: 0.501231, loss_dice: 0.401281
+  0%|                                                                                                                                                                                                            | 0/67 [00:00<?, ?it/s]
+iteration 2 : loss : 0.422853, loss_ce: 0.489746, loss_dice: 0.355685
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████   | 66/67 [03:02<00:02,  2.37s/it]
+Validation end
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [03:04<00:00,  2.43s/it]
+iteration 3 : loss : 0.487010, loss_ce: 0.529809, loss_dice: 0.444043
+iteration 4 : loss : 0.440327, loss_ce: 0.481911, loss_dice: 0.398575
+Validation begin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|                                        | 0/2143 [04:29<?, ?it/s]█████████████▌                                                                                                                    | 27/67 [01:19<02:05,  3.13s/it]
+Traceback (most recent call last):
+  File "Brats2_GDT_MT_woSDM_kfold.py", line 315, in <module>
+    train(args, snapshot_path)
+  File "Brats2_GDT_MT_woSDM_kfold.py", line 251, in train
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/code/brats_val_3D_kfold.py", line 101, in test_all_case
+    prediction = test_single_case(
+  File "/home/sohui/code/SSL_brats/code/brats_val_3D_kfold.py", line 65, in test_single_case
+    y = y.cpu().data.numpy()
+KeyboardInterrupt

@@ -1,0 +1,27 @@
+
+Namespace(add=1e-08, aggKernel=11, base_lr=0.01, batch_size=2, class_name=1, deterministic=1, ema_decay=0.99, exp='SL/sameForm_Wssl', fold=None, gpu='4,5', max_iterations=30000, model='Vnet_3D_288_288_160_randomCrop', num_classes=2, overlap=0.5, patch_size=[288, 288, 160], root_path='/data/sohui/Prostate/data/trim/sl_data/centerCrop_350_350_200', seed=1337, sw_batch_size=8)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:48<00:00,  2.00s/it]
+
+Loading dataset: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:12<00:00,  2.07s/it]
+  0%|                                        | 0/1501 [00:17<?, ?it/s]
+Traceback (most recent call last):
+  File "Prostate_train_SL_1class_woSlidingW.py", line 404, in <module>
+    train(args, snapshot_path)
+  File "Prostate_train_SL_1class_woSlidingW.py", line 310, in train
+    loss = (ce_loss(output, label_batch.squeeze(1).long()) + dice_loss(output_soft, label_batch))
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/Prostate/Prostate/utils/losses.py", line 185, in forward
+    target = self._one_hot_encoder(target)
+  File "/home/sohui/code/Prostate/Prostate/utils/losses.py", line 167, in _one_hot_encoder
+    temp_prob = input_tensor == i * torch.ones_like(input_tensor)
+RuntimeError: CUDA out of memory. Tried to allocate 102.00 MiB (GPU 0; 11.91 GiB total capacity; 11.00 GiB already allocated; 24.94 MiB free; 11.10 GiB reserved in total by PyTorch)

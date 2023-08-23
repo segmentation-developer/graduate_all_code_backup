@@ -1,0 +1,72 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='4,5', labeled_bs=1, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[256, 256, 112], root_path='/data/sohui/Prostate/data/trim/ssl_data', seed=1337, total_labeled_num=290)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [01:18<00:00,  3.29s/it]
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [00:42<00:00,  1.76s/it]
+
+
+
+Loading dataset:  83%|███████████████████████▎    | 5/6 [00:41<00:06,  6.37s/it]
+250 iterations per epoch
+Loading dataset: 100%|████████████████████████████| 6/6 [00:44<00:00,  7.43s/it]
+  0%|                                         | 0/121 [00:00<?, ?it/s]
+iteration 1 : loss : 0.555941, loss_ce: 0.560037, loss_dice: 0.551350
+Validation begin
+
+
+
+
+
+
+
+
+
+ 90%|███████████████████████████████████████▌    | 9/10 [09:17<00:54, 54.65s/it]
+Validation end
+
+100%|███████████████████████████████████████████| 10/10 [09:46<00:00, 46.76s/it]
+iteration 2 : loss : 0.665768, loss_ce: 0.736516, loss_dice: 0.594909
+Validation begin
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████| 10/10 [12:25<00:00, 55.67s/it]
+Validation end
+iteration 2 : dice_score : 0.000000 hd95 : 0.000000
+  0%|                                                    | 0/10 [00:00<?, ?it/s]
+iteration 3 : loss : 0.507295, loss_ce: 0.486015, loss_dice: 0.528406
+  0%|                                         | 0/121 [24:59<?, ?it/s]<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class.py", line 451, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class.py", line 387, in train
+    avg_metric= test_all_case(
+  File "/home/sohui/code/Prostate/Prostate/MSDP_val_3D.py", line 101, in test_all_case
+    prediction = test_single_case(
+  File "/home/sohui/code/Prostate/Prostate/MSDP_val_3D.py", line 68, in test_single_case
+    = score_map[:, xs:xs+patch_size[0], ys:ys+patch_size[1], zs:zs+patch_size[2]] + y
+KeyboardInterrupt

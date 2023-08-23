@@ -1,0 +1,11 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=30000, model='vnet_3D_112_112_80_18_4', root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80, with_cons='without_cons')
+  0%|                                        | 0/3751 [00:00<?, ?it/s]
+total 80 samples
+  0%|                                        | 0/3751 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "LA_train_dtc.py", line 281, in <module>
+    model, args.root_path, test_list="val.txt", num_classes=num_classes-1, patch_size=args.patch_size,
+AttributeError: 'Namespace' object has no attribute 'patch_size'
+iteration 1 : loss : 0.683198, loss_consis: 0.252550, loss_haus: 0.212363, loss_seg: 0.725578, loss_dice: 0.617787
+iteration 1 : loss : 0.683198

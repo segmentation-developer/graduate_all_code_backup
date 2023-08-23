@@ -1,0 +1,47 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=30000, model='vnet_3D_112_112_80_18_4', root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80, with_cons='without_cons')
+  0%|                                        | 0/3751 [00:00<?, ?it/s]
+total 80 samples
+8 itertations per epoch
+  0%|                                                                                                                                                                                                                                                                                    | 0/20 [00:00<?, ?it/s]
+iteration 1 : loss : 0.683198, loss_consis: 0.252550, loss_haus: 0.212363, loss_seg: 0.725578, loss_dice: 0.617787
+iteration 1 : loss : 0.683198
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [01:02<00:00,  3.42s/it]
+Validation end
+iteration 1 : dice_score : 0.000000 hd95 : 0.000000
+iteration 2 : loss : 0.673514, loss_consis: 0.221782, loss_haus: 0.283285, loss_seg: 0.694793, loss_dice: 0.587034
+iteration 2 : loss : 0.673514
+Validation begin
+
+
+
+  0%|                                        | 0/3751 [01:18<?, ?it/s]                                                                                                                                                                                                           | 4/20 [00:12<00:52,  3.29s/it]
+Traceback (most recent call last):
+  File "LA_train_dtc.py", line 280, in <module>
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_val_3D.py", line 103, in test_all_case
+    image = h5f['image'][:]
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/h5py/_hl/dataset.py", line 741, in __getitem__
+    return self._fast_reader.read(args)

@@ -1,0 +1,9 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT-UA2avg_2task_SDM_2Dec', gpu='5', labeled_bs=2, labeled_num=16, max_iterations=10000, model='test', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80)
+total 80 samples
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 325, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 145, in train
+    batch_sampler = TwoStreamBatchSampler(
+KeyboardInterrupt

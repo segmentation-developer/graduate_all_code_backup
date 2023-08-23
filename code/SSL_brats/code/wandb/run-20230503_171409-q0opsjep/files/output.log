@@ -1,0 +1,9 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', fold=1, gpu='4', labeled_bs=2, labeled_num=28, max_iterations=30000, model='test', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=268)
+total 268 samples
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/Brats2_GDT_MT_kfold.py", line 329, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/Brats2_GDT_MT_kfold.py", line 149, in train
+    trainloader = DataLoader(db_train, batch_sampler=batch_sampler,
+KeyboardInterrupt

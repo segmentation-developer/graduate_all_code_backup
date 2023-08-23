@@ -1,0 +1,16 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT_UA2avg_2task_SDM_dualD', gpu='6', labeled_bs=2, labeled_num=138, max_iterations=40000, model='vnet_3D_112', num_classes=2, patch_size=[112, 112, 112], root_path='/data/sohui/ATLAS/data', seed=1337, total_labeled_num=612)
+total 138 samples
+total 550 samples
+275 iterations per epoch
+  0%|                                         | 0/146 [06:30<?, ?it/s]
+Traceback (most recent call last):
+  File "ATLAS_MT_UA2avg_2task_SDM_2Dec.py", line 333, in <module>
+    train(args, snapshot_path)
+  File "ATLAS_MT_UA2avg_2task_SDM_2Dec.py", line 188, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/SSL_brats/code/utils/util.py", line 141, in compute_sdf
+    posdis = distance(posmask)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_morphology.py", line 2285, in distance_transform_edt
+    numpy.multiply(dt, dt, dt)
+KeyboardInterrupt

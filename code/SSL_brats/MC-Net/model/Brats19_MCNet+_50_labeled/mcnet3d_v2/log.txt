@@ -1,0 +1,1 @@
+[14:14:17.889] Namespace(base_lr=0.01, batch_size=4, consistency=1, consistency_rampup=40.0, dataset_name='Brats19', deterministic=1, exp='MCNet+', gpu='1', labeled_bs=2, labelnum=50, lamda=0.5, max_iteration=15000, max_samples=80, model='mcnet3d_v2', root_path='./', seed=1337, temperature=0.1)

@@ -1,0 +1,7 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', fold=1, gamma=0.5, gpu='2', labeled_bs=2, labelnum=25, max_iterations=30000, model='test', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_data_num=250, with_cons='without_cons')
+total 268 samples
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/DTC/code/Brats_train_dtc_original_kfold.py", line 163, in <module>
+    model.train()
+KeyboardInterrupt

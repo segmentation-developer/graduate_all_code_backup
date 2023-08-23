@@ -1,0 +1,2627 @@
+
+Namespace(add=1e-08, aggKernel=11, base_lr=0.01, batch_size=2, class_name=1, deterministic=1, ema_decay=0.99, exp='SL/sameForm_Wssl', fold=None, gpu='2,3', max_iterations=30000, model='Vnet_3D_256_randomCrop', num_classes=2, overlap=0.5, patch_size=[256, 256, 128], root_path='/data/sohui/Prostate/data/trim/sl_data/centerCrop_350_350_200', seed=1337, sw_batch_size=8)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:44<00:00,  1.85s/it]
+
+
+Loading dataset: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:12<00:00,  2.04s/it]
+  0%|                                        | 0/1501 [00:00<?, ?it/s]
+iteration 1 : supervised_loss : 1.116405
+iteration 2 : supervised_loss : 1.258319
+iteration 3 : supervised_loss : 0.889144
+iteration 4 : supervised_loss : 0.915744
+iteration 5 : supervised_loss : 0.945639
+iteration 6 : supervised_loss : 0.915587
+iteration 7 : supervised_loss : 0.966872
+iteration 8 : supervised_loss : 0.847452
+iteration 9 : supervised_loss : 0.773626
+iteration 10 : supervised_loss : 0.817998
+iteration 11 : supervised_loss : 0.727711
+iteration 12 : supervised_loss : 0.645489
+iteration 13 : supervised_loss : 0.632663
+iteration 14 : supervised_loss : 0.596306
+iteration 15 : supervised_loss : 0.658459
+iteration 16 : supervised_loss : 0.569990
+iteration 17 : supervised_loss : 0.629013
+iteration 18 : supervised_loss : 0.623740
+
+  0%|                             | 1/1501 [00:49<20:40:13, 49.61s/it]
+iteration 20 : supervised_loss : 0.561620
+iteration 21 : supervised_loss : 0.651817
+iteration 22 : supervised_loss : 0.529419
+iteration 23 : supervised_loss : 0.525667
+iteration 24 : supervised_loss : 0.519017
+iteration 25 : supervised_loss : 0.517228
+iteration 26 : supervised_loss : 0.509980
+iteration 27 : supervised_loss : 0.585340
+iteration 28 : supervised_loss : 0.520000
+iteration 29 : supervised_loss : 0.589108
+iteration 30 : supervised_loss : 0.509485
+iteration 31 : supervised_loss : 0.528692
+iteration 32 : supervised_loss : 0.532885
+iteration 33 : supervised_loss : 0.512035
+iteration 34 : supervised_loss : 0.507465
+iteration 35 : supervised_loss : 0.522460
+iteration 36 : supervised_loss : 0.528494
+iteration 37 : supervised_loss : 0.509788
+iteration 38 : supervised_loss : 0.534633
+
+  0%|                             | 2/1501 [01:40<20:56:13, 50.28s/it]
+iteration 40 : supervised_loss : 0.528294
+iteration 41 : supervised_loss : 0.501017
+iteration 42 : supervised_loss : 0.508477
+iteration 43 : supervised_loss : 0.510046
+iteration 44 : supervised_loss : 0.499905
+iteration 45 : supervised_loss : 0.513495
+iteration 46 : supervised_loss : 0.497883
+iteration 47 : supervised_loss : 0.497853
+iteration 48 : supervised_loss : 0.497472
+iteration 49 : supervised_loss : 0.494551
+iteration 50 : supervised_loss : 0.490387
+iteration 51 : supervised_loss : 0.509151
+iteration 52 : supervised_loss : 0.503534
+iteration 53 : supervised_loss : 0.492792
+iteration 54 : supervised_loss : 0.483754
+iteration 55 : supervised_loss : 0.484146
+iteration 56 : supervised_loss : 0.486956
+iteration 57 : supervised_loss : 0.482206
+iteration 58 : supervised_loss : 0.488981
+
+  0%|                             | 3/1501 [02:27<20:23:38, 49.01s/it]
+iteration 60 : supervised_loss : 0.478835
+iteration 61 : supervised_loss : 0.498648
+iteration 62 : supervised_loss : 0.471131
+iteration 63 : supervised_loss : 0.510984
+iteration 64 : supervised_loss : 0.524522
+iteration 65 : supervised_loss : 0.487082
+iteration 66 : supervised_loss : 0.498066
+iteration 67 : supervised_loss : 0.473994
+iteration 68 : supervised_loss : 0.500780
+iteration 69 : supervised_loss : 0.481894
+iteration 70 : supervised_loss : 0.521626
+iteration 71 : supervised_loss : 0.468539
+iteration 72 : supervised_loss : 0.462880
+iteration 73 : supervised_loss : 0.469609
+iteration 74 : supervised_loss : 0.508823
+iteration 75 : supervised_loss : 0.453056
+iteration 76 : supervised_loss : 0.475246
+iteration 77 : supervised_loss : 0.494722
+iteration 78 : supervised_loss : 0.491070
+iteration 79 : supervised_loss : 0.464502
+
+  0%|                             | 4/1501 [03:18<20:43:38, 49.85s/it]
+iteration 81 : supervised_loss : 0.453800
+iteration 82 : supervised_loss : 0.471789
+iteration 83 : supervised_loss : 0.476047
+iteration 84 : supervised_loss : 0.487932
+iteration 85 : supervised_loss : 0.481970
+iteration 86 : supervised_loss : 0.490942
+iteration 87 : supervised_loss : 0.475446
+iteration 88 : supervised_loss : 0.471863
+iteration 89 : supervised_loss : 0.474566
+iteration 90 : supervised_loss : 0.464447
+iteration 91 : supervised_loss : 0.461579
+iteration 92 : supervised_loss : 0.444477
+iteration 93 : supervised_loss : 0.445129
+iteration 94 : supervised_loss : 0.466853
+iteration 95 : supervised_loss : 0.476073
+iteration 96 : supervised_loss : 0.459089
+iteration 97 : supervised_loss : 0.457957
+iteration 98 : supervised_loss : 0.454909
+iteration 99 : supervised_loss : 0.446484
+
+  0%|                             | 5/1501 [04:05<20:09:14, 48.50s/it]
+iteration 101 : supervised_loss : 0.511435
+iteration 102 : supervised_loss : 0.447435
+iteration 103 : supervised_loss : 0.530360
+iteration 104 : supervised_loss : 0.451835
+iteration 105 : supervised_loss : 0.440595
+iteration 106 : supervised_loss : 0.466548
+iteration 107 : supervised_loss : 0.463558
+iteration 108 : supervised_loss : 0.514771
+iteration 109 : supervised_loss : 0.447659
+iteration 110 : supervised_loss : 0.442674
+iteration 111 : supervised_loss : 0.424861
+iteration 112 : supervised_loss : 0.430940
+iteration 113 : supervised_loss : 0.467186
+iteration 114 : supervised_loss : 0.409471
+iteration 115 : supervised_loss : 0.416348
+iteration 116 : supervised_loss : 0.412937
+iteration 117 : supervised_loss : 0.444215
+iteration 118 : supervised_loss : 0.441127
+iteration 119 : supervised_loss : 0.455626
+
+  0%|                             | 6/1501 [04:52<19:55:22, 47.98s/it]
+iteration 121 : supervised_loss : 0.463542
+iteration 122 : supervised_loss : 0.420481
+iteration 123 : supervised_loss : 0.408477
+iteration 124 : supervised_loss : 0.465602
+iteration 125 : supervised_loss : 0.425388
+iteration 126 : supervised_loss : 0.464640
+iteration 127 : supervised_loss : 0.430319
+iteration 128 : supervised_loss : 0.411091
+iteration 129 : supervised_loss : 0.402029
+iteration 130 : supervised_loss : 0.410203
+iteration 131 : supervised_loss : 0.440852
+iteration 132 : supervised_loss : 0.401121
+iteration 133 : supervised_loss : 0.390507
+iteration 134 : supervised_loss : 0.436199
+iteration 135 : supervised_loss : 0.425184
+iteration 136 : supervised_loss : 0.413361
+iteration 137 : supervised_loss : 0.428398
+iteration 138 : supervised_loss : 0.419496
+iteration 139 : supervised_loss : 0.418600
+
+  0%|▏                            | 7/1501 [05:39<19:50:36, 47.82s/it]
+iteration 141 : supervised_loss : 0.432098
+iteration 142 : supervised_loss : 0.434463
+iteration 143 : supervised_loss : 0.430498
+iteration 144 : supervised_loss : 0.386617
+iteration 145 : supervised_loss : 0.497172
+iteration 146 : supervised_loss : 0.472177
+iteration 147 : supervised_loss : 0.420293
+iteration 148 : supervised_loss : 0.400707
+iteration 149 : supervised_loss : 0.409190
+iteration 150 : supervised_loss : 0.412952
+iteration 151 : supervised_loss : 0.386277
+iteration 152 : supervised_loss : 0.388259
+iteration 153 : supervised_loss : 0.422836
+iteration 154 : supervised_loss : 0.394525
+iteration 155 : supervised_loss : 0.416587
+iteration 156 : supervised_loss : 0.408906
+iteration 157 : supervised_loss : 0.478588
+iteration 158 : supervised_loss : 0.402149
+iteration 159 : supervised_loss : 0.423989
+
+  1%|▏                            | 8/1501 [06:31<20:22:46, 49.14s/it]
+iteration 161 : supervised_loss : 0.371402
+iteration 162 : supervised_loss : 0.382772
+iteration 163 : supervised_loss : 0.559346
+iteration 164 : supervised_loss : 0.399647
+iteration 165 : supervised_loss : 0.390368
+iteration 166 : supervised_loss : 0.360904
+iteration 167 : supervised_loss : 0.479101
+iteration 168 : supervised_loss : 0.355929
+iteration 169 : supervised_loss : 0.365903
+iteration 170 : supervised_loss : 0.367869
+iteration 171 : supervised_loss : 0.350930
+iteration 172 : supervised_loss : 0.456016
+iteration 173 : supervised_loss : 0.485875
+iteration 174 : supervised_loss : 0.371505
+iteration 175 : supervised_loss : 0.379756
+iteration 176 : supervised_loss : 0.402473
+iteration 177 : supervised_loss : 0.390429
+iteration 178 : supervised_loss : 0.458910
+
+  1%|▏                            | 9/1501 [07:27<21:11:35, 51.14s/it]
+iteration 180 : supervised_loss : 0.393616
+iteration 181 : supervised_loss : 0.412046
+iteration 182 : supervised_loss : 0.405387
+iteration 183 : supervised_loss : 0.442076
+iteration 184 : supervised_loss : 0.391881
+iteration 185 : supervised_loss : 0.453705
+iteration 186 : supervised_loss : 0.368236
+iteration 187 : supervised_loss : 0.386701
+iteration 188 : supervised_loss : 0.361470
+iteration 189 : supervised_loss : 0.377235
+iteration 190 : supervised_loss : 0.425663
+iteration 191 : supervised_loss : 0.369505
+iteration 192 : supervised_loss : 0.393215
+iteration 193 : supervised_loss : 0.355086
+iteration 194 : supervised_loss : 0.373615
+iteration 195 : supervised_loss : 0.368901
+iteration 196 : supervised_loss : 0.361929
+iteration 197 : supervised_loss : 0.350275
+iteration 198 : supervised_loss : 0.351637
+iteration 199 : supervised_loss : 0.367270
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 200 : supervised_loss : 0.356084
+
+
+
+
+
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 9/10 [02:02<00:12, 12.99s/it]
+Validation end
+
+  1%|▏                           | 10/1501 [10:36<38:55:27, 93.98s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 201 : supervised_loss : 0.367088
+iteration 202 : supervised_loss : 0.379029
+iteration 203 : supervised_loss : 0.356644
+iteration 204 : supervised_loss : 0.329070
+iteration 205 : supervised_loss : 0.368389
+iteration 206 : supervised_loss : 0.459076
+iteration 207 : supervised_loss : 0.337778
+iteration 208 : supervised_loss : 0.332833
+iteration 209 : supervised_loss : 0.373288
+iteration 210 : supervised_loss : 0.401947
+iteration 211 : supervised_loss : 0.380376
+iteration 212 : supervised_loss : 0.323642
+iteration 213 : supervised_loss : 0.334662
+iteration 214 : supervised_loss : 0.346725
+iteration 215 : supervised_loss : 0.350386
+iteration 216 : supervised_loss : 0.496881
+iteration 217 : supervised_loss : 0.336012
+iteration 218 : supervised_loss : 0.348130
+
+  1%|▏                           | 11/1501 [11:28<33:28:04, 80.86s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 220 : supervised_loss : 0.389832
+iteration 221 : supervised_loss : 0.338638
+iteration 222 : supervised_loss : 0.344987
+iteration 223 : supervised_loss : 0.328443
+iteration 224 : supervised_loss : 0.336274
+iteration 225 : supervised_loss : 0.355465
+iteration 226 : supervised_loss : 0.356846
+iteration 227 : supervised_loss : 0.319171
+iteration 228 : supervised_loss : 0.451199
+iteration 229 : supervised_loss : 0.306183
+iteration 230 : supervised_loss : 0.371757
+iteration 231 : supervised_loss : 0.300682
+iteration 232 : supervised_loss : 0.328426
+iteration 233 : supervised_loss : 0.275919
+iteration 234 : supervised_loss : 0.295557
+iteration 235 : supervised_loss : 0.305689
+iteration 236 : supervised_loss : 0.325182
+iteration 237 : supervised_loss : 0.289252
+iteration 238 : supervised_loss : 0.322937
+
+  1%|▏                           | 12/1501 [12:13<28:58:35, 70.06s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 240 : supervised_loss : 0.311126
+iteration 241 : supervised_loss : 0.276518
+iteration 242 : supervised_loss : 0.293447
+iteration 243 : supervised_loss : 0.268562
+iteration 244 : supervised_loss : 0.292568
+iteration 245 : supervised_loss : 0.343240
+iteration 246 : supervised_loss : 0.314660
+iteration 247 : supervised_loss : 0.302690
+iteration 248 : supervised_loss : 0.279423
+iteration 249 : supervised_loss : 0.281043
+iteration 250 : supervised_loss : 0.283666
+iteration 251 : supervised_loss : 0.284839
+iteration 252 : supervised_loss : 0.254464
+iteration 253 : supervised_loss : 0.324053
+iteration 254 : supervised_loss : 0.252226
+iteration 255 : supervised_loss : 0.306419
+iteration 256 : supervised_loss : 0.368012
+iteration 257 : supervised_loss : 0.325045
+iteration 258 : supervised_loss : 0.363032
+
+  1%|▏                           | 13/1501 [12:59<25:54:26, 62.68s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 260 : supervised_loss : 0.270642
+iteration 261 : supervised_loss : 0.245974
+iteration 262 : supervised_loss : 0.375792
+iteration 263 : supervised_loss : 0.254455
+iteration 264 : supervised_loss : 0.266838
+iteration 265 : supervised_loss : 0.263467
+iteration 266 : supervised_loss : 0.249677
+iteration 267 : supervised_loss : 0.261859
+iteration 268 : supervised_loss : 0.323750
+iteration 269 : supervised_loss : 0.341859
+iteration 270 : supervised_loss : 0.290316
+iteration 271 : supervised_loss : 0.272823
+iteration 272 : supervised_loss : 0.240696
+iteration 273 : supervised_loss : 0.262772
+iteration 274 : supervised_loss : 0.256059
+iteration 275 : supervised_loss : 0.260719
+iteration 276 : supervised_loss : 0.266346
+iteration 277 : supervised_loss : 0.275748
+iteration 278 : supervised_loss : 0.248874
+
+  1%|▎                           | 14/1501 [13:48<24:17:23, 58.81s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 280 : supervised_loss : 0.213553
+iteration 281 : supervised_loss : 0.434787
+iteration 282 : supervised_loss : 0.220474
+iteration 283 : supervised_loss : 0.214969
+iteration 284 : supervised_loss : 0.212990
+iteration 285 : supervised_loss : 0.238423
+iteration 286 : supervised_loss : 0.207084
+iteration 287 : supervised_loss : 0.224097
+iteration 288 : supervised_loss : 0.227853
+iteration 289 : supervised_loss : 0.186459
+iteration 290 : supervised_loss : 0.288971
+iteration 291 : supervised_loss : 0.297901
+iteration 292 : supervised_loss : 0.271643
+iteration 293 : supervised_loss : 0.277827
+iteration 294 : supervised_loss : 0.198673
+iteration 295 : supervised_loss : 0.255595
+iteration 296 : supervised_loss : 0.216732
+iteration 297 : supervised_loss : 0.213374
+iteration 298 : supervised_loss : 0.233040
+
+  1%|▎                           | 15/1501 [14:40<23:20:40, 56.55s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 300 : supervised_loss : 0.264677
+iteration 301 : supervised_loss : 0.315281
+iteration 302 : supervised_loss : 0.204195
+iteration 303 : supervised_loss : 0.240861
+iteration 304 : supervised_loss : 0.279744
+iteration 305 : supervised_loss : 0.214426
+iteration 306 : supervised_loss : 0.187187
+iteration 307 : supervised_loss : 0.234425
+iteration 308 : supervised_loss : 0.270425
+iteration 309 : supervised_loss : 0.185031
+iteration 310 : supervised_loss : 0.237339
+iteration 311 : supervised_loss : 0.186737
+iteration 312 : supervised_loss : 0.178203
+iteration 313 : supervised_loss : 0.243820
+iteration 314 : supervised_loss : 0.305956
+iteration 315 : supervised_loss : 0.268214
+iteration 316 : supervised_loss : 0.283702
+iteration 317 : supervised_loss : 0.337498
+iteration 318 : supervised_loss : 0.365044
+iteration 319 : supervised_loss : 0.254852
+
+  1%|▎                           | 16/1501 [15:26<22:05:35, 53.56s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 321 : supervised_loss : 0.202634
+iteration 322 : supervised_loss : 0.188197
+iteration 323 : supervised_loss : 0.216533
+iteration 324 : supervised_loss : 0.238128
+iteration 325 : supervised_loss : 0.182660
+iteration 326 : supervised_loss : 0.183265
+iteration 327 : supervised_loss : 0.201373
+iteration 328 : supervised_loss : 0.214257
+iteration 329 : supervised_loss : 0.200816
+iteration 330 : supervised_loss : 0.189308
+iteration 331 : supervised_loss : 0.210902
+iteration 332 : supervised_loss : 0.246356
+iteration 333 : supervised_loss : 0.373312
+iteration 334 : supervised_loss : 0.251478
+iteration 335 : supervised_loss : 0.267063
+iteration 336 : supervised_loss : 0.707955
+iteration 337 : supervised_loss : 0.202096
+iteration 338 : supervised_loss : 0.191349
+
+  1%|▎                           | 17/1501 [16:14<21:16:55, 51.63s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 340 : supervised_loss : 0.565463
+iteration 341 : supervised_loss : 0.187823
+iteration 342 : supervised_loss : 0.155474
+iteration 343 : supervised_loss : 0.196768
+iteration 344 : supervised_loss : 0.193556
+iteration 345 : supervised_loss : 0.171917
+iteration 346 : supervised_loss : 0.207504
+iteration 347 : supervised_loss : 0.152395
+iteration 348 : supervised_loss : 0.226615
+iteration 349 : supervised_loss : 0.211635
+iteration 350 : supervised_loss : 0.242513
+iteration 351 : supervised_loss : 0.204679
+iteration 352 : supervised_loss : 0.172176
+iteration 353 : supervised_loss : 0.180848
+iteration 354 : supervised_loss : 0.253921
+iteration 355 : supervised_loss : 0.355010
+iteration 356 : supervised_loss : 0.194665
+iteration 357 : supervised_loss : 0.276530
+iteration 358 : supervised_loss : 0.218201
+
+  1%|▎                           | 18/1501 [17:06<21:18:42, 51.73s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 360 : supervised_loss : 0.169353
+iteration 361 : supervised_loss : 0.162735
+iteration 362 : supervised_loss : 0.192779
+iteration 363 : supervised_loss : 0.156293
+iteration 364 : supervised_loss : 0.176278
+iteration 365 : supervised_loss : 0.180063
+iteration 366 : supervised_loss : 0.174132
+iteration 367 : supervised_loss : 0.227633
+iteration 368 : supervised_loss : 0.189236
+iteration 369 : supervised_loss : 0.529164
+iteration 370 : supervised_loss : 0.130267
+iteration 371 : supervised_loss : 0.131812
+iteration 372 : supervised_loss : 0.143937
+iteration 373 : supervised_loss : 0.336475
+iteration 374 : supervised_loss : 0.196105
+iteration 375 : supervised_loss : 0.195932
+iteration 376 : supervised_loss : 0.323644
+iteration 377 : supervised_loss : 0.194433
+iteration 378 : supervised_loss : 0.146107
+
+  1%|▎                           | 19/1501 [17:56<21:11:09, 51.46s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [02:16<00:00, 13.28s/it]
+iteration 380 : supervised_loss : 0.194577
+iteration 381 : supervised_loss : 0.214719
+iteration 382 : supervised_loss : 0.170107
+iteration 383 : supervised_loss : 0.191786
+iteration 384 : supervised_loss : 0.170927
+iteration 385 : supervised_loss : 0.196167
+iteration 386 : supervised_loss : 0.185866
+iteration 387 : supervised_loss : 0.157045
+iteration 388 : supervised_loss : 0.204709
+iteration 389 : supervised_loss : 0.593637
+iteration 390 : supervised_loss : 0.182633
+iteration 391 : supervised_loss : 0.223571
+iteration 392 : supervised_loss : 0.146874
+iteration 393 : supervised_loss : 0.216368
+iteration 394 : supervised_loss : 0.211765
+iteration 395 : supervised_loss : 0.240690
+iteration 396 : supervised_loss : 0.231647
+iteration 397 : supervised_loss : 0.199239
+iteration 398 : supervised_loss : 0.164797
+iteration 399 : supervised_loss : 0.211839
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 400 : supervised_loss : 0.171191
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+Validation end
+
+  1%|▎                          | 20/1501 [22:10<46:04:50, 112.01s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 401 : supervised_loss : 0.190527
+iteration 402 : supervised_loss : 0.177860
+iteration 403 : supervised_loss : 0.193070
+iteration 404 : supervised_loss : 0.168628
+iteration 405 : supervised_loss : 0.157054
+iteration 406 : supervised_loss : 0.146793
+iteration 407 : supervised_loss : 0.163996
+iteration 408 : supervised_loss : 0.162119
+iteration 409 : supervised_loss : 0.148215
+iteration 410 : supervised_loss : 0.132125
+iteration 411 : supervised_loss : 0.138741
+iteration 412 : supervised_loss : 0.131299
+iteration 413 : supervised_loss : 0.373975
+iteration 414 : supervised_loss : 0.323780
+iteration 415 : supervised_loss : 0.186494
+iteration 416 : supervised_loss : 0.199971
+iteration 417 : supervised_loss : 0.187110
+iteration 418 : supervised_loss : 0.195833
+iteration 419 : supervised_loss : 0.183106
+
+  1%|▍                           | 21/1501 [22:57<38:08:45, 92.79s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 421 : supervised_loss : 0.291748
+iteration 422 : supervised_loss : 0.219088
+iteration 423 : supervised_loss : 0.146544
+iteration 424 : supervised_loss : 0.153077
+iteration 425 : supervised_loss : 0.249024
+iteration 426 : supervised_loss : 0.149247
+iteration 427 : supervised_loss : 0.150143
+iteration 428 : supervised_loss : 0.167836
+iteration 429 : supervised_loss : 0.124790
+iteration 430 : supervised_loss : 0.135390
+iteration 431 : supervised_loss : 0.147312
+iteration 432 : supervised_loss : 0.157701
+iteration 433 : supervised_loss : 0.206746
+iteration 434 : supervised_loss : 0.214660
+iteration 435 : supervised_loss : 0.177457
+iteration 436 : supervised_loss : 0.190837
+iteration 437 : supervised_loss : 0.148007
+iteration 438 : supervised_loss : 0.143219
+
+  1%|▍                           | 22/1501 [23:45<32:34:22, 79.29s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 440 : supervised_loss : 0.186343
+iteration 441 : supervised_loss : 0.140924
+iteration 442 : supervised_loss : 0.167298
+iteration 443 : supervised_loss : 0.110925
+iteration 444 : supervised_loss : 0.600806
+iteration 445 : supervised_loss : 0.417040
+iteration 446 : supervised_loss : 0.146686
+iteration 447 : supervised_loss : 0.118991
+iteration 448 : supervised_loss : 0.129203
+iteration 449 : supervised_loss : 0.133101
+iteration 450 : supervised_loss : 0.146890
+iteration 451 : supervised_loss : 0.395270
+iteration 452 : supervised_loss : 0.129695
+iteration 453 : supervised_loss : 0.174021
+iteration 454 : supervised_loss : 0.156209
+iteration 455 : supervised_loss : 0.169976
+iteration 456 : supervised_loss : 0.140795
+iteration 457 : supervised_loss : 0.145192
+iteration 458 : supervised_loss : 0.158747
+
+  2%|▍                           | 23/1501 [24:31<28:24:04, 69.18s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 460 : supervised_loss : 0.108669
+iteration 461 : supervised_loss : 0.226108
+iteration 462 : supervised_loss : 0.211031
+iteration 463 : supervised_loss : 0.117910
+iteration 464 : supervised_loss : 0.129701
+iteration 465 : supervised_loss : 0.110615
+iteration 466 : supervised_loss : 0.119803
+iteration 467 : supervised_loss : 0.129522
+iteration 468 : supervised_loss : 0.105626
+iteration 469 : supervised_loss : 0.174475
+iteration 470 : supervised_loss : 0.104523
+iteration 471 : supervised_loss : 0.150005
+iteration 472 : supervised_loss : 0.131215
+iteration 473 : supervised_loss : 0.114925
+iteration 474 : supervised_loss : 0.294870
+iteration 475 : supervised_loss : 0.146494
+iteration 476 : supervised_loss : 0.143990
+iteration 477 : supervised_loss : 0.109161
+iteration 478 : supervised_loss : 0.106817
+iteration 479 : supervised_loss : 0.133554
+
+  2%|▍                           | 24/1501 [25:24<26:25:25, 64.40s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 481 : supervised_loss : 0.223428
+iteration 482 : supervised_loss : 0.107041
+iteration 483 : supervised_loss : 0.148632
+iteration 484 : supervised_loss : 0.136110
+iteration 485 : supervised_loss : 0.241258
+iteration 486 : supervised_loss : 0.190846
+iteration 487 : supervised_loss : 0.178995
+iteration 488 : supervised_loss : 0.159221
+iteration 489 : supervised_loss : 0.141244
+iteration 490 : supervised_loss : 0.123084
+iteration 491 : supervised_loss : 0.200408
+iteration 492 : supervised_loss : 0.094580
+iteration 493 : supervised_loss : 0.173313
+iteration 494 : supervised_loss : 0.185838
+iteration 495 : supervised_loss : 0.126801
+iteration 496 : supervised_loss : 0.108591
+iteration 497 : supervised_loss : 0.143786
+iteration 498 : supervised_loss : 0.255605
+iteration 499 : supervised_loss : 0.141815
+
+  2%|▍                           | 25/1501 [26:10<24:09:12, 58.91s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 501 : supervised_loss : 0.134465
+iteration 502 : supervised_loss : 0.152328
+iteration 503 : supervised_loss : 0.119225
+iteration 504 : supervised_loss : 0.205939
+iteration 505 : supervised_loss : 0.540877
+iteration 506 : supervised_loss : 0.139416
+iteration 507 : supervised_loss : 0.157851
+iteration 508 : supervised_loss : 0.189134
+iteration 509 : supervised_loss : 0.117023
+iteration 510 : supervised_loss : 0.116680
+iteration 511 : supervised_loss : 0.132974
+iteration 512 : supervised_loss : 0.143245
+iteration 513 : supervised_loss : 0.167876
+iteration 514 : supervised_loss : 0.341446
+iteration 515 : supervised_loss : 0.125142
+iteration 516 : supervised_loss : 0.126795
+iteration 517 : supervised_loss : 0.120074
+iteration 518 : supervised_loss : 0.133636
+
+  2%|▍                           | 26/1501 [26:56<22:32:56, 55.03s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 520 : supervised_loss : 0.109862
+iteration 521 : supervised_loss : 0.136041
+iteration 522 : supervised_loss : 0.111156
+iteration 523 : supervised_loss : 0.091405
+iteration 524 : supervised_loss : 0.088810
+iteration 525 : supervised_loss : 0.121003
+iteration 526 : supervised_loss : 0.102392
+iteration 527 : supervised_loss : 1.080880
+iteration 528 : supervised_loss : 0.565102
+iteration 529 : supervised_loss : 0.107105
+iteration 530 : supervised_loss : 0.159964
+iteration 531 : supervised_loss : 0.114026
+iteration 532 : supervised_loss : 0.094827
+iteration 533 : supervised_loss : 0.124336
+iteration 534 : supervised_loss : 0.127556
+iteration 535 : supervised_loss : 0.127836
+iteration 536 : supervised_loss : 0.160020
+iteration 537 : supervised_loss : 0.542303
+iteration 538 : supervised_loss : 0.182491
+iteration 539 : supervised_loss : 0.102315
+
+  2%|▌                           | 27/1501 [27:45<21:45:11, 53.13s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 541 : supervised_loss : 0.093597
+iteration 542 : supervised_loss : 0.119293
+iteration 543 : supervised_loss : 0.096983
+iteration 544 : supervised_loss : 0.177664
+iteration 545 : supervised_loss : 0.100166
+iteration 546 : supervised_loss : 0.215142
+iteration 547 : supervised_loss : 0.176657
+iteration 548 : supervised_loss : 0.134124
+iteration 549 : supervised_loss : 0.180839
+iteration 550 : supervised_loss : 0.129922
+iteration 551 : supervised_loss : 0.105914
+iteration 552 : supervised_loss : 0.181104
+iteration 553 : supervised_loss : 0.104784
+iteration 554 : supervised_loss : 0.105239
+iteration 555 : supervised_loss : 0.142771
+iteration 556 : supervised_loss : 0.124770
+iteration 557 : supervised_loss : 0.145225
+iteration 558 : supervised_loss : 0.130733
+iteration 559 : supervised_loss : 0.094871
+
+  2%|▌                           | 28/1501 [28:35<21:19:36, 52.12s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 561 : supervised_loss : 0.106360
+iteration 562 : supervised_loss : 0.110440
+iteration 563 : supervised_loss : 0.097235
+iteration 564 : supervised_loss : 0.146839
+iteration 565 : supervised_loss : 0.093598
+iteration 566 : supervised_loss : 0.146402
+iteration 567 : supervised_loss : 0.173775
+iteration 568 : supervised_loss : 0.096998
+iteration 569 : supervised_loss : 0.109951
+iteration 570 : supervised_loss : 0.129422
+iteration 571 : supervised_loss : 0.127842
+iteration 572 : supervised_loss : 0.449390
+iteration 573 : supervised_loss : 0.160761
+iteration 574 : supervised_loss : 0.193787
+iteration 575 : supervised_loss : 0.144470
+iteration 576 : supervised_loss : 0.177470
+iteration 577 : supervised_loss : 0.157592
+iteration 578 : supervised_loss : 0.111032
+iteration 579 : supervised_loss : 0.101586
+
+  2%|▌                           | 29/1501 [29:25<21:01:48, 51.43s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:20<00:00, 19.63s/it]
+iteration 581 : supervised_loss : 0.098096
+iteration 582 : supervised_loss : 0.109601
+iteration 583 : supervised_loss : 0.141531
+iteration 584 : supervised_loss : 0.170120
+iteration 585 : supervised_loss : 0.096164
+iteration 586 : supervised_loss : 0.102786
+iteration 587 : supervised_loss : 0.120738
+iteration 588 : supervised_loss : 0.116745
+iteration 589 : supervised_loss : 0.122486
+iteration 590 : supervised_loss : 0.078847
+iteration 591 : supervised_loss : 0.435478
+iteration 592 : supervised_loss : 0.113684
+iteration 593 : supervised_loss : 0.075214
+iteration 594 : supervised_loss : 0.107457
+iteration 595 : supervised_loss : 0.384461
+iteration 596 : supervised_loss : 0.111615
+iteration 597 : supervised_loss : 0.093118
+iteration 598 : supervised_loss : 0.142117
+iteration 599 : supervised_loss : 0.101239
+iteration 600 : supervised_loss : 0.113496
+Validation begin
+
+
+
+
+
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 9/10 [03:06<00:20, 20.15s/it]
+Validation end
+
+  2%|▌                          | 30/1501 [33:41<46:05:55, 112.82s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 601 : supervised_loss : 0.128836
+iteration 602 : supervised_loss : 0.091511
+iteration 603 : supervised_loss : 0.309814
+iteration 604 : supervised_loss : 0.135816
+iteration 605 : supervised_loss : 0.082819
+iteration 606 : supervised_loss : 0.119588
+iteration 607 : supervised_loss : 0.171650
+iteration 608 : supervised_loss : 0.100030
+iteration 609 : supervised_loss : 0.104250
+iteration 610 : supervised_loss : 0.098063
+iteration 611 : supervised_loss : 0.187518
+iteration 612 : supervised_loss : 0.125860
+iteration 613 : supervised_loss : 0.176317
+iteration 614 : supervised_loss : 0.092907
+iteration 615 : supervised_loss : 0.099075
+iteration 616 : supervised_loss : 0.086493
+iteration 617 : supervised_loss : 0.135251
+iteration 618 : supervised_loss : 0.090582
+iteration 619 : supervised_loss : 0.094112
+
+  2%|▌                           | 31/1501 [34:29<38:09:44, 93.46s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 621 : supervised_loss : 0.103391
+iteration 622 : supervised_loss : 0.095858
+iteration 623 : supervised_loss : 0.097897
+iteration 624 : supervised_loss : 0.094687
+iteration 625 : supervised_loss : 0.132369
+iteration 626 : supervised_loss : 0.089557
+iteration 627 : supervised_loss : 0.140742
+iteration 628 : supervised_loss : 0.104544
+iteration 629 : supervised_loss : 0.110305
+iteration 630 : supervised_loss : 0.131525
+iteration 631 : supervised_loss : 0.349047
+iteration 632 : supervised_loss : 0.115771
+iteration 633 : supervised_loss : 0.106044
+iteration 634 : supervised_loss : 0.099840
+iteration 635 : supervised_loss : 0.126844
+iteration 636 : supervised_loss : 0.116131
+iteration 637 : supervised_loss : 0.099607
+iteration 638 : supervised_loss : 0.120412
+iteration 639 : supervised_loss : 0.111979
+
+  2%|▌                           | 32/1501 [35:27<33:45:21, 82.72s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 641 : supervised_loss : 0.116802
+iteration 642 : supervised_loss : 0.074832
+iteration 643 : supervised_loss : 0.116072
+iteration 644 : supervised_loss : 0.080954
+iteration 645 : supervised_loss : 1.041895
+iteration 646 : supervised_loss : 0.136077
+iteration 647 : supervised_loss : 0.081375
+iteration 648 : supervised_loss : 0.106100
+iteration 649 : supervised_loss : 0.107655
+iteration 650 : supervised_loss : 0.109946
+iteration 651 : supervised_loss : 0.097538
+iteration 652 : supervised_loss : 0.116466
+iteration 653 : supervised_loss : 0.115571
+iteration 654 : supervised_loss : 0.246737
+iteration 655 : supervised_loss : 0.265944
+iteration 656 : supervised_loss : 0.114989
+iteration 657 : supervised_loss : 0.423192
+iteration 658 : supervised_loss : 0.117631
+iteration 659 : supervised_loss : 0.080094
+
+  2%|▌                           | 33/1501 [36:10<28:58:49, 71.07s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 661 : supervised_loss : 0.340053
+iteration 662 : supervised_loss : 0.099057
+iteration 663 : supervised_loss : 0.125379
+iteration 664 : supervised_loss : 0.114393
+iteration 665 : supervised_loss : 0.107208
+iteration 666 : supervised_loss : 0.110964
+iteration 667 : supervised_loss : 0.076232
+iteration 668 : supervised_loss : 0.100404
+iteration 669 : supervised_loss : 0.089044
+iteration 670 : supervised_loss : 0.082635
+iteration 671 : supervised_loss : 0.107816
+iteration 672 : supervised_loss : 0.085622
+iteration 673 : supervised_loss : 0.080290
+iteration 674 : supervised_loss : 0.098059
+iteration 675 : supervised_loss : 0.158838
+iteration 676 : supervised_loss : 0.147104
+iteration 677 : supervised_loss : 0.180792
+iteration 678 : supervised_loss : 0.108954
+iteration 679 : supervised_loss : 0.107310
+
+  2%|▋                           | 34/1501 [37:07<27:08:45, 66.62s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 681 : supervised_loss : 0.088584
+iteration 682 : supervised_loss : 0.110488
+iteration 683 : supervised_loss : 0.110949
+iteration 684 : supervised_loss : 0.077926
+iteration 685 : supervised_loss : 0.085671
+iteration 686 : supervised_loss : 0.102717
+iteration 687 : supervised_loss : 0.114754
+iteration 688 : supervised_loss : 0.090151
+iteration 689 : supervised_loss : 0.090316
+iteration 690 : supervised_loss : 0.084253
+iteration 691 : supervised_loss : 0.084684
+iteration 692 : supervised_loss : 0.088911
+iteration 693 : supervised_loss : 0.093665
+iteration 694 : supervised_loss : 0.148366
+iteration 695 : supervised_loss : 0.155565
+iteration 696 : supervised_loss : 0.107610
+iteration 697 : supervised_loss : 0.090178
+iteration 698 : supervised_loss : 0.097494
+iteration 699 : supervised_loss : 0.076571
+
+  2%|▋                           | 35/1501 [37:54<24:49:47, 60.97s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 701 : supervised_loss : 0.103450
+iteration 702 : supervised_loss : 0.078774
+iteration 703 : supervised_loss : 0.075923
+iteration 704 : supervised_loss : 0.103023
+iteration 705 : supervised_loss : 0.095908
+iteration 706 : supervised_loss : 0.108972
+iteration 707 : supervised_loss : 0.090301
+iteration 708 : supervised_loss : 0.123478
+iteration 709 : supervised_loss : 0.104231
+iteration 710 : supervised_loss : 0.087806
+iteration 711 : supervised_loss : 0.112595
+iteration 712 : supervised_loss : 0.130989
+iteration 713 : supervised_loss : 0.080420
+iteration 714 : supervised_loss : 0.122485
+iteration 715 : supervised_loss : 0.119477
+iteration 716 : supervised_loss : 0.088489
+iteration 717 : supervised_loss : 0.085568
+iteration 718 : supervised_loss : 0.086579
+iteration 719 : supervised_loss : 0.089545
+
+  2%|▋                           | 36/1501 [38:49<24:01:57, 59.06s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 721 : supervised_loss : 0.399978
+iteration 722 : supervised_loss : 0.084845
+iteration 723 : supervised_loss : 0.933666
+iteration 724 : supervised_loss : 0.061597
+iteration 725 : supervised_loss : 0.076150
+iteration 726 : supervised_loss : 0.109544
+iteration 727 : supervised_loss : 0.138000
+iteration 728 : supervised_loss : 0.326507
+iteration 729 : supervised_loss : 0.113540
+iteration 730 : supervised_loss : 0.085700
+iteration 731 : supervised_loss : 0.205758
+iteration 732 : supervised_loss : 0.072190
+iteration 733 : supervised_loss : 0.104096
+iteration 734 : supervised_loss : 0.090267
+iteration 735 : supervised_loss : 0.074784
+iteration 736 : supervised_loss : 0.115533
+iteration 737 : supervised_loss : 0.075133
+iteration 738 : supervised_loss : 0.137856
+iteration 739 : supervised_loss : 0.170130
+
+  2%|▋                           | 37/1501 [39:35<22:24:55, 55.12s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 741 : supervised_loss : 0.086300
+iteration 742 : supervised_loss : 0.123140
+iteration 743 : supervised_loss : 0.078955
+iteration 744 : supervised_loss : 0.076509
+iteration 745 : supervised_loss : 0.076874
+iteration 746 : supervised_loss : 0.103693
+iteration 747 : supervised_loss : 0.135322
+iteration 748 : supervised_loss : 0.106248
+iteration 749 : supervised_loss : 0.095479
+iteration 750 : supervised_loss : 0.340077
+iteration 751 : supervised_loss : 0.092545
+iteration 752 : supervised_loss : 0.117312
+iteration 753 : supervised_loss : 0.090118
+iteration 754 : supervised_loss : 0.110231
+iteration 755 : supervised_loss : 0.085032
+iteration 756 : supervised_loss : 0.081158
+iteration 757 : supervised_loss : 0.108671
+iteration 758 : supervised_loss : 0.075994
+iteration 759 : supervised_loss : 0.066343
+
+  3%|▋                           | 38/1501 [40:25<21:49:04, 53.69s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 761 : supervised_loss : 0.113673
+iteration 762 : supervised_loss : 0.080505
+iteration 763 : supervised_loss : 0.077561
+iteration 764 : supervised_loss : 0.087914
+iteration 765 : supervised_loss : 0.106082
+iteration 766 : supervised_loss : 0.096735
+iteration 767 : supervised_loss : 0.072674
+iteration 768 : supervised_loss : 0.113522
+iteration 769 : supervised_loss : 0.071646
+iteration 770 : supervised_loss : 0.086193
+iteration 771 : supervised_loss : 0.092185
+iteration 772 : supervised_loss : 0.084949
+iteration 773 : supervised_loss : 0.075332
+iteration 774 : supervised_loss : 0.128755
+iteration 775 : supervised_loss : 0.131973
+iteration 776 : supervised_loss : 0.086197
+iteration 777 : supervised_loss : 0.089642
+iteration 778 : supervised_loss : 0.089064
+iteration 779 : supervised_loss : 0.116896
+
+  3%|▋                           | 39/1501 [41:11<20:48:13, 51.23s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:27<00:00, 20.48s/it]
+iteration 781 : supervised_loss : 0.109542
+iteration 782 : supervised_loss : 0.073571
+iteration 783 : supervised_loss : 0.083337
+iteration 784 : supervised_loss : 0.069631
+iteration 785 : supervised_loss : 0.067001
+iteration 786 : supervised_loss : 0.071849
+iteration 787 : supervised_loss : 0.065531
+iteration 788 : supervised_loss : 0.127060
+iteration 789 : supervised_loss : 0.089519
+iteration 790 : supervised_loss : 0.075668
+iteration 791 : supervised_loss : 0.090854
+iteration 792 : supervised_loss : 0.083443
+iteration 793 : supervised_loss : 0.136817
+iteration 794 : supervised_loss : 0.072492
+iteration 795 : supervised_loss : 0.094367
+iteration 796 : supervised_loss : 0.144112
+iteration 797 : supervised_loss : 0.080788
+iteration 798 : supervised_loss : 0.093274
+iteration 799 : supervised_loss : 0.112030
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 800 : supervised_loss : 0.073314
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+Validation end
+
+  3%|▋                          | 40/1501 [45:22<45:06:32, 111.15s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 801 : supervised_loss : 0.081775
+iteration 802 : supervised_loss : 0.072288
+iteration 803 : supervised_loss : 0.089603
+iteration 804 : supervised_loss : 0.094953
+iteration 805 : supervised_loss : 0.095745
+iteration 806 : supervised_loss : 0.068697
+iteration 807 : supervised_loss : 0.075851
+iteration 808 : supervised_loss : 0.085451
+iteration 809 : supervised_loss : 0.079470
+iteration 810 : supervised_loss : 0.169009
+iteration 811 : supervised_loss : 0.090253
+iteration 812 : supervised_loss : 0.076507
+iteration 813 : supervised_loss : 0.086266
+iteration 814 : supervised_loss : 0.074124
+iteration 815 : supervised_loss : 0.087442
+iteration 816 : supervised_loss : 0.081744
+iteration 817 : supervised_loss : 0.061183
+iteration 818 : supervised_loss : 0.096190
+iteration 819 : supervised_loss : 0.117539
+
+  3%|▊                           | 41/1501 [46:10<37:25:36, 92.29s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 821 : supervised_loss : 0.092926
+iteration 822 : supervised_loss : 0.091493
+iteration 823 : supervised_loss : 0.056985
+iteration 824 : supervised_loss : 0.072867
+iteration 825 : supervised_loss : 0.130480
+iteration 826 : supervised_loss : 0.109456
+iteration 827 : supervised_loss : 0.108114
+iteration 828 : supervised_loss : 0.081494
+iteration 829 : supervised_loss : 0.054948
+iteration 830 : supervised_loss : 0.071196
+iteration 831 : supervised_loss : 0.090893
+iteration 832 : supervised_loss : 0.081451
+iteration 833 : supervised_loss : 0.085641
+iteration 834 : supervised_loss : 0.095295
+iteration 835 : supervised_loss : 0.088051
+iteration 836 : supervised_loss : 0.460269
+iteration 837 : supervised_loss : 0.084766
+iteration 838 : supervised_loss : 0.103311
+iteration 839 : supervised_loss : 0.091147
+
+  3%|▊                           | 42/1501 [47:02<32:28:28, 80.13s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 841 : supervised_loss : 0.080045
+iteration 842 : supervised_loss : 0.060267
+iteration 843 : supervised_loss : 0.059244
+iteration 844 : supervised_loss : 0.108991
+iteration 845 : supervised_loss : 0.066298
+iteration 846 : supervised_loss : 0.063910
+iteration 847 : supervised_loss : 0.120910
+iteration 848 : supervised_loss : 0.970746
+iteration 849 : supervised_loss : 0.060680
+iteration 850 : supervised_loss : 0.081864
+iteration 851 : supervised_loss : 0.082741
+iteration 852 : supervised_loss : 0.073442
+iteration 853 : supervised_loss : 0.114580
+iteration 854 : supervised_loss : 0.075588
+iteration 855 : supervised_loss : 0.100746
+iteration 856 : supervised_loss : 0.069520
+iteration 857 : supervised_loss : 0.110339
+iteration 858 : supervised_loss : 0.124123
+iteration 859 : supervised_loss : 0.126240
+
+  3%|▊                           | 43/1501 [47:56<29:19:00, 72.39s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 861 : supervised_loss : 0.079769
+iteration 862 : supervised_loss : 0.052962
+iteration 863 : supervised_loss : 0.248128
+iteration 864 : supervised_loss : 0.071743
+iteration 865 : supervised_loss : 0.086870
+iteration 866 : supervised_loss : 0.065756
+iteration 867 : supervised_loss : 0.107930
+iteration 868 : supervised_loss : 0.083505
+iteration 869 : supervised_loss : 0.075094
+iteration 870 : supervised_loss : 0.066152
+iteration 871 : supervised_loss : 0.056659
+iteration 872 : supervised_loss : 0.064331
+iteration 873 : supervised_loss : 0.063776
+iteration 874 : supervised_loss : 0.094444
+iteration 875 : supervised_loss : 0.107519
+iteration 876 : supervised_loss : 0.079634
+iteration 877 : supervised_loss : 0.195739
+iteration 878 : supervised_loss : 0.114623
+
+  3%|▊                           | 44/1501 [48:50<26:59:54, 66.71s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 880 : supervised_loss : 0.113682
+iteration 881 : supervised_loss : 0.073140
+iteration 882 : supervised_loss : 0.058473
+iteration 883 : supervised_loss : 0.100070
+iteration 884 : supervised_loss : 0.079696
+iteration 885 : supervised_loss : 0.060530
+iteration 886 : supervised_loss : 0.055309
+iteration 887 : supervised_loss : 0.070188
+iteration 888 : supervised_loss : 0.103251
+iteration 889 : supervised_loss : 0.084474
+iteration 890 : supervised_loss : 0.091066
+iteration 891 : supervised_loss : 0.073931
+iteration 892 : supervised_loss : 0.066354
+iteration 893 : supervised_loss : 0.084069
+iteration 894 : supervised_loss : 0.132704
+iteration 895 : supervised_loss : 0.083684
+iteration 896 : supervised_loss : 0.089518
+iteration 897 : supervised_loss : 0.070658
+iteration 898 : supervised_loss : 0.249556
+
+  3%|▊                           | 45/1501 [49:49<26:06:29, 64.55s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 900 : supervised_loss : 0.069520
+iteration 901 : supervised_loss : 0.066032
+iteration 902 : supervised_loss : 0.188159
+iteration 903 : supervised_loss : 0.061433
+iteration 904 : supervised_loss : 0.064784
+iteration 905 : supervised_loss : 0.069061
+iteration 906 : supervised_loss : 0.086349
+iteration 907 : supervised_loss : 0.087685
+iteration 908 : supervised_loss : 0.077307
+iteration 909 : supervised_loss : 0.065661
+iteration 910 : supervised_loss : 0.085693
+iteration 911 : supervised_loss : 0.103959
+iteration 912 : supervised_loss : 0.162040
+iteration 913 : supervised_loss : 0.077288
+iteration 914 : supervised_loss : 0.073920
+iteration 915 : supervised_loss : 0.097352
+iteration 916 : supervised_loss : 0.082570
+iteration 917 : supervised_loss : 0.082347
+iteration 918 : supervised_loss : 0.077692
+
+  3%|▊                           | 46/1501 [50:33<23:32:22, 58.24s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 920 : supervised_loss : 0.081656
+iteration 921 : supervised_loss : 0.122394
+iteration 922 : supervised_loss : 0.089100
+iteration 923 : supervised_loss : 0.192813
+iteration 924 : supervised_loss : 0.086337
+iteration 925 : supervised_loss : 0.065692
+iteration 926 : supervised_loss : 0.228039
+iteration 927 : supervised_loss : 0.096639
+iteration 928 : supervised_loss : 0.392985
+iteration 929 : supervised_loss : 0.063816
+iteration 930 : supervised_loss : 0.068464
+iteration 931 : supervised_loss : 0.071632
+iteration 932 : supervised_loss : 0.088405
+iteration 933 : supervised_loss : 0.085168
+iteration 934 : supervised_loss : 0.063240
+iteration 935 : supervised_loss : 0.071935
+iteration 936 : supervised_loss : 0.116657
+iteration 937 : supervised_loss : 0.067563
+iteration 938 : supervised_loss : 0.109886
+
+  3%|▉                           | 47/1501 [51:19<22:02:33, 54.58s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 940 : supervised_loss : 0.086570
+iteration 941 : supervised_loss : 0.063054
+iteration 942 : supervised_loss : 0.051670
+iteration 943 : supervised_loss : 0.068158
+iteration 944 : supervised_loss : 0.079166
+iteration 945 : supervised_loss : 0.099575
+iteration 946 : supervised_loss : 0.107538
+iteration 947 : supervised_loss : 0.084051
+iteration 948 : supervised_loss : 0.061874
+iteration 949 : supervised_loss : 0.058242
+iteration 950 : supervised_loss : 0.065523
+iteration 951 : supervised_loss : 0.092418
+iteration 952 : supervised_loss : 0.129296
+iteration 953 : supervised_loss : 0.131609
+iteration 954 : supervised_loss : 0.072774
+iteration 955 : supervised_loss : 0.072139
+iteration 956 : supervised_loss : 0.104462
+iteration 957 : supervised_loss : 0.078053
+iteration 958 : supervised_loss : 0.085459
+
+  3%|▉                           | 48/1501 [52:09<21:34:39, 53.46s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 960 : supervised_loss : 0.070750
+iteration 961 : supervised_loss : 0.108422
+iteration 962 : supervised_loss : 0.072421
+iteration 963 : supervised_loss : 0.061883
+iteration 964 : supervised_loss : 0.068452
+iteration 965 : supervised_loss : 0.083861
+iteration 966 : supervised_loss : 0.073901
+iteration 967 : supervised_loss : 0.075431
+iteration 968 : supervised_loss : 0.074596
+iteration 969 : supervised_loss : 0.091401
+iteration 970 : supervised_loss : 0.067571
+iteration 971 : supervised_loss : 0.081936
+iteration 972 : supervised_loss : 0.068155
+iteration 973 : supervised_loss : 0.105126
+iteration 974 : supervised_loss : 0.067014
+iteration 975 : supervised_loss : 0.076125
+iteration 976 : supervised_loss : 0.088413
+iteration 977 : supervised_loss : 0.418442
+iteration 978 : supervised_loss : 0.088774
+
+  3%|▉                           | 49/1501 [53:03<21:34:21, 53.49s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.01s/it]
+iteration 980 : supervised_loss : 0.086645
+iteration 981 : supervised_loss : 0.101197
+iteration 982 : supervised_loss : 0.068051
+iteration 983 : supervised_loss : 0.086943
+iteration 984 : supervised_loss : 0.139837
+iteration 985 : supervised_loss : 0.100188
+iteration 986 : supervised_loss : 0.105776
+iteration 987 : supervised_loss : 0.064605
+iteration 988 : supervised_loss : 0.083353
+iteration 989 : supervised_loss : 0.062046
+iteration 990 : supervised_loss : 0.050251
+iteration 991 : supervised_loss : 0.053646
+iteration 992 : supervised_loss : 0.059902
+iteration 993 : supervised_loss : 0.116888
+iteration 994 : supervised_loss : 0.143113
+iteration 995 : supervised_loss : 0.098237
+iteration 996 : supervised_loss : 0.119628
+iteration 997 : supervised_loss : 0.069103
+iteration 998 : supervised_loss : 0.086554
+iteration 999 : supervised_loss : 0.057455
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 1000 : supervised_loss : 0.069724
+
+
+
+
+
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 9/10 [03:01<00:19, 19.46s/it]
+Validation end
+
+  3%|▉                          | 50/1501 [57:24<46:35:56, 115.61s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1001 : supervised_loss : 0.073699
+iteration 1002 : supervised_loss : 0.089711
+iteration 1003 : supervised_loss : 0.067333
+iteration 1004 : supervised_loss : 0.162425
+iteration 1005 : supervised_loss : 0.092125
+iteration 1006 : supervised_loss : 0.070878
+iteration 1007 : supervised_loss : 0.080978
+iteration 1008 : supervised_loss : 0.094573
+iteration 1009 : supervised_loss : 0.253357
+iteration 1010 : supervised_loss : 0.066254
+iteration 1011 : supervised_loss : 0.100010
+iteration 1012 : supervised_loss : 0.062445
+iteration 1013 : supervised_loss : 0.067170
+iteration 1014 : supervised_loss : 0.079492
+iteration 1015 : supervised_loss : 0.097579
+iteration 1016 : supervised_loss : 0.128741
+iteration 1017 : supervised_loss : 0.063159
+iteration 1018 : supervised_loss : 0.082289
+iteration 1019 : supervised_loss : 0.071698
+
+  3%|▉                           | 51/1501 [58:12<38:26:22, 95.44s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1021 : supervised_loss : 0.079860
+iteration 1022 : supervised_loss : 0.092268
+iteration 1023 : supervised_loss : 0.091699
+iteration 1024 : supervised_loss : 0.069887
+iteration 1025 : supervised_loss : 0.085989
+iteration 1026 : supervised_loss : 0.072839
+iteration 1027 : supervised_loss : 0.109902
+iteration 1028 : supervised_loss : 0.065521
+iteration 1029 : supervised_loss : 0.086143
+iteration 1030 : supervised_loss : 0.053109
+iteration 1031 : supervised_loss : 0.075621
+iteration 1032 : supervised_loss : 0.065514
+iteration 1033 : supervised_loss : 0.092266
+iteration 1034 : supervised_loss : 0.133240
+iteration 1035 : supervised_loss : 0.072474
+iteration 1036 : supervised_loss : 0.065220
+iteration 1037 : supervised_loss : 0.062197
+iteration 1038 : supervised_loss : 0.073414
+iteration 1039 : supervised_loss : 0.061343
+
+  3%|▉                           | 52/1501 [59:04<33:07:14, 82.29s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1041 : supervised_loss : 0.048888
+iteration 1042 : supervised_loss : 0.051445
+iteration 1043 : supervised_loss : 0.060602
+iteration 1044 : supervised_loss : 0.106906
+iteration 1045 : supervised_loss : 0.062993
+iteration 1046 : supervised_loss : 0.058609
+iteration 1047 : supervised_loss : 0.080629
+iteration 1048 : supervised_loss : 0.054490
+iteration 1049 : supervised_loss : 0.074128
+iteration 1050 : supervised_loss : 0.063801
+iteration 1051 : supervised_loss : 0.064671
+iteration 1052 : supervised_loss : 0.054984
+iteration 1053 : supervised_loss : 0.059556
+iteration 1054 : supervised_loss : 0.078720
+iteration 1055 : supervised_loss : 0.062139
+iteration 1056 : supervised_loss : 0.111071
+iteration 1057 : supervised_loss : 0.070014
+iteration 1058 : supervised_loss : 0.084068
+iteration 1059 : supervised_loss : 0.073558
+
+  4%|▉                           | 53/1501 [59:55<29:24:29, 73.11s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1061 : supervised_loss : 0.050200
+iteration 1062 : supervised_loss : 0.083489
+iteration 1063 : supervised_loss : 0.076024
+iteration 1064 : supervised_loss : 0.056029
+iteration 1065 : supervised_loss : 0.069829
+iteration 1066 : supervised_loss : 0.062852
+iteration 1067 : supervised_loss : 0.059457
+iteration 1068 : supervised_loss : 0.070028
+iteration 1069 : supervised_loss : 0.061519
+iteration 1070 : supervised_loss : 0.197348
+iteration 1071 : supervised_loss : 0.100679
+iteration 1072 : supervised_loss : 0.066340
+iteration 1073 : supervised_loss : 0.062649
+iteration 1074 : supervised_loss : 0.078458
+iteration 1075 : supervised_loss : 0.089250
+iteration 1076 : supervised_loss : 0.072711
+iteration 1077 : supervised_loss : 0.058893
+iteration 1078 : supervised_loss : 0.074510
+iteration 1079 : supervised_loss : 0.078678
+
+  4%|▉                         | 54/1501 [1:00:49<27:04:08, 67.34s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1081 : supervised_loss : 0.324790
+iteration 1082 : supervised_loss : 0.051371
+iteration 1083 : supervised_loss : 0.054627
+iteration 1084 : supervised_loss : 0.050021
+iteration 1085 : supervised_loss : 0.052041
+iteration 1086 : supervised_loss : 0.072671
+iteration 1087 : supervised_loss : 0.071601
+iteration 1088 : supervised_loss : 0.080306
+iteration 1089 : supervised_loss : 0.050815
+iteration 1090 : supervised_loss : 0.911620
+iteration 1091 : supervised_loss : 0.075551
+iteration 1092 : supervised_loss : 0.070264
+iteration 1093 : supervised_loss : 0.054027
+iteration 1094 : supervised_loss : 0.092541
+iteration 1095 : supervised_loss : 0.073539
+iteration 1096 : supervised_loss : 0.071653
+iteration 1097 : supervised_loss : 0.063852
+iteration 1098 : supervised_loss : 0.066062
+iteration 1099 : supervised_loss : 0.089531
+
+  4%|▉                         | 55/1501 [1:01:49<26:09:35, 65.13s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1101 : supervised_loss : 0.058809
+iteration 1102 : supervised_loss : 0.055928
+iteration 1103 : supervised_loss : 0.051253
+iteration 1104 : supervised_loss : 0.057210
+iteration 1105 : supervised_loss : 0.093694
+iteration 1106 : supervised_loss : 0.059892
+iteration 1107 : supervised_loss : 0.076172
+iteration 1108 : supervised_loss : 0.076312
+iteration 1109 : supervised_loss : 0.049886
+iteration 1110 : supervised_loss : 0.068005
+iteration 1111 : supervised_loss : 0.080979
+iteration 1112 : supervised_loss : 0.060757
+iteration 1113 : supervised_loss : 0.113183
+iteration 1114 : supervised_loss : 0.079816
+iteration 1115 : supervised_loss : 0.074315
+iteration 1116 : supervised_loss : 0.092663
+iteration 1117 : supervised_loss : 0.061336
+iteration 1118 : supervised_loss : 0.077454
+iteration 1119 : supervised_loss : 0.110944
+
+  4%|▉                         | 56/1501 [1:02:44<24:53:43, 62.02s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1121 : supervised_loss : 0.051702
+iteration 1122 : supervised_loss : 0.084977
+iteration 1123 : supervised_loss : 0.065292
+iteration 1124 : supervised_loss : 0.090660
+iteration 1125 : supervised_loss : 0.085681
+iteration 1126 : supervised_loss : 0.072844
+iteration 1127 : supervised_loss : 0.060779
+iteration 1128 : supervised_loss : 0.066789
+iteration 1129 : supervised_loss : 0.045165
+iteration 1130 : supervised_loss : 0.059190
+iteration 1131 : supervised_loss : 0.062507
+iteration 1132 : supervised_loss : 0.059158
+iteration 1133 : supervised_loss : 0.052088
+iteration 1134 : supervised_loss : 0.056095
+iteration 1135 : supervised_loss : 0.085900
+iteration 1136 : supervised_loss : 0.085510
+iteration 1137 : supervised_loss : 0.087009
+iteration 1138 : supervised_loss : 0.053226
+iteration 1139 : supervised_loss : 0.074479
+
+  4%|▉                         | 57/1501 [1:03:40<24:07:12, 60.13s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1141 : supervised_loss : 0.055743
+iteration 1142 : supervised_loss : 0.050587
+iteration 1143 : supervised_loss : 0.078624
+iteration 1144 : supervised_loss : 0.056787
+iteration 1145 : supervised_loss : 0.064106
+iteration 1146 : supervised_loss : 0.057776
+iteration 1147 : supervised_loss : 0.088481
+iteration 1148 : supervised_loss : 0.069624
+iteration 1149 : supervised_loss : 0.050192
+iteration 1150 : supervised_loss : 0.046516
+iteration 1151 : supervised_loss : 0.091868
+iteration 1152 : supervised_loss : 0.093954
+iteration 1153 : supervised_loss : 0.106890
+iteration 1154 : supervised_loss : 0.100357
+iteration 1155 : supervised_loss : 0.074350
+iteration 1156 : supervised_loss : 0.075701
+iteration 1157 : supervised_loss : 0.061379
+iteration 1158 : supervised_loss : 0.053372
+
+  4%|█                         | 58/1501 [1:04:31<23:02:21, 57.48s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1160 : supervised_loss : 0.081792
+iteration 1161 : supervised_loss : 0.087439
+iteration 1162 : supervised_loss : 0.065635
+iteration 1163 : supervised_loss : 0.051237
+iteration 1164 : supervised_loss : 0.068941
+iteration 1165 : supervised_loss : 0.077758
+iteration 1166 : supervised_loss : 0.865548
+iteration 1167 : supervised_loss : 0.077592
+iteration 1168 : supervised_loss : 0.063529
+iteration 1169 : supervised_loss : 0.057343
+iteration 1170 : supervised_loss : 0.060646
+iteration 1171 : supervised_loss : 0.059139
+iteration 1172 : supervised_loss : 0.061154
+iteration 1173 : supervised_loss : 0.066746
+iteration 1174 : supervised_loss : 0.063029
+iteration 1175 : supervised_loss : 0.048217
+iteration 1176 : supervised_loss : 0.478860
+iteration 1177 : supervised_loss : 0.077954
+iteration 1178 : supervised_loss : 0.048327
+iteration 1179 : supervised_loss : 0.061748
+
+  4%|█                         | 59/1501 [1:05:24<22:31:51, 56.25s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.76s/it]
+iteration 1181 : supervised_loss : 0.050167
+iteration 1182 : supervised_loss : 0.040492
+iteration 1183 : supervised_loss : 0.065020
+iteration 1184 : supervised_loss : 0.066561
+iteration 1185 : supervised_loss : 0.076397
+iteration 1186 : supervised_loss : 0.060776
+iteration 1187 : supervised_loss : 0.082042
+iteration 1188 : supervised_loss : 0.067177
+iteration 1189 : supervised_loss : 0.042794
+iteration 1190 : supervised_loss : 0.057096
+iteration 1191 : supervised_loss : 0.081817
+iteration 1192 : supervised_loss : 0.051741
+iteration 1193 : supervised_loss : 0.075932
+iteration 1194 : supervised_loss : 0.077182
+iteration 1195 : supervised_loss : 0.053618
+iteration 1196 : supervised_loss : 0.058514
+iteration 1197 : supervised_loss : 0.098461
+iteration 1198 : supervised_loss : 0.067082
+iteration 1199 : supervised_loss : 0.080717
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 1200 : supervised_loss : 0.087332
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+
+  4%|▉                        | 60/1501 [1:09:41<46:35:17, 116.39s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1200 : model_dice_score : 0.854848 model_hd95 : 5.353714
+iteration 1201 : supervised_loss : 0.061046
+iteration 1202 : supervised_loss : 0.058217
+iteration 1203 : supervised_loss : 0.049919
+iteration 1204 : supervised_loss : 0.120852
+iteration 1205 : supervised_loss : 0.078169
+iteration 1206 : supervised_loss : 0.074197
+iteration 1207 : supervised_loss : 0.065685
+iteration 1208 : supervised_loss : 0.087149
+iteration 1209 : supervised_loss : 0.049868
+iteration 1210 : supervised_loss : 0.074343
+iteration 1211 : supervised_loss : 0.054798
+iteration 1212 : supervised_loss : 0.056965
+iteration 1213 : supervised_loss : 0.052498
+iteration 1214 : supervised_loss : 0.082540
+iteration 1215 : supervised_loss : 0.068494
+iteration 1216 : supervised_loss : 0.198538
+iteration 1217 : supervised_loss : 0.136344
+iteration 1218 : supervised_loss : 0.064668
+
+  4%|█                         | 61/1501 [1:10:26<37:56:26, 94.85s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1220 : supervised_loss : 0.070534
+iteration 1221 : supervised_loss : 0.058160
+iteration 1222 : supervised_loss : 0.068994
+iteration 1223 : supervised_loss : 0.085742
+iteration 1224 : supervised_loss : 0.047762
+iteration 1225 : supervised_loss : 0.057467
+iteration 1226 : supervised_loss : 0.063341
+iteration 1227 : supervised_loss : 0.064466
+iteration 1228 : supervised_loss : 0.082025
+iteration 1229 : supervised_loss : 0.074557
+iteration 1230 : supervised_loss : 0.079120
+iteration 1231 : supervised_loss : 0.058644
+iteration 1232 : supervised_loss : 0.067609
+iteration 1233 : supervised_loss : 0.089331
+iteration 1234 : supervised_loss : 0.050834
+iteration 1235 : supervised_loss : 0.066214
+iteration 1236 : supervised_loss : 0.058443
+iteration 1237 : supervised_loss : 0.058996
+iteration 1238 : supervised_loss : 0.063901
+
+  4%|█                         | 62/1501 [1:11:22<33:20:39, 83.42s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1240 : supervised_loss : 0.052258
+iteration 1241 : supervised_loss : 0.060751
+iteration 1242 : supervised_loss : 0.062838
+iteration 1243 : supervised_loss : 0.088996
+iteration 1244 : supervised_loss : 0.043643
+iteration 1245 : supervised_loss : 0.047207
+iteration 1246 : supervised_loss : 0.113620
+iteration 1247 : supervised_loss : 0.050934
+iteration 1248 : supervised_loss : 0.086155
+iteration 1249 : supervised_loss : 0.077872
+iteration 1250 : supervised_loss : 0.056175
+iteration 1251 : supervised_loss : 0.065789
+iteration 1252 : supervised_loss : 0.057754
+iteration 1253 : supervised_loss : 0.082185
+iteration 1254 : supervised_loss : 0.062821
+iteration 1255 : supervised_loss : 0.064607
+iteration 1256 : supervised_loss : 0.141147
+iteration 1257 : supervised_loss : 0.078305
+iteration 1258 : supervised_loss : 0.060017
+
+  4%|█                         | 63/1501 [1:12:12<29:15:17, 73.24s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1260 : supervised_loss : 0.062060
+iteration 1261 : supervised_loss : 0.050874
+iteration 1262 : supervised_loss : 0.058831
+iteration 1263 : supervised_loss : 0.046727
+iteration 1264 : supervised_loss : 0.054867
+iteration 1265 : supervised_loss : 0.051455
+iteration 1266 : supervised_loss : 0.045764
+iteration 1267 : supervised_loss : 0.049024
+iteration 1268 : supervised_loss : 0.058246
+iteration 1269 : supervised_loss : 0.059304
+iteration 1270 : supervised_loss : 0.067097
+iteration 1271 : supervised_loss : 0.467423
+iteration 1272 : supervised_loss : 0.070871
+iteration 1273 : supervised_loss : 0.075666
+iteration 1274 : supervised_loss : 0.076379
+iteration 1275 : supervised_loss : 0.895032
+iteration 1276 : supervised_loss : 0.091659
+iteration 1277 : supervised_loss : 0.060065
+iteration 1278 : supervised_loss : 0.092002
+
+  4%|█                         | 64/1501 [1:13:18<28:19:53, 70.98s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1280 : supervised_loss : 0.068589
+iteration 1281 : supervised_loss : 0.074073
+iteration 1282 : supervised_loss : 0.070561
+iteration 1283 : supervised_loss : 0.056760
+iteration 1284 : supervised_loss : 0.087000
+iteration 1285 : supervised_loss : 0.078480
+iteration 1286 : supervised_loss : 0.158054
+iteration 1287 : supervised_loss : 0.056639
+iteration 1288 : supervised_loss : 0.069057
+iteration 1289 : supervised_loss : 0.079686
+iteration 1290 : supervised_loss : 0.062653
+iteration 1291 : supervised_loss : 0.066945
+iteration 1292 : supervised_loss : 0.126245
+iteration 1293 : supervised_loss : 0.054068
+iteration 1294 : supervised_loss : 0.075722
+iteration 1295 : supervised_loss : 0.090095
+iteration 1296 : supervised_loss : 0.051750
+iteration 1297 : supervised_loss : 0.046434
+iteration 1298 : supervised_loss : 0.059308
+
+  4%|█▏                        | 65/1501 [1:14:04<25:24:54, 63.71s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1300 : supervised_loss : 0.094821
+iteration 1301 : supervised_loss : 0.062412
+iteration 1302 : supervised_loss : 0.054526
+iteration 1303 : supervised_loss : 0.055011
+iteration 1304 : supervised_loss : 0.044518
+iteration 1305 : supervised_loss : 0.064651
+iteration 1306 : supervised_loss : 0.075199
+iteration 1307 : supervised_loss : 0.054180
+iteration 1308 : supervised_loss : 0.059332
+iteration 1309 : supervised_loss : 0.054593
+iteration 1310 : supervised_loss : 0.069627
+iteration 1311 : supervised_loss : 0.062122
+iteration 1312 : supervised_loss : 0.098147
+iteration 1313 : supervised_loss : 0.093713
+iteration 1314 : supervised_loss : 0.099248
+iteration 1315 : supervised_loss : 0.068285
+iteration 1316 : supervised_loss : 0.523853
+iteration 1317 : supervised_loss : 0.068993
+iteration 1318 : supervised_loss : 0.055341
+iteration 1319 : supervised_loss : 0.064272
+
+  4%|█▏                        | 66/1501 [1:14:55<23:53:50, 59.95s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1321 : supervised_loss : 0.045487
+iteration 1322 : supervised_loss : 0.046318
+iteration 1323 : supervised_loss : 0.218335
+iteration 1324 : supervised_loss : 0.063276
+iteration 1325 : supervised_loss : 0.217548
+iteration 1326 : supervised_loss : 0.057477
+iteration 1327 : supervised_loss : 0.063788
+iteration 1328 : supervised_loss : 0.080845
+iteration 1329 : supervised_loss : 0.086730
+iteration 1330 : supervised_loss : 0.055077
+iteration 1331 : supervised_loss : 0.044506
+iteration 1332 : supervised_loss : 0.057061
+iteration 1333 : supervised_loss : 0.167203
+iteration 1334 : supervised_loss : 0.072300
+iteration 1335 : supervised_loss : 0.103509
+iteration 1336 : supervised_loss : 0.069124
+iteration 1337 : supervised_loss : 0.052982
+iteration 1338 : supervised_loss : 0.058361
+
+  4%|█▏                        | 67/1501 [1:15:47<22:54:07, 57.49s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1340 : supervised_loss : 0.080295
+iteration 1341 : supervised_loss : 0.059506
+iteration 1342 : supervised_loss : 0.044637
+iteration 1343 : supervised_loss : 0.054069
+iteration 1344 : supervised_loss : 0.076110
+iteration 1345 : supervised_loss : 0.056088
+iteration 1346 : supervised_loss : 0.075292
+iteration 1347 : supervised_loss : 0.074771
+iteration 1348 : supervised_loss : 0.071292
+iteration 1349 : supervised_loss : 0.060176
+iteration 1350 : supervised_loss : 0.047225
+iteration 1351 : supervised_loss : 0.082735
+iteration 1352 : supervised_loss : 0.057280
+iteration 1353 : supervised_loss : 0.091706
+iteration 1354 : supervised_loss : 0.064326
+iteration 1355 : supervised_loss : 0.064445
+iteration 1356 : supervised_loss : 0.057462
+iteration 1357 : supervised_loss : 0.066637
+iteration 1358 : supervised_loss : 0.045791
+iteration 1359 : supervised_loss : 0.073567
+
+  5%|█▏                        | 68/1501 [1:16:36<21:47:58, 54.77s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1361 : supervised_loss : 0.051851
+iteration 1362 : supervised_loss : 0.125385
+iteration 1363 : supervised_loss : 0.089352
+iteration 1364 : supervised_loss : 0.064599
+iteration 1365 : supervised_loss : 0.057716
+iteration 1366 : supervised_loss : 0.050929
+iteration 1367 : supervised_loss : 0.216666
+iteration 1368 : supervised_loss : 0.051001
+iteration 1369 : supervised_loss : 0.059816
+iteration 1370 : supervised_loss : 0.044631
+iteration 1371 : supervised_loss : 0.048016
+iteration 1372 : supervised_loss : 0.062544
+iteration 1373 : supervised_loss : 0.063949
+iteration 1374 : supervised_loss : 0.054235
+iteration 1375 : supervised_loss : 0.053211
+iteration 1376 : supervised_loss : 0.072346
+iteration 1377 : supervised_loss : 0.058377
+iteration 1378 : supervised_loss : 0.055375
+
+  5%|█▏                        | 69/1501 [1:17:27<21:22:19, 53.73s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:21<00:00, 19.88s/it]
+iteration 1380 : supervised_loss : 0.058898
+iteration 1381 : supervised_loss : 0.047234
+iteration 1382 : supervised_loss : 0.047663
+iteration 1383 : supervised_loss : 0.050900
+iteration 1384 : supervised_loss : 0.081375
+iteration 1385 : supervised_loss : 0.048571
+iteration 1386 : supervised_loss : 0.054012
+iteration 1387 : supervised_loss : 0.052171
+iteration 1388 : supervised_loss : 0.067250
+iteration 1389 : supervised_loss : 0.085254
+iteration 1390 : supervised_loss : 0.071809
+iteration 1391 : supervised_loss : 0.048840
+iteration 1392 : supervised_loss : 0.067545
+iteration 1393 : supervised_loss : 0.404349
+iteration 1394 : supervised_loss : 0.081105
+iteration 1395 : supervised_loss : 0.060398
+iteration 1396 : supervised_loss : 0.068023
+iteration 1397 : supervised_loss : 0.057378
+iteration 1398 : supervised_loss : 0.062435
+iteration 1399 : supervised_loss : 0.061763
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 1400 : supervised_loss : 0.046742
+
+
+
+
+
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 9/10 [03:04<00:20, 20.03s/it]
+Validation end
+
+  5%|█▏                       | 70/1501 [1:21:40<45:04:30, 113.40s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1401 : supervised_loss : 0.052762
+iteration 1402 : supervised_loss : 0.055741
+iteration 1403 : supervised_loss : 0.054607
+iteration 1404 : supervised_loss : 0.050893
+iteration 1405 : supervised_loss : 0.058505
+iteration 1406 : supervised_loss : 0.068152
+iteration 1407 : supervised_loss : 0.050043
+iteration 1408 : supervised_loss : 0.062835
+iteration 1409 : supervised_loss : 0.069709
+iteration 1410 : supervised_loss : 0.048561
+iteration 1411 : supervised_loss : 0.059811
+iteration 1412 : supervised_loss : 0.059632
+iteration 1413 : supervised_loss : 0.167799
+iteration 1414 : supervised_loss : 0.085433
+iteration 1415 : supervised_loss : 0.065490
+iteration 1416 : supervised_loss : 0.093343
+iteration 1417 : supervised_loss : 0.255108
+iteration 1418 : supervised_loss : 0.053424
+iteration 1419 : supervised_loss : 0.049922
+
+  5%|█▏                        | 71/1501 [1:22:30<37:33:31, 94.55s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1421 : supervised_loss : 0.060420
+iteration 1422 : supervised_loss : 0.046502
+iteration 1423 : supervised_loss : 0.068960
+iteration 1424 : supervised_loss : 0.048310
+iteration 1425 : supervised_loss : 0.066229
+iteration 1426 : supervised_loss : 0.045206
+iteration 1427 : supervised_loss : 0.065152
+iteration 1428 : supervised_loss : 0.061145
+iteration 1429 : supervised_loss : 0.054042
+iteration 1430 : supervised_loss : 0.048462
+iteration 1431 : supervised_loss : 0.050320
+iteration 1432 : supervised_loss : 0.053992
+iteration 1433 : supervised_loss : 0.055131
+iteration 1434 : supervised_loss : 0.061341
+iteration 1435 : supervised_loss : 0.050426
+iteration 1436 : supervised_loss : 0.064914
+iteration 1437 : supervised_loss : 0.098624
+iteration 1438 : supervised_loss : 0.075447
+iteration 1439 : supervised_loss : 0.071220
+
+  5%|█▏                        | 72/1501 [1:23:22<32:29:10, 81.84s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1441 : supervised_loss : 0.053715
+iteration 1442 : supervised_loss : 0.075749
+iteration 1443 : supervised_loss : 0.053970
+iteration 1444 : supervised_loss : 0.058623
+iteration 1445 : supervised_loss : 0.050119
+iteration 1446 : supervised_loss : 0.053479
+iteration 1447 : supervised_loss : 0.063039
+iteration 1448 : supervised_loss : 0.058787
+iteration 1449 : supervised_loss : 0.046549
+iteration 1450 : supervised_loss : 0.064681
+iteration 1451 : supervised_loss : 0.087889
+iteration 1452 : supervised_loss : 0.058322
+iteration 1453 : supervised_loss : 0.052922
+iteration 1454 : supervised_loss : 0.092733
+iteration 1455 : supervised_loss : 0.092036
+iteration 1456 : supervised_loss : 0.053801
+iteration 1457 : supervised_loss : 0.046784
+iteration 1458 : supervised_loss : 0.047194
+iteration 1459 : supervised_loss : 0.077840
+
+  5%|█▎                        | 73/1501 [1:24:11<28:30:30, 71.87s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1461 : supervised_loss : 0.073408
+iteration 1462 : supervised_loss : 0.051126
+iteration 1463 : supervised_loss : 0.050110
+iteration 1464 : supervised_loss : 0.061493
+iteration 1465 : supervised_loss : 0.049325
+iteration 1466 : supervised_loss : 0.060017
+iteration 1467 : supervised_loss : 0.056331
+iteration 1468 : supervised_loss : 0.076462
+iteration 1469 : supervised_loss : 0.062439
+iteration 1470 : supervised_loss : 0.058891
+iteration 1471 : supervised_loss : 0.047199
+iteration 1472 : supervised_loss : 0.051982
+iteration 1473 : supervised_loss : 0.066637
+iteration 1474 : supervised_loss : 0.067439
+iteration 1475 : supervised_loss : 0.166468
+iteration 1476 : supervised_loss : 0.053196
+iteration 1477 : supervised_loss : 0.050121
+iteration 1478 : supervised_loss : 0.084085
+
+  5%|█▎                        | 74/1501 [1:25:02<26:02:17, 65.69s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1480 : supervised_loss : 0.076712
+iteration 1481 : supervised_loss : 0.067878
+iteration 1482 : supervised_loss : 0.040821
+iteration 1483 : supervised_loss : 0.051377
+iteration 1484 : supervised_loss : 0.041836
+iteration 1485 : supervised_loss : 0.074430
+iteration 1486 : supervised_loss : 0.054459
+iteration 1487 : supervised_loss : 0.066695
+iteration 1488 : supervised_loss : 0.065327
+iteration 1489 : supervised_loss : 0.057706
+iteration 1490 : supervised_loss : 0.040071
+iteration 1491 : supervised_loss : 0.045501
+iteration 1492 : supervised_loss : 0.054797
+iteration 1493 : supervised_loss : 0.066012
+iteration 1494 : supervised_loss : 0.053943
+iteration 1495 : supervised_loss : 0.082129
+iteration 1496 : supervised_loss : 0.064214
+iteration 1497 : supervised_loss : 0.077920
+iteration 1498 : supervised_loss : 0.042870
+
+  5%|█▎                        | 75/1501 [1:26:01<25:10:54, 63.57s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1500 : supervised_loss : 0.041264
+iteration 1501 : supervised_loss : 0.044477
+iteration 1502 : supervised_loss : 0.068364
+iteration 1503 : supervised_loss : 0.057341
+iteration 1504 : supervised_loss : 0.041518
+iteration 1505 : supervised_loss : 0.063838
+iteration 1506 : supervised_loss : 0.062301
+iteration 1507 : supervised_loss : 0.051377
+iteration 1508 : supervised_loss : 0.048462
+iteration 1509 : supervised_loss : 0.044028
+iteration 1510 : supervised_loss : 0.043012
+iteration 1511 : supervised_loss : 0.047424
+iteration 1512 : supervised_loss : 0.040370
+iteration 1513 : supervised_loss : 0.047148
+iteration 1514 : supervised_loss : 0.181062
+iteration 1515 : supervised_loss : 0.073746
+iteration 1516 : supervised_loss : 0.050798
+iteration 1517 : supervised_loss : 0.048082
+iteration 1518 : supervised_loss : 0.050207
+
+  5%|█▎                        | 76/1501 [1:26:54<23:59:16, 60.60s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1520 : supervised_loss : 0.068147
+iteration 1521 : supervised_loss : 0.047564
+iteration 1522 : supervised_loss : 0.055133
+iteration 1523 : supervised_loss : 0.078751
+iteration 1524 : supervised_loss : 0.043828
+iteration 1525 : supervised_loss : 0.057245
+iteration 1526 : supervised_loss : 0.047927
+iteration 1527 : supervised_loss : 0.063264
+iteration 1528 : supervised_loss : 0.058284
+iteration 1529 : supervised_loss : 0.064254
+iteration 1530 : supervised_loss : 0.049488
+iteration 1531 : supervised_loss : 0.052510
+iteration 1532 : supervised_loss : 0.061987
+iteration 1533 : supervised_loss : 0.059107
+iteration 1534 : supervised_loss : 0.063403
+iteration 1535 : supervised_loss : 0.064542
+iteration 1536 : supervised_loss : 0.065257
+iteration 1537 : supervised_loss : 0.051190
+iteration 1538 : supervised_loss : 0.053685
+
+  5%|█▎                        | 77/1501 [1:27:45<22:44:30, 57.49s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1540 : supervised_loss : 0.038923
+iteration 1541 : supervised_loss : 0.053069
+iteration 1542 : supervised_loss : 0.082207
+iteration 1543 : supervised_loss : 0.049317
+iteration 1544 : supervised_loss : 0.040756
+iteration 1545 : supervised_loss : 0.768728
+iteration 1546 : supervised_loss : 0.080687
+iteration 1547 : supervised_loss : 0.064023
+iteration 1548 : supervised_loss : 0.066889
+iteration 1549 : supervised_loss : 0.049348
+iteration 1550 : supervised_loss : 0.044737
+iteration 1551 : supervised_loss : 0.104026
+iteration 1552 : supervised_loss : 0.065852
+iteration 1553 : supervised_loss : 0.044303
+iteration 1554 : supervised_loss : 0.082543
+iteration 1555 : supervised_loss : 0.053144
+iteration 1556 : supervised_loss : 0.056064
+iteration 1557 : supervised_loss : 0.055742
+iteration 1558 : supervised_loss : 0.053548
+
+  5%|█▎                        | 78/1501 [1:28:35<21:50:48, 55.27s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1560 : supervised_loss : 0.061505
+iteration 1561 : supervised_loss : 0.047880
+iteration 1562 : supervised_loss : 0.042046
+iteration 1563 : supervised_loss : 0.036904
+iteration 1564 : supervised_loss : 0.051483
+iteration 1565 : supervised_loss : 0.057076
+iteration 1566 : supervised_loss : 0.078833
+iteration 1567 : supervised_loss : 0.059524
+iteration 1568 : supervised_loss : 0.091498
+iteration 1569 : supervised_loss : 0.062085
+iteration 1570 : supervised_loss : 0.051742
+iteration 1571 : supervised_loss : 0.107273
+iteration 1572 : supervised_loss : 0.048519
+iteration 1573 : supervised_loss : 0.073231
+iteration 1574 : supervised_loss : 0.056814
+iteration 1575 : supervised_loss : 0.070877
+iteration 1576 : supervised_loss : 0.051530
+iteration 1577 : supervised_loss : 0.089505
+iteration 1578 : supervised_loss : 0.051923
+iteration 1579 : supervised_loss : 0.060286
+
+  5%|█▎                        | 79/1501 [1:29:31<21:59:23, 55.67s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:25<00:00, 20.28s/it]
+iteration 1581 : supervised_loss : 0.044581
+iteration 1582 : supervised_loss : 0.459756
+iteration 1583 : supervised_loss : 0.060358
+iteration 1584 : supervised_loss : 0.067976
+iteration 1585 : supervised_loss : 0.052487
+iteration 1586 : supervised_loss : 0.066681
+iteration 1587 : supervised_loss : 0.103927
+iteration 1588 : supervised_loss : 0.069259
+iteration 1589 : supervised_loss : 0.064906
+iteration 1590 : supervised_loss : 0.146479
+iteration 1591 : supervised_loss : 0.050618
+iteration 1592 : supervised_loss : 0.070197
+iteration 1593 : supervised_loss : 1.445275
+iteration 1594 : supervised_loss : 0.091188
+iteration 1595 : supervised_loss : 0.068875
+iteration 1596 : supervised_loss : 0.066025
+iteration 1597 : supervised_loss : 0.043814
+iteration 1598 : supervised_loss : 0.059418
+iteration 1599 : supervised_loss : 0.055410
+iteration 1600 : supervised_loss : 0.050660
+Validation begin
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+Validation end
+
+  5%|█▎                       | 80/1501 [1:33:53<46:18:12, 117.31s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1601 : supervised_loss : 0.056890
+iteration 1602 : supervised_loss : 0.056414
+iteration 1603 : supervised_loss : 0.052726
+iteration 1604 : supervised_loss : 0.038937
+iteration 1605 : supervised_loss : 0.074937
+iteration 1606 : supervised_loss : 1.127082
+iteration 1607 : supervised_loss : 0.150802
+iteration 1608 : supervised_loss : 0.061059
+iteration 1609 : supervised_loss : 0.067800
+iteration 1610 : supervised_loss : 0.046289
+iteration 1611 : supervised_loss : 0.058353
+iteration 1612 : supervised_loss : 0.044223
+iteration 1613 : supervised_loss : 0.085060
+iteration 1614 : supervised_loss : 0.047553
+iteration 1615 : supervised_loss : 0.067812
+iteration 1616 : supervised_loss : 0.059458
+iteration 1617 : supervised_loss : 0.063942
+iteration 1618 : supervised_loss : 0.061205
+iteration 1619 : supervised_loss : 0.074524
+
+  5%|█▍                        | 81/1501 [1:34:44<38:31:03, 97.65s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1621 : supervised_loss : 0.126471
+iteration 1622 : supervised_loss : 0.071156
+iteration 1623 : supervised_loss : 0.083861
+iteration 1624 : supervised_loss : 0.048872
+iteration 1625 : supervised_loss : 0.050650
+iteration 1626 : supervised_loss : 0.065339
+iteration 1627 : supervised_loss : 0.302525
+iteration 1628 : supervised_loss : 0.061457
+iteration 1629 : supervised_loss : 0.051164
+iteration 1630 : supervised_loss : 0.058743
+iteration 1631 : supervised_loss : 0.053084
+iteration 1632 : supervised_loss : 0.061693
+iteration 1633 : supervised_loss : 0.059452
+iteration 1634 : supervised_loss : 0.061365
+iteration 1635 : supervised_loss : 0.071853
+iteration 1636 : supervised_loss : 0.058929
+iteration 1637 : supervised_loss : 0.049978
+iteration 1638 : supervised_loss : 0.189348
+iteration 1639 : supervised_loss : 0.069287
+
+  5%|█▍                        | 82/1501 [1:35:38<33:18:06, 84.49s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1641 : supervised_loss : 0.044904
+iteration 1642 : supervised_loss : 0.050521
+iteration 1643 : supervised_loss : 0.043701
+iteration 1644 : supervised_loss : 0.049371
+iteration 1645 : supervised_loss : 0.086011
+iteration 1646 : supervised_loss : 0.053045
+iteration 1647 : supervised_loss : 0.072466
+iteration 1648 : supervised_loss : 0.045488
+iteration 1649 : supervised_loss : 0.060030
+iteration 1650 : supervised_loss : 0.051533
+iteration 1651 : supervised_loss : 0.052622
+iteration 1652 : supervised_loss : 0.041820
+iteration 1653 : supervised_loss : 0.062010
+iteration 1654 : supervised_loss : 0.053791
+iteration 1655 : supervised_loss : 0.057488
+iteration 1656 : supervised_loss : 0.240408
+iteration 1657 : supervised_loss : 0.059980
+iteration 1658 : supervised_loss : 0.055735
+
+  6%|█▍                        | 83/1501 [1:36:25<28:51:27, 73.26s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1660 : supervised_loss : 0.045481
+iteration 1661 : supervised_loss : 0.054231
+iteration 1662 : supervised_loss : 0.065408
+iteration 1663 : supervised_loss : 0.037192
+iteration 1664 : supervised_loss : 0.069789
+iteration 1665 : supervised_loss : 0.059878
+iteration 1666 : supervised_loss : 0.054712
+iteration 1667 : supervised_loss : 0.052986
+iteration 1668 : supervised_loss : 0.050115
+iteration 1669 : supervised_loss : 0.066591
+iteration 1670 : supervised_loss : 0.047194
+iteration 1671 : supervised_loss : 0.053609
+iteration 1672 : supervised_loss : 0.043977
+iteration 1673 : supervised_loss : 0.056043
+iteration 1674 : supervised_loss : 0.057862
+iteration 1675 : supervised_loss : 0.051479
+iteration 1676 : supervised_loss : 0.053152
+iteration 1677 : supervised_loss : 0.078897
+iteration 1678 : supervised_loss : 0.041168
+iteration 1679 : supervised_loss : 0.051688
+
+  6%|█▍                        | 84/1501 [1:37:19<26:32:45, 67.44s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1681 : supervised_loss : 0.053549
+iteration 1682 : supervised_loss : 0.039931
+iteration 1683 : supervised_loss : 0.051729
+iteration 1684 : supervised_loss : 0.049750
+iteration 1685 : supervised_loss : 0.053800
+iteration 1686 : supervised_loss : 0.065514
+iteration 1687 : supervised_loss : 0.042345
+iteration 1688 : supervised_loss : 0.055981
+iteration 1689 : supervised_loss : 0.061692
+iteration 1690 : supervised_loss : 0.047339
+iteration 1691 : supervised_loss : 0.066827
+iteration 1692 : supervised_loss : 0.077035
+iteration 1693 : supervised_loss : 0.053158
+iteration 1694 : supervised_loss : 0.064815
+iteration 1695 : supervised_loss : 0.049477
+iteration 1696 : supervised_loss : 0.071663
+iteration 1697 : supervised_loss : 0.093120
+iteration 1698 : supervised_loss : 0.067457
+
+  6%|█▍                        | 85/1501 [1:38:15<25:07:16, 63.87s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1700 : supervised_loss : 0.056061
+iteration 1701 : supervised_loss : 0.045358
+iteration 1702 : supervised_loss : 0.073171
+iteration 1703 : supervised_loss : 0.042492
+iteration 1704 : supervised_loss : 0.048290
+iteration 1705 : supervised_loss : 0.064622
+iteration 1706 : supervised_loss : 0.069421
+iteration 1707 : supervised_loss : 0.065653
+iteration 1708 : supervised_loss : 0.108988
+iteration 1709 : supervised_loss : 0.062786
+iteration 1710 : supervised_loss : 0.063202
+iteration 1711 : supervised_loss : 0.052499
+iteration 1712 : supervised_loss : 0.058041
+iteration 1713 : supervised_loss : 0.074883
+iteration 1714 : supervised_loss : 0.073994
+iteration 1715 : supervised_loss : 0.083490
+iteration 1716 : supervised_loss : 0.079336
+iteration 1717 : supervised_loss : 0.048891
+iteration 1718 : supervised_loss : 0.065748
+
+  6%|█▍                        | 86/1501 [1:39:08<23:52:51, 60.76s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1720 : supervised_loss : 0.076427
+iteration 1721 : supervised_loss : 0.054280
+iteration 1722 : supervised_loss : 0.060516
+iteration 1723 : supervised_loss : 0.088584
+iteration 1724 : supervised_loss : 0.063387
+iteration 1725 : supervised_loss : 0.054600
+iteration 1726 : supervised_loss : 0.050874
+iteration 1727 : supervised_loss : 0.075588
+iteration 1728 : supervised_loss : 0.052870
+iteration 1729 : supervised_loss : 0.068005
+iteration 1730 : supervised_loss : 0.067758
+iteration 1731 : supervised_loss : 0.066521
+iteration 1732 : supervised_loss : 0.073629
+iteration 1733 : supervised_loss : 0.054510
+iteration 1734 : supervised_loss : 0.061738
+iteration 1735 : supervised_loss : 0.055267
+iteration 1736 : supervised_loss : 0.071679
+iteration 1737 : supervised_loss : 0.052006
+iteration 1738 : supervised_loss : 0.044500
+iteration 1739 : supervised_loss : 0.063260
+
+  6%|█▌                        | 87/1501 [1:40:00<22:46:36, 57.99s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1741 : supervised_loss : 0.056023
+iteration 1742 : supervised_loss : 0.063384
+iteration 1743 : supervised_loss : 0.077444
+iteration 1744 : supervised_loss : 0.055912
+iteration 1745 : supervised_loss : 0.067111
+iteration 1746 : supervised_loss : 0.048221
+iteration 1747 : supervised_loss : 0.076460
+iteration 1748 : supervised_loss : 0.053954
+iteration 1749 : supervised_loss : 0.050130
+iteration 1750 : supervised_loss : 0.063065
+iteration 1751 : supervised_loss : 0.054746
+iteration 1752 : supervised_loss : 0.045753
+iteration 1753 : supervised_loss : 0.072954
+iteration 1754 : supervised_loss : 0.059922
+iteration 1755 : supervised_loss : 0.048946
+iteration 1756 : supervised_loss : 0.106029
+iteration 1757 : supervised_loss : 0.060486
+iteration 1758 : supervised_loss : 0.054337
+
+  6%|█▌                        | 88/1501 [1:40:51<22:02:15, 56.15s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1760 : supervised_loss : 0.061949
+iteration 1761 : supervised_loss : 0.045401
+iteration 1762 : supervised_loss : 0.040894
+iteration 1763 : supervised_loss : 0.043959
+iteration 1764 : supervised_loss : 0.062233
+iteration 1765 : supervised_loss : 0.046663
+iteration 1766 : supervised_loss : 0.064324
+iteration 1767 : supervised_loss : 0.055072
+iteration 1768 : supervised_loss : 0.059473
+iteration 1769 : supervised_loss : 0.051749
+iteration 1770 : supervised_loss : 0.046608
+iteration 1771 : supervised_loss : 0.051971
+iteration 1772 : supervised_loss : 0.057618
+iteration 1773 : supervised_loss : 0.062602
+iteration 1774 : supervised_loss : 0.060674
+iteration 1775 : supervised_loss : 0.049645
+iteration 1776 : supervised_loss : 0.062171
+iteration 1777 : supervised_loss : 0.075287
+iteration 1778 : supervised_loss : 0.040068
+iteration 1779 : supervised_loss : 0.063490
+
+  6%|█▌                        | 89/1501 [1:41:39<21:03:30, 53.69s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:23<00:00, 20.13s/it]
+iteration 1781 : supervised_loss : 0.050888
+iteration 1782 : supervised_loss : 0.053302
+iteration 1783 : supervised_loss : 0.073659
+iteration 1784 : supervised_loss : 0.051306
+iteration 1785 : supervised_loss : 0.050796
+iteration 1786 : supervised_loss : 0.052002
+iteration 1787 : supervised_loss : 0.046943
+iteration 1788 : supervised_loss : 0.057978
+iteration 1789 : supervised_loss : 0.082981
+iteration 1790 : supervised_loss : 0.039924
+iteration 1791 : supervised_loss : 0.040693
+iteration 1792 : supervised_loss : 0.051483
+iteration 1793 : supervised_loss : 0.037852
+iteration 1794 : supervised_loss : 0.058477
+iteration 1795 : supervised_loss : 0.122576
+iteration 1796 : supervised_loss : 0.073147
+iteration 1797 : supervised_loss : 0.062371
+iteration 1798 : supervised_loss : 0.046262
+iteration 1799 : supervised_loss : 0.050857
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 1800 : supervised_loss : 0.114498
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+Validation end
+
+  6%|█▍                       | 90/1501 [1:45:48<43:59:32, 112.24s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1801 : supervised_loss : 0.046685
+iteration 1802 : supervised_loss : 0.062732
+iteration 1803 : supervised_loss : 0.040506
+iteration 1804 : supervised_loss : 0.051099
+iteration 1805 : supervised_loss : 0.064223
+iteration 1806 : supervised_loss : 0.043399
+iteration 1807 : supervised_loss : 0.039906
+iteration 1808 : supervised_loss : 0.038897
+iteration 1809 : supervised_loss : 0.067261
+iteration 1810 : supervised_loss : 0.058572
+iteration 1811 : supervised_loss : 0.055599
+iteration 1812 : supervised_loss : 0.058004
+iteration 1813 : supervised_loss : 0.059381
+iteration 1814 : supervised_loss : 0.058081
+iteration 1815 : supervised_loss : 0.060464
+iteration 1816 : supervised_loss : 0.051940
+iteration 1817 : supervised_loss : 0.045998
+iteration 1818 : supervised_loss : 0.048410
+
+  6%|█▌                        | 91/1501 [1:46:41<36:57:30, 94.36s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1820 : supervised_loss : 0.053319
+iteration 1821 : supervised_loss : 0.036482
+iteration 1822 : supervised_loss : 0.035828
+iteration 1823 : supervised_loss : 0.051776
+iteration 1824 : supervised_loss : 0.076305
+iteration 1825 : supervised_loss : 0.048178
+iteration 1826 : supervised_loss : 0.055339
+iteration 1827 : supervised_loss : 0.091232
+iteration 1828 : supervised_loss : 0.051729
+iteration 1829 : supervised_loss : 0.042469
+iteration 1830 : supervised_loss : 0.064622
+iteration 1831 : supervised_loss : 0.039712
+iteration 1832 : supervised_loss : 0.059180
+iteration 1833 : supervised_loss : 0.055507
+iteration 1834 : supervised_loss : 0.064929
+iteration 1835 : supervised_loss : 0.045399
+iteration 1836 : supervised_loss : 0.044093
+iteration 1837 : supervised_loss : 0.047803
+iteration 1838 : supervised_loss : 0.039063
+
+  6%|█▌                        | 92/1501 [1:47:33<31:55:43, 81.58s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1840 : supervised_loss : 0.049104
+iteration 1841 : supervised_loss : 0.033837
+iteration 1842 : supervised_loss : 0.044125
+iteration 1843 : supervised_loss : 0.063845
+iteration 1844 : supervised_loss : 0.033848
+iteration 1845 : supervised_loss : 0.060289
+iteration 1846 : supervised_loss : 0.057620
+iteration 1847 : supervised_loss : 0.044094
+iteration 1848 : supervised_loss : 0.051874
+iteration 1849 : supervised_loss : 0.043048
+iteration 1850 : supervised_loss : 0.039994
+iteration 1851 : supervised_loss : 0.078489
+iteration 1852 : supervised_loss : 0.051213
+iteration 1853 : supervised_loss : 0.069908
+iteration 1854 : supervised_loss : 0.057339
+iteration 1855 : supervised_loss : 0.055534
+iteration 1856 : supervised_loss : 0.061646
+iteration 1857 : supervised_loss : 0.047836
+iteration 1858 : supervised_loss : 0.055205
+iteration 1859 : supervised_loss : 0.047878
+
+  6%|█▌                        | 93/1501 [1:48:22<28:09:23, 71.99s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1861 : supervised_loss : 0.041028
+iteration 1862 : supervised_loss : 0.034424
+iteration 1863 : supervised_loss : 0.050074
+iteration 1864 : supervised_loss : 0.039709
+iteration 1865 : supervised_loss : 0.037627
+iteration 1866 : supervised_loss : 0.051314
+iteration 1867 : supervised_loss : 0.075084
+iteration 1868 : supervised_loss : 0.052793
+iteration 1869 : supervised_loss : 0.039043
+iteration 1870 : supervised_loss : 0.038074
+iteration 1871 : supervised_loss : 0.050568
+iteration 1872 : supervised_loss : 0.081134
+iteration 1873 : supervised_loss : 0.048580
+iteration 1874 : supervised_loss : 0.053483
+iteration 1875 : supervised_loss : 0.058575
+iteration 1876 : supervised_loss : 0.036468
+iteration 1877 : supervised_loss : 0.040216
+iteration 1878 : supervised_loss : 0.067114
+iteration 1879 : supervised_loss : 0.069469
+
+  6%|█▋                        | 94/1501 [1:49:11<25:22:02, 64.91s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1881 : supervised_loss : 0.036100
+iteration 1882 : supervised_loss : 0.044074
+iteration 1883 : supervised_loss : 0.056602
+iteration 1884 : supervised_loss : 0.047046
+iteration 1885 : supervised_loss : 0.038353
+iteration 1886 : supervised_loss : 0.072739
+iteration 1887 : supervised_loss : 0.058567
+iteration 1888 : supervised_loss : 0.071683
+iteration 1889 : supervised_loss : 0.053662
+iteration 1890 : supervised_loss : 0.039620
+iteration 1891 : supervised_loss : 0.050327
+iteration 1892 : supervised_loss : 0.048159
+iteration 1893 : supervised_loss : 0.079571
+iteration 1894 : supervised_loss : 0.049330
+iteration 1895 : supervised_loss : 0.042649
+iteration 1896 : supervised_loss : 0.060483
+iteration 1897 : supervised_loss : 0.051967
+iteration 1898 : supervised_loss : 0.044069
+iteration 1899 : supervised_loss : 0.057427
+
+  6%|█▋                        | 95/1501 [1:50:01<23:35:40, 60.41s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1901 : supervised_loss : 0.036467
+iteration 1902 : supervised_loss : 0.034969
+iteration 1903 : supervised_loss : 0.043028
+iteration 1904 : supervised_loss : 0.055741
+iteration 1905 : supervised_loss : 0.077653
+iteration 1906 : supervised_loss : 0.112048
+iteration 1907 : supervised_loss : 0.050299
+iteration 1908 : supervised_loss : 0.065788
+iteration 1909 : supervised_loss : 0.051087
+iteration 1910 : supervised_loss : 0.096915
+iteration 1911 : supervised_loss : 0.047141
+iteration 1912 : supervised_loss : 0.045621
+iteration 1913 : supervised_loss : 0.060813
+iteration 1914 : supervised_loss : 0.042083
+iteration 1915 : supervised_loss : 0.055856
+iteration 1916 : supervised_loss : 0.055205
+iteration 1917 : supervised_loss : 0.051512
+iteration 1918 : supervised_loss : 0.050734
+iteration 1919 : supervised_loss : 0.038664
+
+  6%|█▋                        | 96/1501 [1:50:50<22:18:14, 57.15s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1921 : supervised_loss : 0.047351
+iteration 1922 : supervised_loss : 0.052834
+iteration 1923 : supervised_loss : 0.030908
+iteration 1924 : supervised_loss : 0.047222
+iteration 1925 : supervised_loss : 0.048249
+iteration 1926 : supervised_loss : 0.066345
+iteration 1927 : supervised_loss : 0.043607
+iteration 1928 : supervised_loss : 0.081219
+iteration 1929 : supervised_loss : 0.047844
+iteration 1930 : supervised_loss : 0.054405
+iteration 1931 : supervised_loss : 0.055554
+iteration 1932 : supervised_loss : 0.170876
+iteration 1933 : supervised_loss : 0.058660
+iteration 1934 : supervised_loss : 0.037897
+iteration 1935 : supervised_loss : 0.072705
+iteration 1936 : supervised_loss : 0.049519
+iteration 1937 : supervised_loss : 0.057348
+iteration 1938 : supervised_loss : 0.045118
+iteration 1939 : supervised_loss : 0.047160
+
+  6%|█▋                        | 97/1501 [1:52:00<23:48:19, 61.04s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1941 : supervised_loss : 0.054611
+iteration 1942 : supervised_loss : 0.057785
+iteration 1943 : supervised_loss : 0.037652
+iteration 1944 : supervised_loss : 0.041784
+iteration 1945 : supervised_loss : 0.062605
+iteration 1946 : supervised_loss : 0.037720
+iteration 1947 : supervised_loss : 0.043260
+iteration 1948 : supervised_loss : 0.050971
+iteration 1949 : supervised_loss : 0.038258
+iteration 1950 : supervised_loss : 0.050438
+iteration 1951 : supervised_loss : 0.046433
+iteration 1952 : supervised_loss : 0.050085
+iteration 1953 : supervised_loss : 0.056228
+iteration 1954 : supervised_loss : 0.039941
+iteration 1955 : supervised_loss : 0.047878
+iteration 1956 : supervised_loss : 0.056434
+iteration 1957 : supervised_loss : 0.045222
+iteration 1958 : supervised_loss : 0.051340
+iteration 1959 : supervised_loss : 0.049380
+
+  7%|█▋                        | 98/1501 [1:52:55<23:01:38, 59.09s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1961 : supervised_loss : 0.048095
+iteration 1962 : supervised_loss : 0.044700
+iteration 1963 : supervised_loss : 0.048519
+iteration 1964 : supervised_loss : 0.041307
+iteration 1965 : supervised_loss : 0.050984
+iteration 1966 : supervised_loss : 0.041323
+iteration 1967 : supervised_loss : 0.053894
+iteration 1968 : supervised_loss : 0.047496
+iteration 1969 : supervised_loss : 0.197958
+iteration 1970 : supervised_loss : 0.039508
+iteration 1971 : supervised_loss : 0.040122
+iteration 1972 : supervised_loss : 0.051529
+iteration 1973 : supervised_loss : 0.059978
+iteration 1974 : supervised_loss : 0.051908
+iteration 1975 : supervised_loss : 0.082046
+iteration 1976 : supervised_loss : 0.048841
+iteration 1977 : supervised_loss : 0.045863
+iteration 1978 : supervised_loss : 0.045080
+iteration 1979 : supervised_loss : 0.072540
+
+  7%|█▋                        | 99/1501 [1:53:41<21:30:30, 55.23s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:22<00:00, 19.85s/it]
+iteration 1981 : supervised_loss : 0.033790
+iteration 1982 : supervised_loss : 0.041195
+iteration 1983 : supervised_loss : 0.047523
+iteration 1984 : supervised_loss : 0.046619
+iteration 1985 : supervised_loss : 0.049275
+iteration 1986 : supervised_loss : 0.063484
+iteration 1987 : supervised_loss : 0.050362
+iteration 1988 : supervised_loss : 0.071570
+iteration 1989 : supervised_loss : 0.050722
+iteration 1990 : supervised_loss : 0.046565
+iteration 1991 : supervised_loss : 0.053136
+iteration 1992 : supervised_loss : 0.061776
+iteration 1993 : supervised_loss : 0.065121
+iteration 1994 : supervised_loss : 0.046742
+iteration 1995 : supervised_loss : 0.046807
+iteration 1996 : supervised_loss : 0.045418
+iteration 1997 : supervised_loss : 0.051739
+iteration 1998 : supervised_loss : 0.057539
+iteration 1999 : supervised_loss : 0.045713
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 2000 : supervised_loss : 0.060844
+
+
+
+
+
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 9/10 [03:07<00:20, 20.35s/it]
+Validation end
+
+  7%|█▌                      | 100/1501 [1:58:07<46:03:24, 118.35s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2001 : supervised_loss : 0.040895
+iteration 2002 : supervised_loss : 0.067090
+iteration 2003 : supervised_loss : 0.066266
+iteration 2004 : supervised_loss : 0.036572
+iteration 2005 : supervised_loss : 0.058708
+iteration 2006 : supervised_loss : 0.035508
+iteration 2007 : supervised_loss : 0.036284
+iteration 2008 : supervised_loss : 0.040991
+iteration 2009 : supervised_loss : 0.068809
+iteration 2010 : supervised_loss : 0.038034
+iteration 2011 : supervised_loss : 0.048234
+iteration 2012 : supervised_loss : 0.043121
+iteration 2013 : supervised_loss : 0.058842
+iteration 2014 : supervised_loss : 0.049359
+iteration 2015 : supervised_loss : 0.050007
+iteration 2016 : supervised_loss : 0.041298
+iteration 2017 : supervised_loss : 0.055766
+iteration 2018 : supervised_loss : 0.041350
+iteration 2019 : supervised_loss : 0.064186
+
+  7%|█▋                       | 101/1501 [1:59:01<38:35:03, 99.22s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2021 : supervised_loss : 0.040450
+iteration 2022 : supervised_loss : 0.037302
+iteration 2023 : supervised_loss : 0.045266
+iteration 2024 : supervised_loss : 0.048541
+iteration 2025 : supervised_loss : 0.062221
+iteration 2026 : supervised_loss : 0.038686
+iteration 2027 : supervised_loss : 0.038872
+iteration 2028 : supervised_loss : 0.058378
+iteration 2029 : supervised_loss : 0.042428
+iteration 2030 : supervised_loss : 0.039587
+iteration 2031 : supervised_loss : 0.048743
+iteration 2032 : supervised_loss : 0.042700
+iteration 2033 : supervised_loss : 0.036530
+iteration 2034 : supervised_loss : 0.050628
+iteration 2035 : supervised_loss : 0.036869
+iteration 2036 : supervised_loss : 0.067271
+iteration 2037 : supervised_loss : 0.041222
+iteration 2038 : supervised_loss : 0.042559
+iteration 2039 : supervised_loss : 0.043187
+
+  7%|█▋                       | 102/1501 [1:59:53<33:04:58, 85.13s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2041 : supervised_loss : 0.035392
+iteration 2042 : supervised_loss : 0.032688
+iteration 2043 : supervised_loss : 0.036347
+iteration 2044 : supervised_loss : 0.041698
+iteration 2045 : supervised_loss : 0.034523
+iteration 2046 : supervised_loss : 0.057355
+iteration 2047 : supervised_loss : 0.041696
+iteration 2048 : supervised_loss : 0.057784
+iteration 2049 : supervised_loss : 0.054779
+iteration 2050 : supervised_loss : 0.046164
+iteration 2051 : supervised_loss : 0.048806
+iteration 2052 : supervised_loss : 0.066951
+iteration 2053 : supervised_loss : 0.043895
+iteration 2054 : supervised_loss : 0.154763
+iteration 2055 : supervised_loss : 0.040194
+iteration 2056 : supervised_loss : 0.056630
+iteration 2057 : supervised_loss : 0.038394
+iteration 2058 : supervised_loss : 0.051028
+iteration 2059 : supervised_loss : 0.047983
+
+  7%|█▋                       | 103/1501 [2:00:42<28:44:46, 74.02s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2061 : supervised_loss : 0.044373
+iteration 2062 : supervised_loss : 0.050682
+iteration 2063 : supervised_loss : 0.060856
+iteration 2064 : supervised_loss : 0.059014
+iteration 2065 : supervised_loss : 0.066435
+iteration 2066 : supervised_loss : 0.044257
+iteration 2067 : supervised_loss : 0.052240
+iteration 2068 : supervised_loss : 0.039317
+iteration 2069 : supervised_loss : 0.036771
+iteration 2070 : supervised_loss : 0.044944
+iteration 2071 : supervised_loss : 0.038904
+iteration 2072 : supervised_loss : 0.037111
+iteration 2073 : supervised_loss : 0.063298
+iteration 2074 : supervised_loss : 0.044236
+iteration 2075 : supervised_loss : 0.037463
+iteration 2076 : supervised_loss : 0.035280
+iteration 2077 : supervised_loss : 0.059380
+iteration 2078 : supervised_loss : 0.042372
+iteration 2079 : supervised_loss : 0.040211
+
+  7%|█▋                       | 104/1501 [2:01:33<26:03:28, 67.15s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2081 : supervised_loss : 0.035562
+iteration 2082 : supervised_loss : 0.032288
+iteration 2083 : supervised_loss : 0.048080
+iteration 2084 : supervised_loss : 0.033779
+iteration 2085 : supervised_loss : 0.053915
+iteration 2086 : supervised_loss : 0.049384
+iteration 2087 : supervised_loss : 0.051722
+iteration 2088 : supervised_loss : 0.056516
+iteration 2089 : supervised_loss : 0.050896
+iteration 2090 : supervised_loss : 0.062305
+iteration 2091 : supervised_loss : 0.051755
+iteration 2092 : supervised_loss : 0.043142
+iteration 2093 : supervised_loss : 0.048594
+iteration 2094 : supervised_loss : 0.043998
+iteration 2095 : supervised_loss : 0.048975
+iteration 2096 : supervised_loss : 0.044800
+iteration 2097 : supervised_loss : 0.047979
+iteration 2098 : supervised_loss : 0.041473
+iteration 2099 : supervised_loss : 0.053174
+
+  7%|█▋                       | 105/1501 [2:02:28<24:42:24, 63.71s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2101 : supervised_loss : 0.036295
+iteration 2102 : supervised_loss : 0.037256
+iteration 2103 : supervised_loss : 0.038272
+iteration 2104 : supervised_loss : 0.069709
+iteration 2105 : supervised_loss : 0.037774
+iteration 2106 : supervised_loss : 0.037590
+iteration 2107 : supervised_loss : 0.068854
+iteration 2108 : supervised_loss : 0.064162
+iteration 2109 : supervised_loss : 0.043022
+iteration 2110 : supervised_loss : 0.060001
+iteration 2111 : supervised_loss : 0.049888
+iteration 2112 : supervised_loss : 0.050990
+iteration 2113 : supervised_loss : 0.086765
+iteration 2114 : supervised_loss : 0.039229
+iteration 2115 : supervised_loss : 0.054931
+iteration 2116 : supervised_loss : 0.070425
+iteration 2117 : supervised_loss : 0.047138
+iteration 2118 : supervised_loss : 0.049020
+
+  7%|█▊                       | 106/1501 [2:03:23<23:36:31, 60.93s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2120 : supervised_loss : 0.040196
+iteration 2121 : supervised_loss : 0.039160
+iteration 2122 : supervised_loss : 0.162225
+iteration 2123 : supervised_loss : 0.036206
+iteration 2124 : supervised_loss : 0.074322
+iteration 2125 : supervised_loss : 0.049104
+iteration 2126 : supervised_loss : 0.067707
+iteration 2127 : supervised_loss : 0.054848
+iteration 2128 : supervised_loss : 0.052984
+iteration 2129 : supervised_loss : 0.066458
+iteration 2130 : supervised_loss : 0.052361
+iteration 2131 : supervised_loss : 0.037353
+iteration 2132 : supervised_loss : 0.054809
+iteration 2133 : supervised_loss : 0.049848
+iteration 2134 : supervised_loss : 0.054431
+iteration 2135 : supervised_loss : 0.803863
+iteration 2136 : supervised_loss : 0.045041
+iteration 2137 : supervised_loss : 0.061931
+iteration 2138 : supervised_loss : 0.042542
+
+  7%|█▊                       | 107/1501 [2:04:12<22:11:48, 57.32s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2140 : supervised_loss : 0.066785
+iteration 2141 : supervised_loss : 0.048252
+iteration 2142 : supervised_loss : 0.050285
+iteration 2143 : supervised_loss : 0.040314
+iteration 2144 : supervised_loss : 0.045604
+iteration 2145 : supervised_loss : 0.063309
+iteration 2146 : supervised_loss : 0.060416
+iteration 2147 : supervised_loss : 0.042547
+iteration 2148 : supervised_loss : 0.038831
+iteration 2149 : supervised_loss : 0.041413
+iteration 2150 : supervised_loss : 0.049101
+iteration 2151 : supervised_loss : 0.034498
+iteration 2152 : supervised_loss : 0.039438
+iteration 2153 : supervised_loss : 0.056347
+iteration 2154 : supervised_loss : 0.296627
+iteration 2155 : supervised_loss : 0.052810
+iteration 2156 : supervised_loss : 0.041759
+iteration 2157 : supervised_loss : 0.039042
+iteration 2158 : supervised_loss : 0.041352
+
+  7%|█▊                       | 108/1501 [2:05:09<22:08:22, 57.22s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2160 : supervised_loss : 0.051316
+iteration 2161 : supervised_loss : 0.036891
+iteration 2162 : supervised_loss : 0.057571
+iteration 2163 : supervised_loss : 0.044377
+iteration 2164 : supervised_loss : 0.049860
+iteration 2165 : supervised_loss : 0.061126
+iteration 2166 : supervised_loss : 0.052356
+iteration 2167 : supervised_loss : 0.060001
+iteration 2168 : supervised_loss : 0.039736
+iteration 2169 : supervised_loss : 0.044287
+iteration 2170 : supervised_loss : 0.043208
+iteration 2171 : supervised_loss : 0.036025
+iteration 2172 : supervised_loss : 0.038550
+iteration 2173 : supervised_loss : 0.069509
+iteration 2174 : supervised_loss : 0.041814
+iteration 2175 : supervised_loss : 0.073423
+iteration 2176 : supervised_loss : 0.048841
+iteration 2177 : supervised_loss : 0.045149
+iteration 2178 : supervised_loss : 0.041692
+iteration 2179 : supervised_loss : 0.042287
+
+  7%|█▊                       | 109/1501 [2:05:59<21:22:49, 55.29s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:29<00:00, 20.72s/it]
+iteration 2181 : supervised_loss : 0.043854
+iteration 2182 : supervised_loss : 0.036004
+iteration 2183 : supervised_loss : 0.056022
+iteration 2184 : supervised_loss : 0.036054
+iteration 2185 : supervised_loss : 0.079906
+iteration 2186 : supervised_loss : 0.075173
+iteration 2187 : supervised_loss : 0.042163
+iteration 2188 : supervised_loss : 0.695320
+iteration 2189 : supervised_loss : 0.037143
+iteration 2190 : supervised_loss : 0.060481
+iteration 2191 : supervised_loss : 0.052849
+iteration 2192 : supervised_loss : 0.045422
+iteration 2193 : supervised_loss : 0.039112
+iteration 2194 : supervised_loss : 0.035803
+iteration 2195 : supervised_loss : 0.042933
+iteration 2196 : supervised_loss : 0.049285
+iteration 2197 : supervised_loss : 0.064046
+iteration 2198 : supervised_loss : 0.067978
+iteration 2199 : supervised_loss : 0.049137
+  0%|                                                                                                                                                                                                            | 0/10 [00:00<?, ?it/s]
+iteration 2200 : supervised_loss : 0.040783
+
+
+
+
+
+
+
+
+
+ 90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 9/10 [03:12<00:20, 20.88s/it]
+Validation end
+
+  7%|█▊                      | 110/1501 [2:10:26<45:47:53, 118.53s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2201 : supervised_loss : 0.041739
+iteration 2202 : supervised_loss : 0.047076
+iteration 2203 : supervised_loss : 0.036985
+iteration 2204 : supervised_loss : 0.033895
+iteration 2205 : supervised_loss : 0.077342
+iteration 2206 : supervised_loss : 0.055843
+iteration 2207 : supervised_loss : 1.318769
+iteration 2208 : supervised_loss : 0.052966
+iteration 2209 : supervised_loss : 0.122814
+iteration 2210 : supervised_loss : 0.038464
+iteration 2211 : supervised_loss : 0.043091
+iteration 2212 : supervised_loss : 0.053082
+iteration 2213 : supervised_loss : 0.048441
+iteration 2214 : supervised_loss : 0.050178
+iteration 2215 : supervised_loss : 0.063098
+iteration 2216 : supervised_loss : 0.055460
+iteration 2217 : supervised_loss : 0.169489
+iteration 2218 : supervised_loss : 0.051163
+
+  7%|█▊                       | 111/1501 [2:11:14<37:38:12, 97.48s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2220 : supervised_loss : 0.045556
+iteration 2221 : supervised_loss : 0.048423
+iteration 2222 : supervised_loss : 0.051288
+iteration 2223 : supervised_loss : 0.078870
+iteration 2224 : supervised_loss : 0.068195
+iteration 2225 : supervised_loss : 0.072432
+iteration 2226 : supervised_loss : 0.040071
+iteration 2227 : supervised_loss : 0.061964
+iteration 2228 : supervised_loss : 0.066748
+iteration 2229 : supervised_loss : 0.048764
+iteration 2230 : supervised_loss : 0.049392
+iteration 2231 : supervised_loss : 0.072134
+iteration 2232 : supervised_loss : 0.059422
+iteration 2233 : supervised_loss : 0.037132
+iteration 2234 : supervised_loss : 0.049217
+iteration 2235 : supervised_loss : 0.046652
+iteration 2236 : supervised_loss : 0.051452
+iteration 2237 : supervised_loss : 0.047717
+iteration 2238 : supervised_loss : 0.046597
+iteration 2239 : supervised_loss : 0.054163
+
+  7%|█▊                       | 112/1501 [2:12:19<33:49:21, 87.66s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2241 : supervised_loss : 0.047471
+iteration 2242 : supervised_loss : 0.055127
+iteration 2243 : supervised_loss : 0.045684
+iteration 2244 : supervised_loss : 0.039645
+iteration 2245 : supervised_loss : 0.052205
+iteration 2246 : supervised_loss : 0.045804
+iteration 2247 : supervised_loss : 0.052485
+iteration 2248 : supervised_loss : 0.055586
+iteration 2249 : supervised_loss : 0.051653
+iteration 2250 : supervised_loss : 0.044243
+iteration 2251 : supervised_loss : 0.057424
+iteration 2252 : supervised_loss : 0.059944
+iteration 2253 : supervised_loss : 0.048495
+iteration 2254 : supervised_loss : 0.046667
+iteration 2255 : supervised_loss : 0.056918
+iteration 2256 : supervised_loss : 0.044124
+iteration 2257 : supervised_loss : 0.046713
+iteration 2258 : supervised_loss : 0.069038
+iteration 2259 : supervised_loss : 0.093429
+
+  8%|█▉                       | 113/1501 [2:13:05<28:59:30, 75.19s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2261 : supervised_loss : 0.049238
+iteration 2262 : supervised_loss : 0.051472
+iteration 2263 : supervised_loss : 0.037985
+iteration 2264 : supervised_loss : 0.056514
+iteration 2265 : supervised_loss : 0.038552
+iteration 2266 : supervised_loss : 0.054042
+iteration 2267 : supervised_loss : 0.047374
+iteration 2268 : supervised_loss : 0.059828
+iteration 2269 : supervised_loss : 0.057719
+iteration 2270 : supervised_loss : 0.066435
+iteration 2271 : supervised_loss : 0.034900
+iteration 2272 : supervised_loss : 0.041102
+iteration 2273 : supervised_loss : 0.060956
+iteration 2274 : supervised_loss : 0.047232
+iteration 2275 : supervised_loss : 0.050166
+iteration 2276 : supervised_loss : 0.047441
+iteration 2277 : supervised_loss : 0.052413
+iteration 2278 : supervised_loss : 0.047173
+iteration 2279 : supervised_loss : 0.076660
+
+  8%|█▉                       | 114/1501 [2:13:53<25:51:33, 67.12s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2281 : supervised_loss : 0.045886
+iteration 2282 : supervised_loss : 0.042758
+iteration 2283 : supervised_loss : 0.050776
+iteration 2284 : supervised_loss : 0.046567
+iteration 2285 : supervised_loss : 0.063319
+iteration 2286 : supervised_loss : 0.045966
+iteration 2287 : supervised_loss : 0.066242
+iteration 2288 : supervised_loss : 0.048786
+iteration 2289 : supervised_loss : 0.050303
+iteration 2290 : supervised_loss : 0.045898
+iteration 2291 : supervised_loss : 0.035587
+iteration 2292 : supervised_loss : 0.039905
+iteration 2293 : supervised_loss : 0.063313
+iteration 2294 : supervised_loss : 0.038634
+iteration 2295 : supervised_loss : 0.043616
+iteration 2296 : supervised_loss : 0.863627
+iteration 2297 : supervised_loss : 0.042316
+iteration 2298 : supervised_loss : 1.278579
+iteration 2299 : supervised_loss : 0.060690
+
+  8%|█▉                       | 115/1501 [2:14:45<24:02:46, 62.46s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2301 : supervised_loss : 0.043489
+iteration 2302 : supervised_loss : 0.067752
+iteration 2303 : supervised_loss : 0.042123
+iteration 2304 : supervised_loss : 0.039810
+iteration 2305 : supervised_loss : 0.056999
+iteration 2306 : supervised_loss : 0.055018
+iteration 2307 : supervised_loss : 0.057366
+iteration 2308 : supervised_loss : 0.057536
+iteration 2309 : supervised_loss : 0.044418
+iteration 2310 : supervised_loss : 0.038148
+iteration 2311 : supervised_loss : 0.065541
+iteration 2312 : supervised_loss : 0.043164
+iteration 2313 : supervised_loss : 0.044026
+iteration 2314 : supervised_loss : 0.059713
+iteration 2315 : supervised_loss : 0.063459
+iteration 2316 : supervised_loss : 0.049081
+iteration 2317 : supervised_loss : 0.050476
+iteration 2318 : supervised_loss : 0.067546
+iteration 2319 : supervised_loss : 0.038077
+
+  8%|█▉                       | 116/1501 [2:15:32<22:15:40, 57.86s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+iteration 2321 : supervised_loss : 0.035206
+iteration 2322 : supervised_loss : 0.042561
+iteration 2323 : supervised_loss : 0.033433
+iteration 2324 : supervised_loss : 0.041571
+iteration 2325 : supervised_loss : 0.053827
+iteration 2326 : supervised_loss : 0.065008
+iteration 2327 : supervised_loss : 0.053580
+iteration 2328 : supervised_loss : 0.033071
+iteration 2329 : supervised_loss : 0.044968
+iteration 2330 : supervised_loss : 0.040882
+iteration 2331 : supervised_loss : 0.052342
+iteration 2332 : supervised_loss : 0.044911
+  8%|█▉                       | 116/1501 [2:16:08<27:05:28, 70.42s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [03:34<00:00, 21.19s/it]
+Traceback (most recent call last):
+  File "Prostate_train_SL_1class_woSlidingW.py", line 404, in <module>
+    train(args, snapshot_path)
+  File "Prostate_train_SL_1class_woSlidingW.py", line 323, in train
+    writer.add_scalar('loss/supervised_loss',
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tensorboardX/writer.py", line 457, in add_scalar
+    scalar(tag, scalar_value, display_name, summary_description), global_step, walltime)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tensorboardX/summary.py", line 152, in scalar
+    scalar = make_np(scalar)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tensorboardX/x2num.py", line 28, in make_np
+    return check_nan(prepare_pytorch(x))
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tensorboardX/x2num.py", line 43, in prepare_pytorch
+    x = x.cpu().numpy()
+KeyboardInterrupt

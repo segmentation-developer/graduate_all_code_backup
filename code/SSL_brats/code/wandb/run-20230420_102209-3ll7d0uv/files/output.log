@@ -1,0 +1,31 @@
+
+Namespace(T=10, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='GDT-MT', gpu='5', labeled_bs=2, labeled_num=50, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/1201 [00:00<?, ?it/s]
+total 250 samples
+  0%|                                        | 0/1201 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 330, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 168, in train
+    outputs_2class, outputs_1class_tanh = model(volume_batch)  ## model = student
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 328, in forward
+    out_SDM = self.decoder_SDM(features)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 287, in forward
+    x9 = self.block_nine(x8_up)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 30, in forward
+    x = self.conv(x)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 520, in forward
+    return F.conv3d(input, self.weight, self.bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 216.00 MiB (GPU 0; 11.91 GiB total capacity; 3.98 GiB already allocated; 85.94 MiB free; 4.01 GiB reserved in total by PyTorch)

@@ -1,0 +1,17 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC_kfold', fold=4, gamma=0.5, gpu='4', labeled_bs=2, labelnum=56, max_iterations=30000, model='vnet_3D_96_32', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_data_num=268, with_cons='without_cons')
+  0%|                                        | 0/1072 [00:00<?, ?it/s]
+total 268 samples
+28 itertations per epoch
+iteration 1 : loss : 0.954910, loss_consis: 0.250083, loss_haus: 0.152443, loss_seg: 0.711404, loss_dice: 0.907492
+iteration 1 : loss : 0.954910
+iteration 2 : loss : 0.951053, loss_consis: 0.223581, loss_haus: 0.293461, loss_seg: 0.697638, loss_dice: 0.861508
+iteration 2 : loss : 0.951053
+iteration 3 : loss : 0.782466, loss_consis: 0.197755, loss_haus: 0.151676, loss_seg: 0.573805, loss_dice: 0.735631
+iteration 3 : loss : 0.782466
+iteration 4 : loss : 0.634130, loss_consis: 0.212846, loss_haus: 0.205267, loss_seg: 0.592002, loss_dice: 0.571116
+  0%|                                        | 0/1072 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats_train_dtc_original_kfold.py", line 198, in <module>
+    gt_dis = compute_sdf(label_batch[:].cpu(
+KeyboardInterrupt

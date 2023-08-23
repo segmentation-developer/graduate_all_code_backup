@@ -1,0 +1,5 @@
+CUDA_VISIBLE_DEVICES=6,7 python test_urpc.py --exp='LA/URPC_kfold_vnetConcat_2Dec_112'  --exp_test='LA_test/URPC_kfold_vnetConcat_2Dec_112/0' --gpu='6,7' --fold='fold_0_iter_35000_dice_0.9044.pth' --nms=1 &&
+CUDA_VISIBLE_DEVICES=6,7 python test_urpc.py --exp='LA/URPC_kfold_vnetConcat_2Dec_112'  --exp_test='LA_test/URPC_kfold_vnetConcat_2Dec_112/1' --gpu='6,7' --fold='fold_1_iter_20000_dice_0.869.pth' --nms=1 &&
+CUDA_VISIBLE_DEVICES=6,7 python test_urpc.py --exp='LA/URPC_kfold_vnetConcat_2Dec_112'  --exp_test='LA_test/URPC_kfold_vnetConcat_2Dec_112/2' --gpu='6,7' --fold='fold_2_iter_32000_dice_0.9024.pth' --nms=1 &&
+CUDA_VISIBLE_DEVICES=6,7 python test_urpc.py --exp='LA/URPC_kfold_vnetConcat_2Dec_112'  --exp_test='LA_test/URPC_kfold_vnetConcat_2Dec_112/3' --gpu='6,7' --fold='fold_3_iter_35000_dice_0.879.pth' --nms=1
+#CUDA_VISIBLE_DEVICES=7 python test_urpc.py --exp='LA/URPC_kfold_vnetConcat_2Dec_112'  --exp_test='LA_test/URPC_kfold_vnetConcat_2Dec_112/4' --gpu='7' --fold='fold_4_iter_15000_dice_0.9071.pth' --nms=0

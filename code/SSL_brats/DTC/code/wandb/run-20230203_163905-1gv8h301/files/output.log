@@ -1,0 +1,19 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', gamma=0.5, gpu='2', labeled_bs=2, labelnum=25, max_iterations=30000, model='vnet_3D_96_32', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250, with_cons='without_cons')
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 250 samples
+12 itertations per epoch
+iteration 1 : loss : 0.918397, loss_consis: 0.244125, loss_haus: 0.236583, loss_seg: 0.678633, loss_dice: 0.845777
+iteration 1 : loss : 0.918397
+  0%|                                                                                                                                                                                                                                                                                    | 0/25 [00:00<?, ?it/s]
+
+
+  0%|                                        | 0/2501 [00:09<?, ?it/s]                                                                                                                                                                                                           | 3/25 [00:05<00:39,  1.82s/it]
+Traceback (most recent call last):
+  File "Brats_train_dtc_original.py", line 242, in <module>
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/Brats_val_3D_2task.py", line 101, in test_all_case
+    prediction = test_single_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/Brats_val_3D_2task.py", line 59, in test_single_case
+    test_patch = torch.from_numpy(test_patch).cuda()
+KeyboardInterrupt

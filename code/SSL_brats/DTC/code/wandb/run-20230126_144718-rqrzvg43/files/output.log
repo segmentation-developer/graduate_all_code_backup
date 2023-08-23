@@ -1,0 +1,25 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='test', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=6000, model='test', root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+8 itertations per epoch
+iteration 1 : loss : 0.683198, loss_consis: 0.252550, loss_haus: 0.212363, loss_seg: 0.725578, loss_dice: 0.617787
+iteration 1 : loss : 0.683198
+iteration 2 : loss : 0.673514, loss_consis: 0.221782, loss_haus: 0.283285, loss_seg: 0.694793, loss_dice: 0.587034
+iteration 2 : loss : 0.673514
+iteration 3 : loss : 0.724259, loss_consis: 0.195827, loss_haus: 0.187433, loss_seg: 0.613182, loss_dice: 0.666710
+iteration 3 : loss : 0.724259
+iteration 4 : loss : 0.555794, loss_consis: 0.217350, loss_haus: 0.182918, loss_seg: 0.632636, loss_dice: 0.499454
+iteration 4 : loss : 0.555794
+  0%|                                                    | 0/20 [00:00<?, ?it/s]
+iteration 5 : loss : 0.596677, loss_consis: 0.229837, loss_haus: 0.192742, loss_seg: 0.676880, loss_dice: 0.537306
+iteration 5 : loss : 0.596677
+  0%|                                         | 0/751 [01:58<?, ?it/s]<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_train_dtc.py", line 280, in <module>
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_val_3D.py", line 105, in test_all_case
+    prediction = test_single_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_val_3D.py", line 83, in test_single_case
+    return label_map
+KeyboardInterrupt

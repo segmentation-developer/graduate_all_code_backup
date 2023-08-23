@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-02-28T09:24:14.424145",
+    "startedAt": "2023-02-28T09:24:10.294692",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [
+        "--exp=GDT-MT_woATO",
+        "--model=vnet_3D_96_32",
+        "--max_iterations=30000",
+        "--labeled_num=25",
+        "--consistency=0.1",
+        "--num_classes=2",
+        "--gpu=1"
+    ],
+    "state": "running",
+    "program": "Brats2_GDT-MT_woATO.py",
+    "codePath": "Brats2_GDT-MT_woATO.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python"
+}

@@ -1,0 +1,192 @@
+2023-01-27 18:28:33,522 INFO    MainThread:4949 [internal.py:wandb_internal():87] W&B internal server running at pid: 4949, started at: 2023-01-27 18:28:33.522232
+2023-01-27 18:28:33,527 INFO    WriterThread:4949 [datastore.py:open_for_write():77] open: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/run-gxtdtf0n.wandb
+2023-01-27 18:28:33,528 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: check_version
+2023-01-27 18:28:33,532 DEBUG   SenderThread:4949 [sender.py:send():234] send: header
+2023-01-27 18:28:33,532 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: check_version
+2023-01-27 18:28:33,623 DEBUG   SenderThread:4949 [sender.py:send():234] send: run
+2023-01-27 18:28:33,897 INFO    SenderThread:4949 [dir_watcher.py:__init__():169] watching files in: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files
+2023-01-27 18:28:33,897 INFO    SenderThread:4949 [sender.py:_start_run_threads():804] run started: gxtdtf0n with start time 1674811711
+2023-01-27 18:28:33,898 DEBUG   SenderThread:4949 [sender.py:send():234] send: summary
+2023-01-27 18:28:33,899 INFO    SenderThread:4949 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-01-27 18:28:33,907 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: run_start
+2023-01-27 18:28:34,907 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/wandb-summary.json
+2023-01-27 18:28:35,799 DEBUG   HandlerThread:4949 [meta.py:__init__():40] meta init
+2023-01-27 18:28:35,799 DEBUG   HandlerThread:4949 [meta.py:__init__():54] meta init done
+2023-01-27 18:28:35,799 DEBUG   HandlerThread:4949 [meta.py:probe():214] probe
+2023-01-27 18:28:35,807 DEBUG   HandlerThread:4949 [git.py:repo():33] git repository is invalid
+2023-01-27 18:28:35,807 DEBUG   HandlerThread:4949 [meta.py:_save_pip():58] save pip
+2023-01-27 18:28:35,808 DEBUG   HandlerThread:4949 [meta.py:_save_pip():72] save pip done
+2023-01-27 18:28:35,808 DEBUG   HandlerThread:4949 [meta.py:_save_conda():79] save conda
+2023-01-27 18:28:35,826 ERROR   HandlerThread:4949 [meta.py:_save_conda():88] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 84, in _save_conda
+    subprocess.call(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2023-01-27 18:28:35,828 DEBUG   HandlerThread:4949 [meta.py:_save_conda():89] save conda done
+2023-01-27 18:28:35,828 DEBUG   HandlerThread:4949 [meta.py:probe():252] probe done
+2023-01-27 18:28:35,836 DEBUG   SenderThread:4949 [sender.py:send():234] send: files
+2023-01-27 18:28:35,836 INFO    SenderThread:4949 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2023-01-27 18:28:35,862 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:28:35,863 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:28:35,905 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/wandb-metadata.json
+2023-01-27 18:28:35,906 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/requirements.txt
+2023-01-27 18:28:35,906 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:28:35,907 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/conda-environment.yaml
+2023-01-27 18:28:36,104 DEBUG   SenderThread:4949 [sender.py:send():234] send: run
+2023-01-27 18:28:36,369 INFO    SenderThread:4949 [sender.py:send_run():702] updated run: gxtdtf0n
+2023-01-27 18:28:36,526 INFO    Thread-11 :4949 [upload_job.py:push():137] Uploaded file /tmp/tmpgcdu2bmywandb/1jb52ark-wandb-metadata.json
+2023-01-27 18:28:36,906 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/config.yaml
+2023-01-27 18:28:37,906 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:28:39,908 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:28:41,909 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:28:51,108 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:28:51,109 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:29:06,343 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:29:06,351 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:29:06,352 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:29:21,591 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:29:21,592 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:29:36,946 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:29:36,947 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:29:38,770 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:29:52,183 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:29:52,185 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:30:07,545 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:30:07,546 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:30:11,303 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:30:22,787 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:30:22,788 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:30:38,022 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:30:38,023 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:30:43,800 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:30:53,268 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:30:53,269 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:31:08,507 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:31:08,508 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:31:16,520 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:31:23,742 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:31:23,742 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:31:38,976 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:31:38,977 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:31:49,127 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:31:54,218 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:31:54,219 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:32:09,451 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:32:09,452 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:32:21,603 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:32:24,696 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:32:24,697 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:32:40,190 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:32:40,190 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:32:54,092 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:32:55,423 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:32:55,424 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:33:10,657 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:33:10,658 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:33:25,905 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:33:25,906 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:33:26,650 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:33:41,143 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:33:41,144 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:33:56,392 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: stop_status
+2023-01-27 18:33:56,393 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: stop_status
+2023-01-27 18:33:59,104 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:34:04,325 WARNING MainThread:4949 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2023-01-27 18:34:07,136 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:34:07,288 DEBUG   SenderThread:4949 [sender.py:send():234] send: telemetry
+2023-01-27 18:34:07,290 DEBUG   SenderThread:4949 [sender.py:send():234] send: exit
+2023-01-27 18:34:07,290 INFO    SenderThread:4949 [sender.py:send_exit():366] handling exit code: 0
+2023-01-27 18:34:07,292 INFO    SenderThread:4949 [sender.py:send_exit():368] handling runtime: 333
+2023-01-27 18:34:07,293 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:07,294 INFO    SenderThread:4949 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-01-27 18:34:07,295 INFO    SenderThread:4949 [sender.py:send_exit():374] send defer
+2023-01-27 18:34:07,295 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:07,297 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:07,297 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 0
+2023-01-27 18:34:07,297 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:07,298 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 0
+2023-01-27 18:34:07,298 INFO    SenderThread:4949 [sender.py:transition_state():387] send defer: 1
+2023-01-27 18:34:07,299 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:07,299 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 1
+2023-01-27 18:34:07,514 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:07,514 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 1
+2023-01-27 18:34:07,515 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:07,515 INFO    SenderThread:4949 [sender.py:transition_state():387] send defer: 2
+2023-01-27 18:34:07,516 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:07,517 DEBUG   SenderThread:4949 [sender.py:send():234] send: stats
+2023-01-27 18:34:07,517 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:07,519 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 2
+2023-01-27 18:34:07,520 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:07,520 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 2
+2023-01-27 18:34:07,520 INFO    SenderThread:4949 [sender.py:transition_state():387] send defer: 3
+2023-01-27 18:34:07,521 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:07,521 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 3
+2023-01-27 18:34:07,521 DEBUG   SenderThread:4949 [sender.py:send():234] send: summary
+2023-01-27 18:34:07,522 INFO    SenderThread:4949 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-01-27 18:34:07,523 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:07,523 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 3
+2023-01-27 18:34:07,523 INFO    SenderThread:4949 [sender.py:transition_state():387] send defer: 4
+2023-01-27 18:34:07,524 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:07,524 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 4
+2023-01-27 18:34:07,524 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:07,524 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 4
+2023-01-27 18:34:07,619 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:07,796 INFO    SenderThread:4949 [sender.py:transition_state():387] send defer: 5
+2023-01-27 18:34:07,796 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:07,797 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:07,798 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 5
+2023-01-27 18:34:07,798 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:07,798 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 5
+2023-01-27 18:34:07,798 INFO    SenderThread:4949 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-01-27 18:34:07,899 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,137 INFO    Thread-8  :4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/config.yaml
+2023-01-27 18:34:08,138 INFO    SenderThread:4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/wandb-summary.json
+2023-01-27 18:34:08,138 INFO    SenderThread:4949 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:34:08,139 INFO    SenderThread:4949 [dir_watcher.py:finish():313] scan: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files
+2023-01-27 18:34:08,139 INFO    SenderThread:4949 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/requirements.txt requirements.txt
+2023-01-27 18:34:08,140 INFO    SenderThread:4949 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/conda-environment.yaml conda-environment.yaml
+2023-01-27 18:34:08,151 INFO    SenderThread:4949 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/wandb-summary.json wandb-summary.json
+2023-01-27 18:34:08,151 INFO    SenderThread:4949 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/config.yaml config.yaml
+2023-01-27 18:34:08,152 INFO    SenderThread:4949 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log output.log
+2023-01-27 18:34:08,153 INFO    SenderThread:4949 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/wandb-metadata.json wandb-metadata.json
+2023-01-27 18:34:08,169 INFO    SenderThread:4949 [sender.py:transition_state():387] send defer: 6
+2023-01-27 18:34:08,174 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,187 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:08,187 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 6
+2023-01-27 18:34:08,188 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:08,188 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 6
+2023-01-27 18:34:08,188 INFO    SenderThread:4949 [file_pusher.py:finish():177] shutting down file pusher
+2023-01-27 18:34:08,289 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,289 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,392 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,392 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,495 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,495 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,598 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,598 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,700 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,701 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,803 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,804 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,873 INFO    Thread-14 :4949 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/config.yaml
+2023-01-27 18:34:08,879 INFO    Thread-13 :4949 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/wandb-summary.json
+2023-01-27 18:34:08,902 INFO    Thread-15 :4949 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/output.log
+2023-01-27 18:34:08,906 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:08,906 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:08,928 INFO    Thread-12 :4949 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230127_182830-gxtdtf0n/files/requirements.txt
+2023-01-27 18:34:09,009 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:09,009 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:09,112 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit
+2023-01-27 18:34:09,112 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: poll_exit
+2023-01-27 18:34:09,129 INFO    Thread-7  :4949 [sender.py:transition_state():387] send defer: 7
+2023-01-27 18:34:09,130 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: defer
+2023-01-27 18:34:09,130 INFO    HandlerThread:4949 [handler.py:handle_request_defer():147] handle defer: 7
+2023-01-27 18:34:09,131 DEBUG   SenderThread:4949 [sender.py:send_request():248] send_request: defer
+2023-01-27 18:34:09,131 INFO    SenderThread:4949 [sender.py:send_request_defer():383] handle sender defer: 7
+2023-01-27 18:34:09,215 DEBUG   HandlerThread:4949 [handler.py:handle_request():130] handle_request: poll_exit

@@ -1,0 +1,292 @@
+2023-02-27 21:08:34,032 INFO    MainThread:17962 [internal.py:wandb_internal():87] W&B internal server running at pid: 17962, started at: 2023-02-27 21:08:34.032096
+2023-02-27 21:08:34,036 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: check_version
+2023-02-27 21:08:34,036 INFO    WriterThread:17962 [datastore.py:open_for_write():77] open: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/run-16z42wbi.wandb
+2023-02-27 21:08:34,040 DEBUG   SenderThread:17962 [sender.py:send():234] send: header
+2023-02-27 21:08:34,040 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: check_version
+2023-02-27 21:08:34,109 DEBUG   SenderThread:17962 [sender.py:send():234] send: run
+2023-02-27 21:08:34,513 INFO    SenderThread:17962 [dir_watcher.py:__init__():169] watching files in: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files
+2023-02-27 21:08:34,513 INFO    SenderThread:17962 [sender.py:_start_run_threads():804] run started: 16z42wbi with start time 1677499712
+2023-02-27 21:08:34,514 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:08:34,515 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: run_start
+2023-02-27 21:08:34,516 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:08:35,518 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:08:36,879 DEBUG   HandlerThread:17962 [meta.py:__init__():40] meta init
+2023-02-27 21:08:36,879 DEBUG   HandlerThread:17962 [meta.py:__init__():54] meta init done
+2023-02-27 21:08:36,879 DEBUG   HandlerThread:17962 [meta.py:probe():214] probe
+2023-02-27 21:08:36,895 DEBUG   HandlerThread:17962 [git.py:repo():33] git repository is invalid
+2023-02-27 21:08:36,895 DEBUG   HandlerThread:17962 [meta.py:_save_pip():58] save pip
+2023-02-27 21:08:36,896 DEBUG   HandlerThread:17962 [meta.py:_save_pip():72] save pip done
+2023-02-27 21:08:36,896 DEBUG   HandlerThread:17962 [meta.py:_save_conda():79] save conda
+2023-02-27 21:08:37,557 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/requirements.txt
+2023-02-27 21:08:37,559 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/conda-environment.yaml
+2023-02-27 21:08:39,559 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:08:41,560 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:08:47,329 DEBUG   HandlerThread:17962 [meta.py:_save_conda():89] save conda done
+2023-02-27 21:08:47,329 DEBUG   HandlerThread:17962 [meta.py:probe():252] probe done
+2023-02-27 21:08:47,336 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: stop_status
+2023-02-27 21:08:47,336 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: stop_status
+2023-02-27 21:08:47,565 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/conda-environment.yaml
+2023-02-27 21:08:47,565 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-metadata.json
+2023-02-27 21:08:47,592 DEBUG   SenderThread:17962 [sender.py:send():234] send: run
+2023-02-27 21:08:47,885 INFO    SenderThread:17962 [sender.py:send_run():702] updated run: 16z42wbi
+2023-02-27 21:08:47,885 DEBUG   SenderThread:17962 [sender.py:send():234] send: files
+2023-02-27 21:08:47,889 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2023-02-27 21:08:48,565 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/config.yaml
+2023-02-27 21:08:48,657 INFO    Thread-11 :17962 [upload_job.py:push():137] Uploaded file /tmp/tmpuyrb_x21wandb/1klnr60g-wandb-metadata.json
+2023-02-27 21:08:50,567 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:08:51,567 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:08:53,519 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:08:53,520 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:08:53,521 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:08:53,569 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:08:54,569 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:08:56,087 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:08:56,088 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:08:56,093 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:08:56,570 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:08:58,541 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:08:58,542 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:08:58,547 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:08:58,572 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:08:58,572 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:08:59,526 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: stop_status
+2023-02-27 21:08:59,526 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: stop_status
+2023-02-27 21:09:00,574 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:00,624 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:00,625 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:00,629 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:01,574 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:02,575 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:03,090 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:03,091 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:03,097 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:03,576 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:04,577 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:05,493 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:05,494 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:05,500 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:05,577 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:06,578 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:07,910 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:07,911 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:07,913 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:08,579 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:10,439 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:10,440 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:10,445 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:10,581 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:10,581 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:12,582 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:12,939 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:12,940 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:12,944 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:13,583 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:13,886 DEBUG   SenderThread:17962 [sender.py:send():234] send: stats
+2023-02-27 21:09:14,583 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:14,782 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: stop_status
+2023-02-27 21:09:14,782 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: stop_status
+2023-02-27 21:09:15,323 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:15,324 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:15,328 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:15,584 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:16,584 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:17,861 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:17,862 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:17,863 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:18,586 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:20,223 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:20,224 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:20,225 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:20,588 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:20,588 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:21,588 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:22,589 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:23,430 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:23,430 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:23,431 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:23,590 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:24,590 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:25,815 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:25,816 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:25,820 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:26,591 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:27,876 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:27,877 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:27,881 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:28,592 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:28,593 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:30,036 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: stop_status
+2023-02-27 21:09:30,037 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: stop_status
+2023-02-27 21:09:30,438 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:30,439 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:30,441 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:30,594 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:30,595 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:32,595 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:32,862 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:32,863 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:32,863 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:33,596 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:34,596 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:35,511 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:35,511 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:35,512 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:35,597 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:36,597 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:37,995 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:37,996 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:37,997 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:38,599 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:40,432 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:40,432 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:40,433 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:40,600 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:40,600 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:42,601 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:42,905 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:42,906 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:42,906 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:43,603 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:44,603 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:45,334 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:45,334 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:45,335 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:45,344 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: stop_status
+2023-02-27 21:09:45,344 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: stop_status
+2023-02-27 21:09:45,604 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:46,604 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:47,742 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:47,742 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:47,743 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:48,605 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:50,206 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:50,207 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:50,208 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:50,606 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:50,607 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:52,607 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:53,572 DEBUG   SenderThread:17962 [sender.py:send():234] send: history
+2023-02-27 21:09:53,573 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:53,573 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:53,608 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:54,175 DEBUG   SenderThread:17962 [sender.py:send():234] send: stats
+2023-02-27 21:09:54,608 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:55,947 WARNING MainThread:17962 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2023-02-27 21:09:58,611 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:58,682 DEBUG   SenderThread:17962 [sender.py:send():234] send: telemetry
+2023-02-27 21:09:58,683 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:09:58,683 DEBUG   SenderThread:17962 [sender.py:send():234] send: exit
+2023-02-27 21:09:58,683 INFO    SenderThread:17962 [sender.py:send_exit():366] handling exit code: 255
+2023-02-27 21:09:58,685 INFO    SenderThread:17962 [sender.py:send_exit():368] handling runtime: 84
+2023-02-27 21:09:58,685 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:58,685 INFO    SenderThread:17962 [sender.py:send_exit():374] send defer
+2023-02-27 21:09:58,686 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:09:58,687 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:09:58,687 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 0
+2023-02-27 21:09:58,688 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:09:58,688 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 0
+2023-02-27 21:09:58,688 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 1
+2023-02-27 21:09:58,688 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:09:58,689 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 1
+2023-02-27 21:09:59,574 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:09:59,574 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:09:59,575 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 1
+2023-02-27 21:09:59,576 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 2
+2023-02-27 21:09:59,576 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:09:59,577 DEBUG   SenderThread:17962 [sender.py:send():234] send: stats
+2023-02-27 21:09:59,579 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:09:59,579 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 2
+2023-02-27 21:09:59,580 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:09:59,580 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 2
+2023-02-27 21:09:59,580 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 3
+2023-02-27 21:09:59,581 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:09:59,581 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 3
+2023-02-27 21:09:59,582 DEBUG   SenderThread:17962 [sender.py:send():234] send: summary
+2023-02-27 21:09:59,583 INFO    SenderThread:17962 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-02-27 21:09:59,584 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:09:59,584 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 3
+2023-02-27 21:09:59,584 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 4
+2023-02-27 21:09:59,585 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:09:59,585 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 4
+2023-02-27 21:09:59,585 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:09:59,586 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 4
+2023-02-27 21:09:59,611 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:09:59,612 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:09:59,679 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:09:59,882 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 5
+2023-02-27 21:09:59,883 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:09:59,884 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:09:59,884 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 5
+2023-02-27 21:09:59,885 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:09:59,885 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 5
+2023-02-27 21:09:59,885 INFO    SenderThread:17962 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-02-27 21:09:59,986 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:00,612 INFO    Thread-8  :17962 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/config.yaml
+2023-02-27 21:10:00,613 INFO    SenderThread:17962 [dir_watcher.py:finish():313] scan: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files
+2023-02-27 21:10:00,613 INFO    SenderThread:17962 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/requirements.txt requirements.txt
+2023-02-27 21:10:00,614 INFO    SenderThread:17962 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/conda-environment.yaml conda-environment.yaml
+2023-02-27 21:10:00,614 INFO    SenderThread:17962 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json wandb-summary.json
+2023-02-27 21:10:00,624 INFO    SenderThread:17962 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/config.yaml config.yaml
+2023-02-27 21:10:00,635 INFO    SenderThread:17962 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log output.log
+2023-02-27 21:10:00,646 INFO    SenderThread:17962 [dir_watcher.py:finish():327] scan save: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-metadata.json wandb-metadata.json
+2023-02-27 21:10:00,646 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 6
+2023-02-27 21:10:00,647 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:00,674 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:10:00,676 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 6
+2023-02-27 21:10:00,677 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:10:00,677 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 6
+2023-02-27 21:10:00,677 INFO    SenderThread:17962 [file_pusher.py:finish():177] shutting down file pusher
+2023-02-27 21:10:00,778 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:00,779 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:00,882 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:00,882 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:00,986 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:00,987 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,090 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:01,090 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,193 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:01,194 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,297 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:01,297 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,384 INFO    Thread-13 :17962 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/conda-environment.yaml
+2023-02-27 21:10:01,387 INFO    Thread-12 :17962 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/requirements.txt
+2023-02-27 21:10:01,397 INFO    Thread-14 :17962 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/wandb-summary.json
+2023-02-27 21:10:01,400 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:01,401 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,457 INFO    Thread-15 :17962 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/config.yaml
+2023-02-27 21:10:01,459 INFO    Thread-16 :17962 [upload_job.py:push():137] Uploaded file /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/files/output.log
+2023-02-27 21:10:01,503 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:01,504 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,607 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:01,607 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:01,660 INFO    Thread-7  :17962 [sender.py:transition_state():387] send defer: 7
+2023-02-27 21:10:01,661 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:10:01,661 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 7
+2023-02-27 21:10:01,661 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:10:01,661 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 7
+2023-02-27 21:10:01,710 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:02,652 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 8
+2023-02-27 21:10:02,653 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:02,654 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:10:02,654 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 8
+2023-02-27 21:10:02,654 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:10:02,654 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 8
+2023-02-27 21:10:02,655 INFO    SenderThread:17962 [sender.py:transition_state():387] send defer: 9
+2023-02-27 21:10:02,656 DEBUG   SenderThread:17962 [sender.py:send():234] send: final
+2023-02-27 21:10:02,656 DEBUG   SenderThread:17962 [sender.py:send():234] send: footer
+2023-02-27 21:10:02,656 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: defer
+2023-02-27 21:10:02,657 INFO    HandlerThread:17962 [handler.py:handle_request_defer():147] handle defer: 9
+2023-02-27 21:10:02,657 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: defer
+2023-02-27 21:10:02,657 INFO    SenderThread:17962 [sender.py:send_request_defer():383] handle sender defer: 9
+2023-02-27 21:10:02,756 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: poll_exit
+2023-02-27 21:10:02,757 DEBUG   SenderThread:17962 [sender.py:send_request():248] send_request: poll_exit
+2023-02-27 21:10:02,757 INFO    SenderThread:17962 [file_pusher.py:join():182] waiting for file pusher
+2023-02-27 21:10:03,275 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: get_summary
+2023-02-27 21:10:03,278 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: sampled_history
+2023-02-27 21:10:03,282 DEBUG   HandlerThread:17962 [handler.py:handle_request():130] handle_request: shutdown
+2023-02-27 21:10:03,283 INFO    HandlerThread:17962 [handler.py:finish():731] shutting down handler
+2023-02-27 21:10:03,657 INFO    WriterThread:17962 [datastore.py:close():281] close: /home/sohui/code/SSL_brats/code/wandb/run-20230227_210832-16z42wbi/run-16z42wbi.wandb
+2023-02-27 21:10:04,273 INFO    SenderThread:17962 [sender.py:finish():1070] shutting down sender
+2023-02-27 21:10:04,273 INFO    SenderThread:17962 [file_pusher.py:finish():177] shutting down file pusher
+2023-02-27 21:10:04,273 INFO    SenderThread:17962 [file_pusher.py:join():182] waiting for file pusher
+2023-02-27 21:10:04,279 INFO    MainThread:17962 [internal.py:handle_exit():77] Internal process exited

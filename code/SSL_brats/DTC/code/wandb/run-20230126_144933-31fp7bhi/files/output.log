@@ -1,0 +1,103 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='test', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=6000, model='test', root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80, with_cons='without_cons')
+total 80 samples
+8 itertations per epoch
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+iteration 1 : loss : 0.683198, loss_consis: 0.252550, loss_haus: 0.212363, loss_seg: 0.725578, loss_dice: 0.617787
+iteration 1 : loss : 0.683198
+iteration 2 : loss : 0.673514, loss_consis: 0.221782, loss_haus: 0.283285, loss_seg: 0.694793, loss_dice: 0.587034
+iteration 2 : loss : 0.673514
+iteration 3 : loss : 0.724259, loss_consis: 0.195827, loss_haus: 0.187433, loss_seg: 0.613182, loss_dice: 0.666710
+iteration 3 : loss : 0.724259
+iteration 4 : loss : 0.555794, loss_consis: 0.217350, loss_haus: 0.182918, loss_seg: 0.632636, loss_dice: 0.499454
+iteration 4 : loss : 0.555794
+  0%|                                                    | 0/20 [00:00<?, ?it/s]
+iteration 5 : loss : 0.596677, loss_consis: 0.229837, loss_haus: 0.192742, loss_seg: 0.676880, loss_dice: 0.537306
+iteration 5 : loss : 0.596677
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|████████████████████████████████████████▊  | 19/20 [01:13<00:03,  3.99s/it]
+Validation end
+
+100%|███████████████████████████████████████████| 20/20 [01:18<00:00,  4.28s/it]
+iteration 6 : loss : 0.595256, loss_consis: 0.197126, loss_haus: 0.217882, loss_seg: 0.832711, loss_dice: 0.528563
+iteration 6 : loss : 0.595256
+iteration 7 : loss : 0.707275, loss_consis: 0.206514, loss_haus: 0.316802, loss_seg: 0.832403, loss_dice: 0.610843
+iteration 7 : loss : 0.707275
+iteration 8 : loss : 0.656075, loss_consis: 0.217442, loss_haus: 0.224742, loss_seg: 0.643092, loss_dice: 0.587187
+
+  0%|                              | 1/751 [01:29<18:36:48, 89.34s/it] 4.28s/it]
+iteration 9 : loss : 0.667594, loss_consis: 0.198226, loss_haus: 0.156203, loss_seg: 0.644370, loss_dice: 0.619398
+iteration 9 : loss : 0.667594
+iteration 10 : loss : 0.538974, loss_consis: 0.178348, loss_haus: 0.153518, loss_seg: 0.579455, loss_dice: 0.491717
+iteration 10 : loss : 0.538974
+Validation begin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|████████████████████████████████████████▊  | 19/20 [01:14<00:04,  4.02s/it]
+Validation end
+
+100%|███████████████████████████████████████████| 20/20 [01:19<00:00,  4.33s/it]
+iteration 11 : loss : 0.632597, loss_consis: 0.202945, loss_haus: 0.213454, loss_seg: 0.731930, loss_dice: 0.567194
+iteration 11 : loss : 0.632597
+iteration 12 : loss : 0.552861, loss_consis: 0.183605, loss_haus: 0.172868, loss_seg: 0.557345, loss_dice: 0.499763
+iteration 12 : loss : 0.552861
+iteration 13 : loss : 0.607346, loss_consis: 0.222899, loss_haus: 0.173121, loss_seg: 0.657687, loss_dice: 0.553908
+iteration 13 : loss : 0.607346
+iteration 14 : loss : 0.668561, loss_consis: 0.211158, loss_haus: 0.133638, loss_seg: 0.552161, loss_dice: 0.627047
+iteration 14 : loss : 0.668561
+iteration 15 : loss : 0.608594, loss_consis: 0.226341, loss_haus: 0.108097, loss_seg: 0.612188, loss_dice: 0.574640
+iteration 15 : loss : 0.608594
+Validation begin
+
+
+
+
+
+
+
+
+
+  0%|                             | 1/751 [03:36<45:00:10, 216.01s/it] 4.34s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_train_dtc.py", line 280, in <module>
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_val_3D.py", line 105, in test_all_case
+    prediction = test_single_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/LA_val_3D.py", line 67, in test_single_case
+    y = y.cpu().data.numpy()
+KeyboardInterrupt

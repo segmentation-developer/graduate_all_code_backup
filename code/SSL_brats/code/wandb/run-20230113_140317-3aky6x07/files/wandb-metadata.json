@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-01-13T05:03:26.320214",
+    "startedAt": "2023-01-13T05:03:17.433358",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [],
+    "state": "running",
+    "program": "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py",
+    "codePath": "LA_MT_UA2avg_2task_SDM_2Dec.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python3"
+}

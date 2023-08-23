@@ -1,0 +1,12 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT_UA2avg_2task_SDM_dualD', gpu='4', labeled_bs=2, labeled_num=68, max_iterations=60000, model='vnet_3D_112', num_classes=2, patch_size=[112, 112, 112], root_path='/data/sohui/ATLAS/data', seed=1337, total_labeled_num=612)
+  0%|                                         | 0/194 [00:00<?, ?it/s]
+total 68 samples
+total 620 samples
+  0%|                                         | 0/194 [01:35<?, ?it/s]
+Traceback (most recent call last):
+  File "ATLAS_MT_UA2avg_2task_SDM_2Dec.py", line 333, in <module>
+    train(args, snapshot_path)
+  File "ATLAS_MT_UA2avg_2task_SDM_2Dec.py", line 188, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+KeyboardInterrupt

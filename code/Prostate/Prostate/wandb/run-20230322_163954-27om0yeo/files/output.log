@@ -1,0 +1,95 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, class_name=1, consistency=1.0, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='4', labeled_bs=2, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[144, 144, 144], root_path='/data/sohui/Prostate/data/trim/ssl_data', seed=1337, total_labeled_num=290)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [01:17<00:00,  3.23s/it]
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [00:41<00:00,  1.72s/it]
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+Loading dataset:   0%|                                    | 0/6 [00:00<?, ?it/s]pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+
+
+
+Loading dataset: 100%|████████████████████████████| 6/6 [00:35<00:00,  5.84s/it]
+  0%|                                         | 0/241 [00:00<?, ?it/s]
+  0%|                                         | 0/241 [00:00<?, ?it/s]pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/anaconda3/envs/fully_supervised_56/lib/python3.6/site-packages/dicom2nifti/common.py (will have no effect)
+  0%|                                         | 0/241 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/home/sohui/.pycharm_helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/sohui/code/Prostate/Prostate/Prostate_train_SSL_1class.py", line 450, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/Prostate/Prostate/Prostate_train_SSL_1class.py", line 301, in train
+    plt.imshow(volume_batch[0][0][:,:,100:101])
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 456, in wrapper
+    return func(*args, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/pyplot.py", line 2640, in imshow
+    __ret = gca().imshow(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 456, in wrapper
+    return func(*args, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/axes/_axes.py", line 5488, in imshow
+    im.set_data(X)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/image.py", line 702, in set_data
+    self._A = cbook.safe_masked_invalid(A, copy=True)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/cbook/__init__.py", line 701, in safe_masked_invalid
+    x = np.array(x, subok=True, copy=copy)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/tensor.py", line 621, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

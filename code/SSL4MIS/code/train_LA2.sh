@@ -1,0 +1,4 @@
+python LA_train_UnetVnetTracoco_dsvURUM_4to1.py --exp='LA/UnetVnetTracoco_dsvURUM_4to1' --model=vnet_newdata_15000_1 --max_iterations=15000 --num_classes=2 --gpu=5 &&
+python LA_train_UnetVnetTracoco_dsvURUM_4to1.py --exp='LA/UnetVnetTracoco_dsvURUM_4to1' --model=vnet_newdata_15000_2 --max_iterations=15000 --num_classes=2 --gpu=5 &&
+python LA_train_UnetVnetTracoco_dsvURUM_4to1.py --exp='LA/UnetVnetTracoco_dsvURUM_4to1' --model=vnet_newdata_15000_3 --max_iterations=15000 --num_classes=2 --gpu=5 &&
+python LA_train_UnetVnetTracoco_dsvURUM_4to1.py --exp='LA/UnetVnetTracoco_dsvURUM_4to1' --model=vnet_newdata_15000_4 --max_iterations=15000 --num_classes=2 --gpu=5

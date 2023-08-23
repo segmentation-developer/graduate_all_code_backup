@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-03-23T08:16:06.871747",
+    "startedAt": "2023-03-23T08:16:00.637640",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [],
+    "state": "running",
+    "program": "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class.py",
+    "codePath": "SSL_Prostate_train_1class.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python3.8"
+}

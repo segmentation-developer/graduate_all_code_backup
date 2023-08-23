@@ -1,0 +1,29 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='4,5', labeled_bs=1, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[256, 256, 112], root_path='/data/sohui/Prostate/data/trim/ssl_data', seed=1337, total_labeled_num=290)
+Loading dataset:   0%|                                   | 0/24 [00:00<?, ?it/s]
+Loading dataset:   0%|                                   | 0/24 [00:11<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/multiprocessing/pool.py", line 851, in next
+    item = self._items.popleft()
+IndexError: pop from an empty deque
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class.py", line 453, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class.py", line 243, in train
+    db_train_SL = CacheDataset(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 723, in __init__
+    self.set_data(data)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 748, in set_data
+    self._cache = _compute_cache()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 737, in _compute_cache
+    return self._fill_cache()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 757, in _fill_cache
+    return list(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/multiprocessing/pool.py", line 856, in next
+    self._cond.wait(timeout)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/threading.py", line 302, in wait
+    waiter.acquire()
+KeyboardInterrupt

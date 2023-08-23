@@ -1,0 +1,46 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', fold=1, gamma=0.5, gpu='2', labeled_bs=2, labelnum=25, max_iterations=30000, model='test', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_data_num=250, with_cons='without_cons')
+  0%|                                        | 0/2501 [00:00<?, ?it/s]pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/sohui/code/SSL_brats/DTC/code/dataloaders/brats2019_kfold.py", line 40, in __getitem__
+    h5f = h5py.File(self._base_dir + "/{}.h5".format(image_name), 'r')
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/h5py/_hl/files.py", line 533, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/h5py/_hl/files.py", line 226, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to open file (unable to open file: name = '/data/sohui/BraTS/data/BraTs2019/BraTS19_CBICA_ASU_1.h5.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+total 268 samples
+12 itertations per epoch

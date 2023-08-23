@@ -1,0 +1,25 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-04-05T08:32:56.498853",
+    "startedAt": "2023-04-05T08:32:53.184719",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [
+        "--exp=SL/sameForm_Wssl",
+        "--model=Vnet_3D_288_288_160_randomCrop",
+        "--batch_size=2",
+        "--max_iterations=30000",
+        "--num_classes=2",
+        "--class_name=1"
+    ],
+    "state": "running",
+    "program": "Prostate_train_SL_1class_woSlidingW.py",
+    "codePath": "Prostate_train_SL_1class_woSlidingW.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python"
+}

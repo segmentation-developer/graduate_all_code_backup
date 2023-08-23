@@ -1,0 +1,79 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='test', gpu='4', labeled_bs=2, labeled_num=25, max_iterations=30000, model='uncertaintyConfirm_vnet_3D_96', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 250 samples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▏                           | 16/2501 [08:32<22:05:55, 32.01s/it]
+Validation begin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎          | 24/25 [01:24<00:03,  3.48s/it]
+Validation end
+
+
+
+
+  1%|▏                           | 19/2501 [11:40<25:24:27, 36.85s/it]██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [01:28<00:00,  3.60s/it]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 331, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 189, in train
+    2 * stride * i:2 * stride * (i + 1)] = ema_model(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 326, in forward
+    features = self.encoder(input)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 178, in forward
+    x4 = self.block_four(x3_dw)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 30, in forward
+    x = self.conv(x)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 520, in forward
+    return F.conv3d(input, self.weight, self.bias, self.stride,
+KeyboardInterrupt

@@ -1,0 +1,27 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT-UA2avg_2task_SDM_2Dec', gpu='4', labeled_bs=2, labeled_num=8, max_iterations=10000, model='test', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=72)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 80 samples
+  0%|                                        | 0/2501 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 340, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 179, in train
+    plt.imshow(label_batch[1][:, :, 70:71])
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 456, in wrapper
+    return func(*args, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/pyplot.py", line 2640, in imshow
+    __ret = gca().imshow(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/_api/deprecation.py", line 456, in wrapper
+    return func(*args, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/axes/_axes.py", line 5488, in imshow
+    im.set_data(X)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/image.py", line 702, in set_data
+    self._A = cbook.safe_masked_invalid(A, copy=True)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/matplotlib/cbook/__init__.py", line 701, in safe_masked_invalid
+    x = np.array(x, subok=True, copy=copy)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/tensor.py", line 621, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-04-20T16:33:47.025257",
+    "startedAt": "2023-04-20T16:33:41.421019",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [],
+    "state": "running",
+    "program": "/home/sohui/code/SSL_brats/DTC/code/Brats_train_dtc_original_kfold.py",
+    "codePath": "Brats_train_dtc_original_kfold.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python3.8"
+}

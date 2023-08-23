@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "SSL_Prostate_train_1class.py", line 107, in <module>
+    consistency_rampup = ((args.max_iterations//{args.total_labeled_num-args.labeled_num}) * 80 )/ 300
+TypeError: unsupported operand type(s) for //: 'int' and 'set'

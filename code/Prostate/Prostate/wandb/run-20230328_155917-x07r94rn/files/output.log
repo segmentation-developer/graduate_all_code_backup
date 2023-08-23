@@ -1,0 +1,26 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='SSL/MT_ATO_350_350_200', gpu='4,5', labeled_bs=1, labeled_num=40, max_iterations=30000, model='Vnet_3D_256_randomCrop', num_classes=2, patch_size=[256, 256, 128], root_path='/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200', seed=1337, total_labeled_num=290)
+Loading dataset:   0%|                                                                                                                                                                                           | 0/24 [00:00<?, ?it/s]
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:55<00:00,  2.31s/it]
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:24<00:00,  1.04s/it]
+
+
+Loading dataset:  83%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                              | 5/6 [00:13<00:02,  2.04s/it]
+250 iterations per epoch
+Loading dataset: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:19<00:00,  3.28s/it]
+  0%|                                         | 0/121 [00:07<?, ?it/s]
+Traceback (most recent call last):
+  File "SSL_Prostate_train_1class.py", line 455, in <module>
+    train(args, snapshot_path)
+  File "SSL_Prostate_train_1class.py", line 343, in train
+    consistency_weight = get_current_consistency_weight(iter_num* (args.consistency_rampup/iter_num) )
+ZeroDivisionError: float division by zero

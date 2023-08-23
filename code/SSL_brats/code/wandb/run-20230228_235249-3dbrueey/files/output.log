@@ -1,0 +1,233 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='GDT-MT_woSDM', gpu='3', labeled_bs=2, labeled_num=25, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 250 samples
+12 iterations per epoch
+iteration 1 : loss : 0.513297, loss_ce: 0.551209, loss_dice: 0.475330
+iteration 2 : loss : 0.489455, loss_ce: 0.566184, loss_dice: 0.412709
+iteration 3 : loss : 0.440934, loss_ce: 0.464989, loss_dice: 0.416865
+iteration 4 : loss : 0.480392, loss_ce: 0.507753, loss_dice: 0.453012
+iteration 5 : loss : 0.357929, loss_ce: 0.419127, loss_dice: 0.296718
+iteration 6 : loss : 0.423363, loss_ce: 0.464052, loss_dice: 0.382645
+iteration 7 : loss : 0.417060, loss_ce: 0.420689, loss_dice: 0.413402
+iteration 8 : loss : 0.391012, loss_ce: 0.420793, loss_dice: 0.361218
+iteration 9 : loss : 0.380189, loss_ce: 0.489718, loss_dice: 0.270640
+iteration 10 : loss : 0.344333, loss_ce: 0.384477, loss_dice: 0.304153
+
+  0%|                             | 1/2501 [00:14<10:23:12, 14.96s/it]
+iteration 12 : loss : 0.361231, loss_ce: 0.279951, loss_dice: 0.442480
+iteration 13 : loss : 0.342017, loss_ce: 0.419321, loss_dice: 0.264693
+iteration 14 : loss : 0.309042, loss_ce: 0.294906, loss_dice: 0.323158
+iteration 15 : loss : 0.371210, loss_ce: 0.330686, loss_dice: 0.411697
+iteration 16 : loss : 0.256037, loss_ce: 0.270489, loss_dice: 0.241559
+iteration 17 : loss : 0.216294, loss_ce: 0.208143, loss_dice: 0.224400
+iteration 18 : loss : 0.288893, loss_ce: 0.280889, loss_dice: 0.296888
+iteration 19 : loss : 0.311567, loss_ce: 0.345640, loss_dice: 0.277450
+iteration 20 : loss : 0.266371, loss_ce: 0.214673, loss_dice: 0.318047
+iteration 21 : loss : 0.313723, loss_ce: 0.330177, loss_dice: 0.297240
+iteration 22 : loss : 0.225221, loss_ce: 0.175284, loss_dice: 0.275135
+
+  0%|                             | 2/2501 [00:29<10:14:30, 14.75s/it]
+iteration 24 : loss : 0.154860, loss_ce: 0.167739, loss_dice: 0.141967
+iteration 25 : loss : 0.207748, loss_ce: 0.167909, loss_dice: 0.247563
+iteration 26 : loss : 0.168630, loss_ce: 0.129429, loss_dice: 0.207809
+iteration 27 : loss : 0.193467, loss_ce: 0.220855, loss_dice: 0.166052
+iteration 28 : loss : 0.221824, loss_ce: 0.174528, loss_dice: 0.269100
+iteration 29 : loss : 0.189456, loss_ce: 0.164248, loss_dice: 0.214640
+iteration 30 : loss : 0.280348, loss_ce: 0.260209, loss_dice: 0.300454
+iteration 31 : loss : 0.168052, loss_ce: 0.141524, loss_dice: 0.194569
+iteration 32 : loss : 0.319496, loss_ce: 0.210834, loss_dice: 0.428129
+iteration 33 : loss : 0.178861, loss_ce: 0.188991, loss_dice: 0.168712
+
+  0%|                             | 3/2501 [00:44<10:13:14, 14.73s/it]
+iteration 35 : loss : 0.104089, loss_ce: 0.137334, loss_dice: 0.070804
+iteration 36 : loss : 0.141560, loss_ce: 0.191379, loss_dice: 0.091707
+iteration 37 : loss : 0.199262, loss_ce: 0.182522, loss_dice: 0.215985
+iteration 38 : loss : 0.169692, loss_ce: 0.183954, loss_dice: 0.155407
+iteration 39 : loss : 0.159032, loss_ce: 0.177665, loss_dice: 0.140352
+iteration 40 : loss : 0.193719, loss_ce: 0.131009, loss_dice: 0.256407
+iteration 41 : loss : 0.269704, loss_ce: 0.189646, loss_dice: 0.349751
+iteration 42 : loss : 0.211684, loss_ce: 0.159233, loss_dice: 0.264117
+iteration 43 : loss : 0.069559, loss_ce: 0.069817, loss_dice: 0.069288
+iteration 44 : loss : 0.062363, loss_ce: 0.071083, loss_dice: 0.053630
+iteration 45 : loss : 0.117514, loss_ce: 0.078940, loss_dice: 0.156073
+iteration 46 : loss : 0.128445, loss_ce: 0.115509, loss_dice: 0.141363
+
+  0%|                             | 4/2501 [00:58<10:12:07, 14.71s/it]
+iteration 48 : loss : 0.103576, loss_ce: 0.120361, loss_dice: 0.086776
+iteration 49 : loss : 0.257320, loss_ce: 0.237926, loss_dice: 0.276702
+iteration 50 : loss : 0.106870, loss_ce: 0.114663, loss_dice: 0.099063
+iteration 51 : loss : 0.164279, loss_ce: 0.102379, loss_dice: 0.226165
+iteration 52 : loss : 0.097146, loss_ce: 0.102810, loss_dice: 0.091448
+iteration 53 : loss : 0.076030, loss_ce: 0.088435, loss_dice: 0.063604
+iteration 54 : loss : 0.202539, loss_ce: 0.171522, loss_dice: 0.233547
+iteration 55 : loss : 0.073242, loss_ce: 0.088583, loss_dice: 0.057890
+iteration 56 : loss : 0.155820, loss_ce: 0.186434, loss_dice: 0.125180
+iteration 57 : loss : 0.087424, loss_ce: 0.104047, loss_dice: 0.070780
+iteration 58 : loss : 0.060486, loss_ce: 0.062825, loss_dice: 0.058128
+
+  0%|                             | 5/2501 [01:13<10:12:06, 14.71s/it]
+iteration 60 : loss : 0.090644, loss_ce: 0.086907, loss_dice: 0.094367
+iteration 61 : loss : 0.194951, loss_ce: 0.222843, loss_dice: 0.167038
+iteration 62 : loss : 0.159265, loss_ce: 0.079631, loss_dice: 0.238883
+iteration 63 : loss : 0.124554, loss_ce: 0.155929, loss_dice: 0.093173
+iteration 64 : loss : 0.213735, loss_ce: 0.103271, loss_dice: 0.324187
+iteration 65 : loss : 0.080327, loss_ce: 0.087318, loss_dice: 0.073331
+iteration 66 : loss : 0.054443, loss_ce: 0.054102, loss_dice: 0.054777
+iteration 67 : loss : 0.108222, loss_ce: 0.120429, loss_dice: 0.095993
+iteration 68 : loss : 0.099766, loss_ce: 0.103891, loss_dice: 0.095634
+iteration 69 : loss : 0.149400, loss_ce: 0.110362, loss_dice: 0.188435
+
+  0%|                             | 6/2501 [01:28<10:11:13, 14.70s/it]
+iteration 71 : loss : 0.210132, loss_ce: 0.115660, loss_dice: 0.304592
+iteration 72 : loss : 0.057738, loss_ce: 0.062773, loss_dice: 0.052684
+iteration 73 : loss : 0.102898, loss_ce: 0.114532, loss_dice: 0.091255
+iteration 74 : loss : 0.359608, loss_ce: 0.378084, loss_dice: 0.341120
+iteration 75 : loss : 0.128680, loss_ce: 0.064220, loss_dice: 0.193119
+iteration 76 : loss : 0.070747, loss_ce: 0.047902, loss_dice: 0.093582
+iteration 77 : loss : 0.156598, loss_ce: 0.130386, loss_dice: 0.182799
+iteration 78 : loss : 0.045677, loss_ce: 0.056677, loss_dice: 0.034668
+iteration 79 : loss : 0.093639, loss_ce: 0.075688, loss_dice: 0.111582
+iteration 80 : loss : 0.105884, loss_ce: 0.114448, loss_dice: 0.097310
+iteration 81 : loss : 0.045670, loss_ce: 0.045449, loss_dice: 0.045882
+iteration 82 : loss : 0.300231, loss_ce: 0.256281, loss_dice: 0.344166
+
+  0%|                             | 7/2501 [01:42<10:10:22, 14.68s/it]
+iteration 84 : loss : 0.128310, loss_ce: 0.137619, loss_dice: 0.118992
+iteration 85 : loss : 0.124033, loss_ce: 0.105059, loss_dice: 0.142995
+iteration 86 : loss : 0.093187, loss_ce: 0.099936, loss_dice: 0.086417
+iteration 87 : loss : 0.186054, loss_ce: 0.114808, loss_dice: 0.257293
+iteration 88 : loss : 0.062919, loss_ce: 0.067520, loss_dice: 0.058308
+iteration 89 : loss : 0.098996, loss_ce: 0.070657, loss_dice: 0.127324
+iteration 90 : loss : 0.157269, loss_ce: 0.111039, loss_dice: 0.203490
+iteration 91 : loss : 0.062333, loss_ce: 0.048772, loss_dice: 0.075886
+iteration 92 : loss : 0.064625, loss_ce: 0.081624, loss_dice: 0.047621
+iteration 93 : loss : 0.251777, loss_ce: 0.121271, loss_dice: 0.382275
+
+  0%|                             | 8/2501 [01:57<10:11:06, 14.71s/it]
+iteration 95 : loss : 0.176962, loss_ce: 0.134515, loss_dice: 0.219396
+iteration 96 : loss : 0.222942, loss_ce: 0.145306, loss_dice: 0.300565
+iteration 97 : loss : 0.280825, loss_ce: 0.273075, loss_dice: 0.288561
+iteration 98 : loss : 0.073855, loss_ce: 0.052440, loss_dice: 0.095261
+iteration 99 : loss : 0.150864, loss_ce: 0.103789, loss_dice: 0.197909
+iteration 100 : loss : 0.044212, loss_ce: 0.055455, loss_dice: 0.032958
+iteration 101 : loss : 0.173118, loss_ce: 0.110552, loss_dice: 0.235665
+iteration 102 : loss : 0.048613, loss_ce: 0.047318, loss_dice: 0.049897
+iteration 103 : loss : 0.057790, loss_ce: 0.051659, loss_dice: 0.063911
+iteration 104 : loss : 0.108254, loss_ce: 0.117072, loss_dice: 0.099423
+iteration 105 : loss : 0.120974, loss_ce: 0.111096, loss_dice: 0.130814
+iteration 106 : loss : 0.368655, loss_ce: 0.348733, loss_dice: 0.388569
+iteration 107 : loss : 0.130191, loss_ce: 0.060417, loss_dice: 0.199939
+
+  0%|                             | 9/2501 [02:12<10:11:03, 14.71s/it]
+iteration 109 : loss : 0.133268, loss_ce: 0.034845, loss_dice: 0.231684
+iteration 110 : loss : 0.083924, loss_ce: 0.092313, loss_dice: 0.075513
+iteration 111 : loss : 0.120035, loss_ce: 0.066591, loss_dice: 0.173463
+iteration 112 : loss : 0.099555, loss_ce: 0.033394, loss_dice: 0.165711
+iteration 113 : loss : 0.274246, loss_ce: 0.235473, loss_dice: 0.313012
+iteration 114 : loss : 0.128505, loss_ce: 0.070536, loss_dice: 0.186464
+iteration 115 : loss : 0.142110, loss_ce: 0.162884, loss_dice: 0.121305
+iteration 116 : loss : 0.171626, loss_ce: 0.219057, loss_dice: 0.124144
+iteration 117 : loss : 0.057842, loss_ce: 0.055879, loss_dice: 0.059802
+iteration 118 : loss : 0.095743, loss_ce: 0.075240, loss_dice: 0.116238
+
+  0%|                            | 10/2501 [02:27<10:10:12, 14.70s/it]
+iteration 120 : loss : 0.067623, loss_ce: 0.082104, loss_dice: 0.053140
+iteration 121 : loss : 0.092289, loss_ce: 0.088595, loss_dice: 0.095967
+iteration 122 : loss : 0.149264, loss_ce: 0.076700, loss_dice: 0.221813
+iteration 123 : loss : 0.196794, loss_ce: 0.147237, loss_dice: 0.246339
+iteration 124 : loss : 0.053450, loss_ce: 0.045475, loss_dice: 0.061421
+iteration 125 : loss : 0.265682, loss_ce: 0.251841, loss_dice: 0.279497
+iteration 126 : loss : 0.094389, loss_ce: 0.083111, loss_dice: 0.105660
+iteration 127 : loss : 0.148818, loss_ce: 0.085994, loss_dice: 0.211626
+iteration 128 : loss : 0.052241, loss_ce: 0.046074, loss_dice: 0.058391
+iteration 129 : loss : 0.095051, loss_ce: 0.116270, loss_dice: 0.073812
+
+  0%|                            | 11/2501 [02:41<10:09:47, 14.69s/it]
+iteration 131 : loss : 0.096800, loss_ce: 0.059878, loss_dice: 0.133708
+iteration 132 : loss : 0.080755, loss_ce: 0.089380, loss_dice: 0.072123
+iteration 133 : loss : 0.123552, loss_ce: 0.153520, loss_dice: 0.093577
+iteration 134 : loss : 0.283749, loss_ce: 0.334742, loss_dice: 0.232750
+iteration 135 : loss : 0.209664, loss_ce: 0.045955, loss_dice: 0.373359
+iteration 136 : loss : 0.115913, loss_ce: 0.090309, loss_dice: 0.141501
+iteration 137 : loss : 0.362255, loss_ce: 0.232929, loss_dice: 0.491572
+iteration 138 : loss : 0.065281, loss_ce: 0.069784, loss_dice: 0.060772
+iteration 139 : loss : 0.078590, loss_ce: 0.090906, loss_dice: 0.066268
+iteration 140 : loss : 0.112194, loss_ce: 0.102990, loss_dice: 0.121391
+iteration 141 : loss : 0.104367, loss_ce: 0.086882, loss_dice: 0.121842
+iteration 142 : loss : 0.045229, loss_ce: 0.046048, loss_dice: 0.044403
+iteration 143 : loss : 0.111879, loss_ce: 0.107893, loss_dice: 0.115834
+
+  0%|▏                           | 12/2501 [02:56<10:09:55, 14.70s/it]
+iteration 145 : loss : 0.173318, loss_ce: 0.168629, loss_dice: 0.178000
+iteration 146 : loss : 0.047733, loss_ce: 0.062024, loss_dice: 0.033398
+iteration 147 : loss : 0.129593, loss_ce: 0.108078, loss_dice: 0.151102
+iteration 148 : loss : 0.067103, loss_ce: 0.056542, loss_dice: 0.077656
+iteration 149 : loss : 0.259665, loss_ce: 0.247435, loss_dice: 0.271886
+iteration 150 : loss : 0.082257, loss_ce: 0.078800, loss_dice: 0.085711
+iteration 151 : loss : 0.135389, loss_ce: 0.115788, loss_dice: 0.154973
+iteration 152 : loss : 0.114771, loss_ce: 0.115942, loss_dice: 0.113582
+iteration 153 : loss : 0.061540, loss_ce: 0.045136, loss_dice: 0.077938
+iteration 154 : loss : 0.085717, loss_ce: 0.096059, loss_dice: 0.075370
+
+  1%|▏                           | 13/2501 [03:11<10:10:09, 14.71s/it]
+iteration 156 : loss : 0.191864, loss_ce: 0.114841, loss_dice: 0.268876
+iteration 157 : loss : 0.125963, loss_ce: 0.069738, loss_dice: 0.182179
+iteration 158 : loss : 0.101850, loss_ce: 0.053782, loss_dice: 0.149911
+iteration 159 : loss : 0.071715, loss_ce: 0.058750, loss_dice: 0.084674
+iteration 160 : loss : 0.069551, loss_ce: 0.062458, loss_dice: 0.076634
+iteration 161 : loss : 0.258071, loss_ce: 0.286609, loss_dice: 0.229524
+iteration 162 : loss : 0.093298, loss_ce: 0.125333, loss_dice: 0.061216
+iteration 163 : loss : 0.059630, loss_ce: 0.046710, loss_dice: 0.072538
+iteration 164 : loss : 0.099925, loss_ce: 0.091801, loss_dice: 0.108034
+iteration 165 : loss : 0.135841, loss_ce: 0.064241, loss_dice: 0.207434
+
+  1%|▏                           | 14/2501 [03:26<10:09:58, 14.72s/it]
+iteration 167 : loss : 0.161482, loss_ce: 0.106937, loss_dice: 0.216021
+iteration 168 : loss : 0.075772, loss_ce: 0.067544, loss_dice: 0.083989
+iteration 169 : loss : 0.038145, loss_ce: 0.024580, loss_dice: 0.051704
+iteration 170 : loss : 0.065966, loss_ce: 0.062589, loss_dice: 0.069334
+iteration 171 : loss : 0.050406, loss_ce: 0.040437, loss_dice: 0.060361
+iteration 172 : loss : 0.040225, loss_ce: 0.046860, loss_dice: 0.033581
+iteration 173 : loss : 0.173590, loss_ce: 0.208195, loss_dice: 0.138982
+iteration 174 : loss : 0.112133, loss_ce: 0.023984, loss_dice: 0.200273
+iteration 175 : loss : 0.047904, loss_ce: 0.042932, loss_dice: 0.052867
+iteration 176 : loss : 0.064768, loss_ce: 0.042905, loss_dice: 0.086613
+iteration 177 : loss : 0.225983, loss_ce: 0.115250, loss_dice: 0.336696
+iteration 178 : loss : 0.199547, loss_ce: 0.212361, loss_dice: 0.186709
+iteration 179 : loss : 0.147721, loss_ce: 0.079681, loss_dice: 0.215751
+
+  1%|▏                           | 15/2501 [03:40<10:09:47, 14.72s/it]
+iteration 181 : loss : 0.090205, loss_ce: 0.060160, loss_dice: 0.120242
+iteration 182 : loss : 0.057461, loss_ce: 0.049339, loss_dice: 0.065577
+iteration 183 : loss : 0.192902, loss_ce: 0.167773, loss_dice: 0.218013
+iteration 184 : loss : 0.204647, loss_ce: 0.103766, loss_dice: 0.305518
+iteration 185 : loss : 0.082410, loss_ce: 0.098841, loss_dice: 0.065963
+iteration 186 : loss : 0.089082, loss_ce: 0.079628, loss_dice: 0.098534
+iteration 187 : loss : 0.355718, loss_ce: 0.252089, loss_dice: 0.459340
+iteration 188 : loss : 0.113097, loss_ce: 0.133956, loss_dice: 0.092234
+iteration 189 : loss : 0.122501, loss_ce: 0.135143, loss_dice: 0.109840
+iteration 190 : loss : 0.078523, loss_ce: 0.071953, loss_dice: 0.085086
+
+  1%|▏                           | 16/2501 [03:55<10:09:11, 14.71s/it]
+iteration 192 : loss : 0.191987, loss_ce: 0.161026, loss_dice: 0.222935
+iteration 193 : loss : 0.039550, loss_ce: 0.037038, loss_dice: 0.042050
+iteration 194 : loss : 0.126981, loss_ce: 0.169169, loss_dice: 0.084775
+iteration 195 : loss : 0.207385, loss_ce: 0.235459, loss_dice: 0.179267
+iteration 196 : loss : 0.234632, loss_ce: 0.181108, loss_dice: 0.288113
+iteration 197 : loss : 0.049118, loss_ce: 0.051957, loss_dice: 0.046259
+iteration 198 : loss : 0.246593, loss_ce: 0.228268, loss_dice: 0.264909
+iteration 199 : loss : 0.062200, loss_ce: 0.030710, loss_dice: 0.093685
+iteration 200 : loss : 0.147125, loss_ce: 0.076637, loss_dice: 0.217597
+  0%|                                                                                                                                                                                                            | 0/25 [00:00<?, ?it/s]
+  1%|▏                           | 16/2501 [04:05<10:35:43, 15.35s/it]                                                                                                                                           | 0/25 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats2_GDT-MT_woSDM.py", line 314, in <module>
+    train(args, snapshot_path)
+  File "Brats2_GDT-MT_woSDM.py", line 248, in train
+    avg_metric,uncertainty_val = test_all_case(
+  File "/home/sohui/code/SSL_brats/code/brats_val_3D_2task_ConfirmUncertainty.py", line 101, in test_all_case
+    score_map, prediction = test_single_case(
+  File "/home/sohui/code/SSL_brats/code/brats_val_3D_2task_ConfirmUncertainty.py", line 62, in test_single_case
+    y1,_ = net(test_patch)
+ValueError: not enough values to unpack (expected 2, got 1)

@@ -1,0 +1,3 @@
+#python HV_train_SL.py --exp='HV_result/Unet2_SL_labelCrop' --model=unet_newdata_20000_1 --max_iterations=20000 --num_classes=3
+#python pancreas_train_SL.py --exp='pancreas_result/Unet2_SL_imageCrop' --model=unet_newdata_20000_1 --max_iterations=20000 --num_classes=3
+python HV_train_SL.py --exp='HV_result/Unet2_SL_imgCrop_slidingW16_Vnet' --model=vnet_newdata_20000_1 --max_iterations=20000 --num_classes=3

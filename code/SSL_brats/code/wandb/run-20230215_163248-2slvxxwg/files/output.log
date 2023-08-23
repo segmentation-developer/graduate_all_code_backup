@@ -1,0 +1,17 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='test', gpu='4', labeled_bs=2, labeled_num=50, max_iterations=30000, model='uncertaintyConfirm_vnet_3D_96', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/1201 [00:00<?, ?it/s]
+total 250 samples
+
+
+  0%|                             | 2/1201 [02:13<22:15:00, 66.81s/it]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 331, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 175, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/SSL_brats/code/utils/util.py", line 141, in compute_sdf
+    posdis = distance(posmask)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_morphology.py", line 2277, in distance_transform_edt
+    _nd_image.euclidean_feature_transform(input, sampling, ft)
+KeyboardInterrupt

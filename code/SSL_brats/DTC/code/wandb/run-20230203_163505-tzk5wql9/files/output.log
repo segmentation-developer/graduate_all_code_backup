@@ -1,0 +1,11 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', gamma=0.5, gpu='2', labeled_bs=2, labelnum=25, max_iterations=30000, model='vnet_3D_96_32', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250, with_cons='without_cons')
+total 250 samples
+12 itertations per epoch
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+iteration 1 : loss : 0.918397, loss_consis: 0.244125, loss_haus: 0.236583, loss_seg: 0.678633, loss_dice: 0.845777
+  0%|                                        | 0/2501 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats_train_dtc_original.py", line 243, in <module>
+    model, args.root_path, test_list="val.txt", num_classes=args.num_classes,
+AttributeError: 'Namespace' object has no attribute 'num_classes'

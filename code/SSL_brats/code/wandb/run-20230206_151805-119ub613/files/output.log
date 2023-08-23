@@ -1,0 +1,47 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='1', labeled_bs=2, labeled_num=2, max_iterations=30000, model='test', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                       | 0/30001 [00:00<?, ?it/s]
+total 250 samples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|                           | 22/30001 [02:00<45:32:58,  5.47s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/Brats2_MT_UA2avg_2task_SDM_2Dec_UncertaintyPseudoLabel_ConsisModi.py", line 359, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/Brats2_MT_UA2avg_2task_SDM_2Dec_UncertaintyPseudoLabel_ConsisModi.py", line 200, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/SSL_brats/code/utils/util.py", line 143, in compute_sdf
+    boundary = skimage_seg.find_boundaries(posmask, mode='inner').astype(np.uint8)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/skimage/segmentation/boundaries.py", line 166, in find_boundaries
+    dilation(label_img, footprint) != erosion(label_img, footprint)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/skimage/morphology/misc.py", line 39, in func_out
+    return func(image, footprint=footprint, *args, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/skimage/_shared/utils.py", line 232, in fixed_func
+    return func(*args, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/skimage/morphology/gray.py", line 261, in dilation
+    ndi.grey_dilation(image, footprint=footprint, output=out)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_morphology.py", line 1368, in grey_dilation
+    return _filters._min_or_max_filter(input, size, footprint, structure,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_filters.py", line 1151, in _min_or_max_filter
+    _nd_image.min_or_max_filter(input, footprint, structure, output,
+KeyboardInterrupt

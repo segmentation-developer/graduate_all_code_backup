@@ -1,0 +1,21 @@
+
+Namespace(T=1, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='GDT-MT_woATO', gpu='2', labeled_bs=2, labeled_num=50, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+Traceback (most recent call last):
+  File "Brats2_GDT-MT_woATO.py", line 310, in <module>
+    train(args, snapshot_path)
+  File "Brats2_GDT-MT_woATO.py", line 122, in train
+    ema_model = ema_model.cuda()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 491, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 387, in _apply
+    module._apply(fn)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 387, in _apply
+    module._apply(fn)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 387, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 409, in _apply
+    param_applied = fn(param)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 491, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 11.91 GiB total capacity; 65.46 MiB already allocated; 3.94 MiB free; 72.00 MiB reserved in total by PyTorch)

@@ -1,0 +1,212 @@
+2023-03-22 16:44:35,437 INFO    MainThread:24013 [internal.py:wandb_internal():87] W&B internal server running at pid: 24013, started at: 2023-03-22 16:44:35.437351
+2023-03-22 16:44:35,443 INFO    WriterThread:24013 [datastore.py:open_for_write():77] open: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/run-dln3bo9m.wandb
+2023-03-22 16:44:35,445 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: check_version
+2023-03-22 16:44:35,448 DEBUG   SenderThread:24013 [sender.py:send():234] send: header
+2023-03-22 16:44:35,448 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: check_version
+2023-03-22 16:44:35,583 DEBUG   SenderThread:24013 [sender.py:send():234] send: run
+2023-03-22 16:44:35,941 INFO    SenderThread:24013 [dir_watcher.py:__init__():169] watching files in: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files
+2023-03-22 16:44:35,941 INFO    SenderThread:24013 [sender.py:_start_run_threads():804] run started: dln3bo9m with start time 1679471073
+2023-03-22 16:44:35,942 DEBUG   SenderThread:24013 [sender.py:send():234] send: summary
+2023-03-22 16:44:35,942 INFO    SenderThread:24013 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-03-22 16:44:35,952 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: run_start
+2023-03-22 16:44:36,948 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/wandb-summary.json
+2023-03-22 16:44:37,820 DEBUG   HandlerThread:24013 [meta.py:__init__():40] meta init
+2023-03-22 16:44:37,820 DEBUG   HandlerThread:24013 [meta.py:__init__():54] meta init done
+2023-03-22 16:44:37,820 DEBUG   HandlerThread:24013 [meta.py:probe():214] probe
+2023-03-22 16:44:37,828 DEBUG   HandlerThread:24013 [git.py:repo():33] git repository is invalid
+2023-03-22 16:44:37,828 DEBUG   HandlerThread:24013 [meta.py:_save_pip():58] save pip
+2023-03-22 16:44:37,830 DEBUG   HandlerThread:24013 [meta.py:_save_pip():72] save pip done
+2023-03-22 16:44:37,830 DEBUG   HandlerThread:24013 [meta.py:_save_conda():79] save conda
+2023-03-22 16:44:37,852 ERROR   HandlerThread:24013 [meta.py:_save_conda():88] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 84, in _save_conda
+    subprocess.call(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2023-03-22 16:44:37,856 DEBUG   HandlerThread:24013 [meta.py:_save_conda():89] save conda done
+2023-03-22 16:44:37,856 DEBUG   HandlerThread:24013 [meta.py:probe():252] probe done
+2023-03-22 16:44:37,866 DEBUG   SenderThread:24013 [sender.py:send():234] send: files
+2023-03-22 16:44:37,866 INFO    SenderThread:24013 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2023-03-22 16:44:37,889 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:44:37,890 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:44:37,948 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/requirements.txt
+2023-03-22 16:44:37,950 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/wandb-metadata.json
+2023-03-22 16:44:37,950 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:44:37,951 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/conda-environment.yaml
+2023-03-22 16:44:38,145 DEBUG   SenderThread:24013 [sender.py:send():234] send: run
+2023-03-22 16:44:38,442 INFO    SenderThread:24013 [sender.py:send_run():702] updated run: dln3bo9m
+2023-03-22 16:44:38,752 INFO    Thread-11 :24013 [upload_job.py:push():137] Uploaded file /tmp/tmpkf4jxig0wandb/2d9ql1av-wandb-metadata.json
+2023-03-22 16:44:38,949 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/config.yaml
+2023-03-22 16:44:39,950 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:44:42,952 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:44:53,160 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:44:53,162 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:45:08,462 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:45:08,463 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:45:08,731 DEBUG   SenderThread:24013 [sender.py:send():234] send: stats
+2023-03-22 16:45:15,976 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:17,977 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:24,173 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:45:24,174 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:45:25,982 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:39,628 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:45:39,629 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:45:41,404 DEBUG   SenderThread:24013 [sender.py:send():234] send: stats
+2023-03-22 16:45:42,993 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:44,994 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:46,996 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:48,998 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:53,000 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:45:54,905 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:45:54,906 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:45:59,005 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:01,006 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:10,195 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:46:10,196 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:46:14,267 DEBUG   SenderThread:24013 [sender.py:send():234] send: stats
+2023-03-22 16:46:17,016 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:21,018 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:25,026 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:25,447 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:46:25,448 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:46:29,027 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:31,031 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:33,031 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:35,032 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:37,034 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:39,036 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:46:40,890 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:46:40,891 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:46:47,269 DEBUG   SenderThread:24013 [sender.py:send():234] send: stats
+2023-03-22 16:46:56,148 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:46:56,149 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:47:00,051 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:02,052 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:11,382 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: stop_status
+2023-03-22 16:47:11,383 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: stop_status
+2023-03-22 16:47:12,058 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:14,060 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:16,061 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:17,664 DEBUG   SenderThread:24013 [sender.py:send():234] send: telemetry
+2023-03-22 16:47:17,665 DEBUG   SenderThread:24013 [sender.py:send():234] send: exit
+2023-03-22 16:47:17,665 INFO    SenderThread:24013 [sender.py:send_exit():366] handling exit code: 0
+2023-03-22 16:47:17,666 INFO    SenderThread:24013 [sender.py:send_exit():368] handling runtime: 161
+2023-03-22 16:47:17,666 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:17,667 INFO    SenderThread:24013 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-03-22 16:47:17,668 INFO    SenderThread:24013 [sender.py:send_exit():374] send defer
+2023-03-22 16:47:17,668 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:17,669 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:17,670 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 0
+2023-03-22 16:47:17,670 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:17,670 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 0
+2023-03-22 16:47:17,670 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 1
+2023-03-22 16:47:17,671 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:17,671 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 1
+2023-03-22 16:47:17,844 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:17,845 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 1
+2023-03-22 16:47:17,845 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 2
+2023-03-22 16:47:17,845 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:17,846 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:17,847 DEBUG   SenderThread:24013 [sender.py:send():234] send: stats
+2023-03-22 16:47:17,849 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:17,850 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 2
+2023-03-22 16:47:17,850 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:17,850 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 2
+2023-03-22 16:47:17,850 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 3
+2023-03-22 16:47:17,851 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:17,851 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 3
+2023-03-22 16:47:17,851 DEBUG   SenderThread:24013 [sender.py:send():234] send: summary
+2023-03-22 16:47:17,852 INFO    SenderThread:24013 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2023-03-22 16:47:17,852 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:17,852 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 3
+2023-03-22 16:47:17,852 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 4
+2023-03-22 16:47:17,853 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:17,853 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 4
+2023-03-22 16:47:17,854 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:17,854 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 4
+2023-03-22 16:47:17,949 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:18,063 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/wandb-summary.json
+2023-03-22 16:47:18,063 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:18,113 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 5
+2023-03-22 16:47:18,113 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:18,114 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:18,114 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 5
+2023-03-22 16:47:18,115 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:18,116 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 5
+2023-03-22 16:47:18,116 INFO    SenderThread:24013 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-03-22 16:47:18,218 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,064 INFO    Thread-8  :24013 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/config.yaml
+2023-03-22 16:47:19,065 INFO    SenderThread:24013 [dir_watcher.py:finish():313] scan: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files
+2023-03-22 16:47:19,065 INFO    SenderThread:24013 [dir_watcher.py:finish():327] scan save: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/requirements.txt requirements.txt
+2023-03-22 16:47:19,066 INFO    SenderThread:24013 [dir_watcher.py:finish():327] scan save: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/conda-environment.yaml conda-environment.yaml
+2023-03-22 16:47:19,066 INFO    SenderThread:24013 [dir_watcher.py:finish():327] scan save: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/wandb-summary.json wandb-summary.json
+2023-03-22 16:47:19,067 INFO    SenderThread:24013 [dir_watcher.py:finish():327] scan save: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/config.yaml config.yaml
+2023-03-22 16:47:19,078 INFO    SenderThread:24013 [dir_watcher.py:finish():327] scan save: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log output.log
+2023-03-22 16:47:19,101 INFO    SenderThread:24013 [dir_watcher.py:finish():327] scan save: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/wandb-metadata.json wandb-metadata.json
+2023-03-22 16:47:19,102 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 6
+2023-03-22 16:47:19,102 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,115 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:19,115 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 6
+2023-03-22 16:47:19,117 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:19,117 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 6
+2023-03-22 16:47:19,117 INFO    SenderThread:24013 [file_pusher.py:finish():177] shutting down file pusher
+2023-03-22 16:47:19,207 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,208 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,311 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,312 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,415 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,416 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,519 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,520 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,623 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,624 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,727 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,727 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,831 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,831 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,934 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:19,935 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:19,940 INFO    Thread-12 :24013 [upload_job.py:push():137] Uploaded file /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/requirements.txt
+2023-03-22 16:47:19,958 INFO    Thread-15 :24013 [upload_job.py:push():137] Uploaded file /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/output.log
+2023-03-22 16:47:19,985 INFO    Thread-13 :24013 [upload_job.py:push():137] Uploaded file /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/wandb-summary.json
+2023-03-22 16:47:19,990 INFO    Thread-14 :24013 [upload_job.py:push():137] Uploaded file /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/files/config.yaml
+2023-03-22 16:47:20,038 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:20,042 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:20,147 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:20,148 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:20,191 INFO    Thread-7  :24013 [sender.py:transition_state():387] send defer: 7
+2023-03-22 16:47:20,193 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:20,193 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 7
+2023-03-22 16:47:20,193 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:20,194 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 7
+2023-03-22 16:47:20,251 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:20,876 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 8
+2023-03-22 16:47:20,877 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:20,878 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:20,878 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 8
+2023-03-22 16:47:20,879 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:20,879 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 8
+2023-03-22 16:47:20,879 INFO    SenderThread:24013 [sender.py:transition_state():387] send defer: 9
+2023-03-22 16:47:20,881 DEBUG   SenderThread:24013 [sender.py:send():234] send: final
+2023-03-22 16:47:20,881 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: defer
+2023-03-22 16:47:20,882 DEBUG   SenderThread:24013 [sender.py:send():234] send: footer
+2023-03-22 16:47:20,882 INFO    HandlerThread:24013 [handler.py:handle_request_defer():147] handle defer: 9
+2023-03-22 16:47:20,882 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: defer
+2023-03-22 16:47:20,883 INFO    SenderThread:24013 [sender.py:send_request_defer():383] handle sender defer: 9
+2023-03-22 16:47:20,981 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: poll_exit
+2023-03-22 16:47:20,981 DEBUG   SenderThread:24013 [sender.py:send_request():248] send_request: poll_exit
+2023-03-22 16:47:20,982 INFO    SenderThread:24013 [file_pusher.py:join():182] waiting for file pusher
+2023-03-22 16:47:21,450 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: get_summary
+2023-03-22 16:47:21,452 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: sampled_history
+2023-03-22 16:47:21,455 DEBUG   HandlerThread:24013 [handler.py:handle_request():130] handle_request: shutdown
+2023-03-22 16:47:21,455 INFO    HandlerThread:24013 [handler.py:finish():731] shutting down handler
+2023-03-22 16:47:21,881 INFO    WriterThread:24013 [datastore.py:close():281] close: /home/sohui/code/Prostate/Prostate/wandb/run-20230322_164432-dln3bo9m/run-dln3bo9m.wandb
+2023-03-22 16:47:22,447 INFO    SenderThread:24013 [sender.py:finish():1070] shutting down sender
+2023-03-22 16:47:22,447 INFO    SenderThread:24013 [file_pusher.py:finish():177] shutting down file pusher
+2023-03-22 16:47:22,447 INFO    SenderThread:24013 [file_pusher.py:join():182] waiting for file pusher
+2023-03-22 16:47:22,455 INFO    MainThread:24013 [internal.py:handle_exit():77] Internal process exited

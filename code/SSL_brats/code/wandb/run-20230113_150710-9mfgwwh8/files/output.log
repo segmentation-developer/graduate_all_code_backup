@@ -1,0 +1,33 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT_UA2avg_2task_SDM_dualD', gpu='4', labeled_bs=2, labeled_num=8, max_iterations=10000, model='vnet_3D_112_112_80', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=72)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 80 samples
+4 iterations per epoch
+Traceback (most recent call last):
+  File "LA_MT_UA2avg_2task_SDM_2Dec.py", line 325, in <module>
+    train(args, snapshot_path)
+  File "LA_MT_UA2avg_2task_SDM_2Dec.py", line 174, in train
+    outputs_2class, outputs_1class_tanh = model(volume_batch)  ## model = student
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 328, in forward
+    out_SDM = self.decoder_SDM(features)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 281, in forward
+    x7_up = self.block_seven_up(x7)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/networks/vnet_2task_SDM_2Dec.py", line 117, in forward
+    x = self.conv(x)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 135, in forward
+    return F.batch_norm(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/functional.py", line 2149, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 62.00 MiB (GPU 0; 11.91 GiB total capacity; 3.45 GiB already allocated; 63.94 MiB free; 3.46 GiB reserved in total by PyTorch)

@@ -1,0 +1,27 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-04-20T01:22:13.877215",
+    "startedAt": "2023-04-20T01:22:09.849254",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [
+        "--exp=GDT-MT",
+        "--model=vnet_3D_96_32",
+        "--max_iterations=30000",
+        "--labeled_num=50",
+        "--consistency=0.1",
+        "--num_classes=2",
+        "--gpu=5",
+        "--T=10"
+    ],
+    "state": "running",
+    "program": "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py",
+    "codePath": "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python"
+}

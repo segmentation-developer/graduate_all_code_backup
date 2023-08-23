@@ -1,0 +1,24 @@
+
+Namespace(T=2, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='GDT-MT', gpu='5', labeled_bs=2, labeled_num=50, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/1201 [00:00<?, ?it/s]
+total 250 samples
+25 iterations per epoch
+iteration 1 : loss : 0.873741, loss_ce: 0.535350, loss_dice: 0.515879
+iteration 2 : loss : 0.836306, loss_ce: 0.504045, loss_dice: 0.519308
+iteration 3 : loss : 0.670743, loss_ce: 0.511527, loss_dice: 0.361541
+iteration 4 : loss : 0.730902, loss_ce: 0.585448, loss_dice: 0.420137
+iteration 5 : loss : 0.746068, loss_ce: 0.568703, loss_dice: 0.445707
+iteration 6 : loss : 0.780689, loss_ce: 0.467883, loss_dice: 0.404770
+iteration 7 : loss : 0.668732, loss_ce: 0.521217, loss_dice: 0.403611
+iteration 8 : loss : 0.672468, loss_ce: 0.441588, loss_dice: 0.420933
+iteration 9 : loss : 0.595610, loss_ce: 0.419662, loss_dice: 0.405567
+  0%|                                        | 0/1201 [02:29<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 330, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 175, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/SSL_brats/code/utils/util.py", line 142, in compute_sdf
+    negdis = distance(negmask)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_morphology.py", line 2281, in distance_transform_edt
+    dt = dt.astype(numpy.float64)

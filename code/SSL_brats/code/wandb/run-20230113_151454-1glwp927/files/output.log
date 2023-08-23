@@ -1,0 +1,16 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT_UA2avg_2task_SDM_dualD', gpu='4', labeled_bs=2, labeled_num=8, max_iterations=10000, model='vnet_3D_112_112_80', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=72)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 80 samples
+
+  0%|                             | 1/2501 [00:15<10:36:57, 15.29s/it]
+Traceback (most recent call last):
+  File "LA_MT_UA2avg_2task_SDM_2Dec.py", line 325, in <module>
+    train(args, snapshot_path)
+  File "LA_MT_UA2avg_2task_SDM_2Dec.py", line 178, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/SSL_brats/code/utils/util.py", line 142, in compute_sdf
+    negdis = distance(negmask)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_morphology.py", line 2277, in distance_transform_edt
+    _nd_image.euclidean_feature_transform(input, sampling, ft)
+KeyboardInterrupt

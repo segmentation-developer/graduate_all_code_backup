@@ -1,0 +1,22 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC_kfold', fold=1, gamma=0.5, gpu='4', labeled_bs=2, labelnum=28, max_iterations=30000, model='vnet_3D_96_32', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_data_num=268, with_cons='without_cons')
+  0%|                                        | 0/2143 [00:00<?, ?it/s]
+total 268 samples
+14 itertations per epoch
+iteration 1 : loss : 1.013181, loss_consis: 0.254408, loss_haus: 0.223822, loss_seg: 0.723148, loss_dice: 0.944320
+  0%|                                                                                                                                                                                                            | 0/67 [00:00<?, ?it/s]
+  0%|                                        | 0/2143 [00:04<?, ?it/s]                                                                                                                                           | 0/67 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats_train_dtc_original_kfold.py", line 244, in <module>
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/DTC/code/Brats_val_3D_2task_kfold.py", line 102, in test_all_case
+    h5f = h5py.File(image_path, 'r')
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/h5py/_hl/files.py", line 533, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/h5py/_hl/files.py", line 226, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to open file (unable to open file: name = '/data/sohui/BraTS/data/BraTs2019/fold1/BraTS19_2013_0_1.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+Validation begin

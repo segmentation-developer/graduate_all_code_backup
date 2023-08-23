@@ -1,0 +1,15 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', fold=None, gpu='4', labeled_bs=1, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[256, 256, 128], root_path='/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200', seed=1337, total_labeled_num=290)
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/home/sohui/.pycharm_helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class_kfold.py", line 466, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class_kfold.py", line 246, in train
+    train_files = load_decathlon_datalist(datasets, True, "training")
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/decathlon_datalist.py", line 119, in load_decathlon_datalist
+    raise ValueError(f"Data list file {data_list_file_path} does not exist.")
+ValueError: Data list file /data/sohui/Prostate/data/trim/ssl_data/centerCrop_200/dataset_foldNone.json does not exist.
+total_prostate train : dataset.json

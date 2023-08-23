@@ -1,0 +1,17 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT-UA2avg_2task_SDM_2Dec', gpu='4', labeled_bs=2, labeled_num=8, max_iterations=10000, model='test', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=72)
+total 80 samples
+4 iterations per epoch
+
+
+  0%|                             | 2/2501 [00:51<17:59:31, 25.92s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 340, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 219, in train
+    loss_dice = dice_loss(outputs_soft_2class[:labeled_bs], label_batch[:labeled_bs].unsqueeze(1).float())
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/utils/losses.py", line 196, in forward
+    class_wise_dice.append(1.0 - dice.item())
+KeyboardInterrupt

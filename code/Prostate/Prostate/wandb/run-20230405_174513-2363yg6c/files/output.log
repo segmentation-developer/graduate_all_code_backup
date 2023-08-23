@@ -1,0 +1,28 @@
+
+Namespace(add=1e-08, aggKernel=11, base_lr=0.01, batch_size=2, class_name=1, deterministic=1, ema_decay=0.99, exp='SL/sameForm_Wssl', fold=None, gpu='4,5', max_iterations=30000, model='Vnet_3D_272_272_160_randomCrop', num_classes=2, overlap=0.5, patch_size=[272, 272, 160], root_path='/data/sohui/Prostate/data/trim/sl_data/centerCrop_350_350_200', seed=1337, sw_batch_size=8)
+Loading dataset:   0%|                                                                                                                                                                                           | 0/24 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:47<00:00,  1.99s/it]
+
+
+Loading dataset: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:12<00:00,  2.10s/it]
+  0%|                                        | 0/1501 [00:00<?, ?it/s]
+  0%|                                        | 0/1501 [00:16<?, ?it/s]
+Traceback (most recent call last):
+  File "Prostate_train_SL_1class_woSlidingW.py", line 404, in <module>
+    train(args, snapshot_path)
+  File "Prostate_train_SL_1class_woSlidingW.py", line 315, in train
+    loss.backward()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/autograd/__init__.py", line 145, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: CUDA out of memory. Tried to allocate 724.00 MiB (GPU 0; 11.91 GiB total capacity; 9.73 GiB already allocated; 708.94 MiB free; 10.42 GiB reserved in total by PyTorch)

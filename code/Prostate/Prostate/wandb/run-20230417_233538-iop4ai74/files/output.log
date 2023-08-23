@@ -1,0 +1,50 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='2,3', labeled_bs=1, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[208, 208, 128], root_path='/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200', seed=1337, total_labeled_num=290)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [00:42<00:00,  1.77s/it]
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [00:22<00:00,  1.06it/s]
+
+Loading dataset:  83%|███████████████████████▎    | 5/6 [00:12<00:01,  1.92s/it]
+250 iterations per epoch
+Loading dataset: 100%|████████████████████████████| 6/6 [00:16<00:00,  2.76s/it]
+  0%|                                         | 0/121 [00:00<?, ?it/s]
+iteration 1 : loss : 0.860521, loss_ce: 0.554824, loss_dice: 0.543334
+Validation begin
+
+
+
+
+
+
+
+
+
+ 90%|███████████████████████████████████████▌    | 9/10 [03:33<00:22, 22.97s/it]
+Validation end
+
+100%|███████████████████████████████████████████| 10/10 [03:57<00:00, 23.44s/it]
+iteration 2 : loss : 1.040091, loss_ce: 0.623764, loss_dice: 0.569975
+Validation begin
+  0%|                                         | 0/121 [04:31<?, ?it/s]<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class_GDT_MT.py", line 476, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/Prostate/Prostate/SSL_Prostate_train_1class_GDT_MT.py", line 408, in train
+    avg_metric= test_all_case(
+  File "/home/sohui/code/Prostate/Prostate/MSDP_val_3D_GDT_MT.py", line 102, in test_all_case
+    prediction = test_single_case(
+  File "/home/sohui/code/Prostate/Prostate/MSDP_val_3D_GDT_MT.py", line 66, in test_single_case
+    y = y.cpu().data.numpy()
+KeyboardInterrupt

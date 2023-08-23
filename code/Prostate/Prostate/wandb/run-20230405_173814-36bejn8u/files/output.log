@@ -1,0 +1,56 @@
+
+Namespace(add=1e-08, aggKernel=11, base_lr=0.01, batch_size=2, class_name=1, deterministic=1, ema_decay=0.99, exp='SL/sameForm_Wssl', fold=None, gpu='2,3,4', max_iterations=30000, model='Vnet_3D_304_304_176_randomCrop', num_classes=2, overlap=0.5, patch_size=[304, 304, 176], root_path='/data/sohui/Prostate/data/trim/sl_data/centerCrop_350_350_200', seed=1337, sw_batch_size=8)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:43<00:00,  1.80s/it]
+
+
+Loading dataset: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:12<00:00,  2.08s/it]
+  0%|                                        | 0/1501 [00:16<?, ?it/s]
+Traceback (most recent call last):
+  File "Prostate_train_SL_1class_woSlidingW.py", line 404, in <module>
+    train(args, snapshot_path)
+  File "Prostate_train_SL_1class_woSlidingW.py", line 306, in train
+    output = model(volume_batch)        # 2,1,176,176,176 -> 2,2,176,176,176
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 177, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 86, in parallel_apply
+    output.reraise()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 61, in _worker
+    output = module(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/Prostate/Prostate/networks/vnet.py", line 236, in forward
+    out = self.decoder(features)
+  File "/home/sohui/code/Prostate/Prostate/networks/vnet.py", line 223, in decoder
+    x9 = self.block_nine(x8_up)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/Prostate/Prostate/networks/vnet.py", line 30, in forward
+    x = self.conv(x)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 135, in forward
+    return F.batch_norm(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/functional.py", line 2149, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 994.00 MiB (GPU 0; 11.91 GiB total capacity; 10.58 GiB already allocated; 494.94 MiB free; 10.64 GiB reserved in total by PyTorch)

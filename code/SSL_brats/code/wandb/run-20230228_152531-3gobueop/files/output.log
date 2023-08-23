@@ -1,0 +1,114 @@
+
+Namespace(T=1, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='4', labeled_bs=2, labeled_num=25, max_iterations=30000, model='test', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+total 250 samples
+12 iterations per epoch
+  0%|                                        | 0/2501 [00:00<?, ?it/s]pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+iteration 1 : loss : 0.854675, loss_ce: 0.551209, loss_dice: 0.475330
+iteration 2 : loss : 0.816030, loss_ce: 0.589864, loss_dice: 0.428003
+iteration 3 : loss : 0.969024, loss_ce: 0.548361, loss_dice: 0.459247
+iteration 4 : loss : 0.766308, loss_ce: 0.477511, loss_dice: 0.468828
+iteration 5 : loss : 0.490621, loss_ce: 0.435456, loss_dice: 0.310172
+iteration 6 : loss : 0.712441, loss_ce: 0.496705, loss_dice: 0.401570
+iteration 7 : loss : 0.605548, loss_ce: 0.472471, loss_dice: 0.365770
+iteration 8 : loss : 0.468939, loss_ce: 0.346688, loss_dice: 0.342427
+iteration 9 : loss : 0.381083, loss_ce: 0.335398, loss_dice: 0.211240
+iteration 10 : loss : 0.585220, loss_ce: 0.454989, loss_dice: 0.405522
+iteration 11 : loss : 0.454183, loss_ce: 0.326627, loss_dice: 0.322566
+iteration 12 : loss : 0.557746, loss_ce: 0.330406, loss_dice: 0.463082
+  0%|                            | 1/2501 [01:55<80:13:08, 115.52s/it]Could not connect to 0.0.0.0: 43229
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                            | 1/2501 [01:55<80:15:46, 115.58s/it]
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1872, in dispatch
+    dispatcher.connect(host, port)
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1826, in connect
+    self.client = start_client(self.host, self.port)
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+iteration 10 : loss : 0.585220, loss_ce: 0.454989, loss_dice: 0.405522
+iteration 10 : loss : 0.585220, loss_ce: 0.454989, loss_dice: 0.405522
+iteration 10 : loss : 0.585220, loss_ce: 0.454989, loss_dice: 0.405522
+iteration 10 : loss : 0.585220, loss_ce: 0.454989, loss_dice: 0.405522
+iteration 11 : loss : 0.454183, loss_ce: 0.326627, loss_dice: 0.322566iteration 11 : loss : 0.454183, loss_ce: 0.326627, loss_dice: 0.322566iteration 11 : loss : 0.454183, loss_ce: 0.326627, loss_dice: 0.322566iteration 11 : loss : 0.454183, loss_ce: 0.326627, loss_dice: 0.322566ConnectionRefusedError: [Errno 111] Connection refused
+L@stWr!t3T0k3nL@stWr!t3T0k3nL@stWr!t3T0k3nL@stWr!t3T0k3n
+Could not connect to 0.0.0.0: 43229
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                            | 1/2501 [01:55<80:17:46, 115.63s/it]
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1872, in dispatch
+    dispatcher.connect(host, port)
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1826, in connect
+    self.client = start_client(self.host, self.port)
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+Could not connect to 0.0.0.0: 43229
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                            | 1/2501 [01:55<80:19:51, 115.68s/it]
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1872, in dispatch
+    dispatcher.connect(host, port)
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1826, in connect
+    self.client = start_client(self.host, self.port)
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+Could not connect to 0.0.0.0: 43229
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                            | 1/2501 [01:55<80:21:14, 115.71s/it]
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1872, in dispatch
+    dispatcher.connect(host, port)
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1826, in connect
+    self.client = start_client(self.host, self.port)
+  File "/home/sohui/.pycharm_helpers/pydev/_pydevd_bundle/pydevd_comm.py", line 458, in start_client
+    s.connect((host, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                            | 1/2501 [01:57<81:44:48, 117.72s/it]
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 986, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 12799) is killed by signal: Terminated.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1182, in _next_data
+    idx, data = self._get_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1138, in _get_data
+    success, data = self._try_get_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 999, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 12799) exited unexpectedly
+L@stWr!t3T0k3n

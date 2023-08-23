@@ -1,0 +1,27 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', fold=1, gamma=0.5, gpu='2', labeled_bs=2, labelnum=25, max_iterations=30000, model='test', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_data_num=250, with_cons='without_cons')
+  0%|                                        | 0/2501 [00:00<?, ?it/s]pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+total 268 samples
+12 itertations per epoch
+  0%|                                        | 0/2501 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/home/sohui/.pycharm_helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/sohui/code/SSL_brats/DTC/code/Brats_train_dtc_original_kfold.py", line 191, in <module>
+    volume_batch, label_batch = volume_batch.cuda(), label_batch.cuda()
+RuntimeError: CUDA out of memory. Tried to allocate 14.00 MiB (GPU 0; 11.91 GiB total capacity; 36.11 MiB already allocated; 13.94 MiB free; 46.00 MiB reserved in total by PyTorch)

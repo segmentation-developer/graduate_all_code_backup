@@ -1,0 +1,31 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', fold=1, gamma=0.5, gpu='4', labeled_bs=2, labelnum=28, max_iterations=30000, model='test', root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_data_num=268, with_cons='without_cons')
+total 268 samples
+14 itertations per epoch
+  0%|                                        | 0/2143 [00:00<?, ?it/s]pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+pydev debugger: warning: trying to add breakpoint to file that does not exist: /home/psh/.cache/JetBrains/PyCharm2021.2/remote_sources/246745051/-1924635245/monai/inferers/utils.py (will have no effect)
+  0%|                                        | 0/2143 [02:39<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/DTC/code/Brats_train_dtc_original_kfold.py", line 187, in <module>
+    for i_batch, sampled_batch in enumerate(trainloader):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1182, in _next_data
+    idx, data = self._get_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1138, in _get_data
+    success, data = self._try_get_data()
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 986, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+KeyboardInterrupt

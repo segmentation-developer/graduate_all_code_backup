@@ -1,0 +1,25 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-04-17T14:42:04.676592",
+    "startedAt": "2023-04-17T14:41:57.815719",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [
+        "--exp=SSL/GDT-MT_350_350_200_rampup_refpaper",
+        "--model=Vnet_3D_208_randomCrop",
+        "--batch_size=2",
+        "--max_iterations=30000",
+        "--num_classes=2",
+        "--class_name=1"
+    ],
+    "state": "running",
+    "program": "SSL_Prostate_train_1class_GDT_MT.py",
+    "codePath": "SSL_Prostate_train_1class_GDT_MT.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python"
+}

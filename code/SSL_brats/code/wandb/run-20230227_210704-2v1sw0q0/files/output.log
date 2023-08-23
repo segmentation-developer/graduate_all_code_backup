@@ -1,0 +1,91 @@
+
+Namespace(T=4, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT_UA2avg_2task_SDM_dualD_SLsdmLow', gpu='2', labeled_bs=2, labeled_num=25, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 250 samples
+12 iterations per epoch
+iteration 1 : loss : 0.854635, loss_ce: 0.551209, loss_dice: 0.475330
+iteration 2 : loss : 0.738360, loss_ce: 0.653480, loss_dice: 0.466708
+iteration 3 : loss : 0.840342, loss_ce: 0.589066, loss_dice: 0.447429
+iteration 4 : loss : 0.654002, loss_ce: 0.568510, loss_dice: 0.460892
+iteration 5 : loss : 0.731427, loss_ce: 0.681302, loss_dice: 0.391273
+iteration 6 : loss : 0.767309, loss_ce: 0.493378, loss_dice: 0.480275
+iteration 7 : loss : 0.732748, loss_ce: 0.489413, loss_dice: 0.388158
+iteration 8 : loss : 0.514987, loss_ce: 0.368819, loss_dice: 0.329928
+iteration 9 : loss : 0.437026, loss_ce: 0.393220, loss_dice: 0.297250
+iteration 10 : loss : 0.472462, loss_ce: 0.350470, loss_dice: 0.280324
+
+  0%|                             | 1/2501 [00:26<18:11:08, 26.19s/it]
+iteration 12 : loss : 0.405068, loss_ce: 0.273901, loss_dice: 0.373624
+iteration 13 : loss : 0.432285, loss_ce: 0.384795, loss_dice: 0.274854
+iteration 14 : loss : 0.382776, loss_ce: 0.314685, loss_dice: 0.346936
+iteration 15 : loss : 0.491548, loss_ce: 0.338377, loss_dice: 0.466846
+iteration 16 : loss : 0.326846, loss_ce: 0.277434, loss_dice: 0.272729
+iteration 17 : loss : 0.357649, loss_ce: 0.308617, loss_dice: 0.335563
+iteration 18 : loss : 0.259325, loss_ce: 0.217547, loss_dice: 0.183935
+iteration 19 : loss : 0.250347, loss_ce: 0.238574, loss_dice: 0.148825
+iteration 20 : loss : 0.313169, loss_ce: 0.243352, loss_dice: 0.288552
+iteration 21 : loss : 0.262137, loss_ce: 0.240650, loss_dice: 0.106456
+iteration 22 : loss : 0.278747, loss_ce: 0.179902, loss_dice: 0.315277
+
+  0%|                             | 2/2501 [00:52<18:05:55, 26.07s/it]
+iteration 24 : loss : 0.213308, loss_ce: 0.169094, loss_dice: 0.112524
+iteration 25 : loss : 0.314466, loss_ce: 0.279936, loss_dice: 0.285128
+iteration 26 : loss : 0.339796, loss_ce: 0.227061, loss_dice: 0.385902
+iteration 27 : loss : 0.312957, loss_ce: 0.290358, loss_dice: 0.250013
+iteration 28 : loss : 0.223289, loss_ce: 0.134651, loss_dice: 0.263145
+iteration 29 : loss : 0.267832, loss_ce: 0.222250, loss_dice: 0.254599
+iteration 30 : loss : 0.284296, loss_ce: 0.241665, loss_dice: 0.284573
+iteration 31 : loss : 0.259848, loss_ce: 0.204252, loss_dice: 0.260242
+iteration 32 : loss : 0.358710, loss_ce: 0.133422, loss_dice: 0.342905
+iteration 33 : loss : 0.220868, loss_ce: 0.188798, loss_dice: 0.176877
+iteration 34 : loss : 0.264093, loss_ce: 0.167906, loss_dice: 0.302912
+iteration 35 : loss : 0.180595, loss_ce: 0.150340, loss_dice: 0.140902
+
+  0%|                             | 3/2501 [01:18<18:11:19, 26.21s/it]
+iteration 37 : loss : 0.188216, loss_ce: 0.152028, loss_dice: 0.148169
+iteration 38 : loss : 0.162524, loss_ce: 0.145413, loss_dice: 0.075172
+iteration 39 : loss : 0.269296, loss_ce: 0.181176, loss_dice: 0.224018
+iteration 40 : loss : 0.204269, loss_ce: 0.116559, loss_dice: 0.210690
+iteration 41 : loss : 0.256229, loss_ce: 0.203358, loss_dice: 0.244747
+iteration 42 : loss : 0.136765, loss_ce: 0.080789, loss_dice: 0.145285
+iteration 43 : loss : 0.149907, loss_ce: 0.078140, loss_dice: 0.085027
+iteration 44 : loss : 0.147365, loss_ce: 0.114663, loss_dice: 0.119159
+iteration 45 : loss : 0.181838, loss_ce: 0.119276, loss_dice: 0.195465
+iteration 46 : loss : 0.148501, loss_ce: 0.144807, loss_dice: 0.099236
+iteration 47 : loss : 0.165361, loss_ce: 0.129171, loss_dice: 0.141382
+
+  0%|                             | 4/2501 [01:44<18:09:47, 26.19s/it]
+iteration 49 : loss : 0.292092, loss_ce: 0.231770, loss_dice: 0.264169
+iteration 50 : loss : 0.152331, loss_ce: 0.120134, loss_dice: 0.100466
+iteration 51 : loss : 0.249695, loss_ce: 0.085979, loss_dice: 0.316315
+iteration 52 : loss : 0.116345, loss_ce: 0.110521, loss_dice: 0.079619
+iteration 53 : loss : 0.115445, loss_ce: 0.105409, loss_dice: 0.056809
+iteration 54 : loss : 0.267496, loss_ce: 0.194609, loss_dice: 0.240064
+iteration 55 : loss : 0.114060, loss_ce: 0.106416, loss_dice: 0.056593
+iteration 56 : loss : 0.278869, loss_ce: 0.279874, loss_dice: 0.206564
+iteration 57 : loss : 0.088727, loss_ce: 0.070052, loss_dice: 0.055968
+iteration 58 : loss : 0.107065, loss_ce: 0.075651, loss_dice: 0.073495
+iteration 59 : loss : 0.151237, loss_ce: 0.070212, loss_dice: 0.174403
+
+  0%|                             | 5/2501 [02:11<18:11:41, 26.24s/it]
+iteration 61 : loss : 0.265220, loss_ce: 0.272585, loss_dice: 0.189301
+iteration 62 : loss : 0.192283, loss_ce: 0.123914, loss_dice: 0.206415
+iteration 63 : loss : 0.101895, loss_ce: 0.099147, loss_dice: 0.052657
+iteration 64 : loss : 0.220698, loss_ce: 0.085221, loss_dice: 0.297756
+iteration 65 : loss : 0.080890, loss_ce: 0.047131, loss_dice: 0.046149
+iteration 66 : loss : 0.142416, loss_ce: 0.118650, loss_dice: 0.125970
+iteration 67 : loss : 0.130106, loss_ce: 0.091054, loss_dice: 0.105881
+iteration 68 : loss : 0.127685, loss_ce: 0.110566, loss_dice: 0.100879
+iteration 69 : loss : 0.207144, loss_ce: 0.111311, loss_dice: 0.237259
+iteration 70 : loss : 0.084015, loss_ce: 0.084416, loss_dice: 0.040131
+  0%|                             | 5/2501 [02:36<21:41:55, 31.30s/it]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 330, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_Uncertainty_ConsisModi.py", line 202, in train
+    loss_dice = dice_loss(outputs_soft_2class[:labeled_bs], label_batch[:labeled_bs].unsqueeze(1).float())
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/SSL_brats/code/utils/losses.py", line 196, in forward
+    class_wise_dice.append(1.0 - dice.item())
+KeyboardInterrupt

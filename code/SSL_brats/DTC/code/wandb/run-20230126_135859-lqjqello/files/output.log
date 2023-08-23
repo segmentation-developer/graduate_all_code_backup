@@ -1,0 +1,37 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='DTC', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=30000, model='vnet_3D_112_112_80_18_4', root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80, with_cons='without_cons')
+  0%|                                        | 0/3751 [00:00<?, ?it/s]
+total 80 samples
+8 itertations per epoch
+  0%|                                                                                                                                                                                                                                                                                    | 0/20 [00:00<?, ?it/s]
+iteration 1 : loss : 0.683198, loss_consis: 0.252550, loss_haus: 0.212363, loss_seg: 0.725578, loss_dice: 0.617787
+iteration 1 : loss : 0.683198
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋             | 19/20 [00:53<00:02,  2.90s/it]
+LA_train_dtc.py:283: RuntimeWarning: Mean of empty slice.███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:57<00:00,  3.14s/it]
+  if avg_metric[:, 0].mean() > best_performance:
+/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+  0%|                                        | 0/3751 [00:59<?, ?it/s]
+Traceback (most recent call last):
+  File "LA_train_dtc.py", line 294, in <module>
+    avg_metric[0, 0], iter_num)
+IndexError: index 0 is out of bounds for axis 0 with size 0

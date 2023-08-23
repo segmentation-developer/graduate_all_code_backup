@@ -1,0 +1,77 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.2, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='kfold/GDT-MT', fold=5, gpu='3', labeled_bs=2, labeled_num=28, max_iterations=30000, model='vnet_3D_96_32', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=268)
+  0%|                                        | 0/2143 [00:00<?, ?it/s]
+total 268 samples
+14 iterations per epoch
+iteration 1 : loss : 0.739116, loss_ce: 0.501231, loss_dice: 0.401281
+iteration 2 : loss : 0.692542, loss_ce: 0.508645, loss_dice: 0.366574
+iteration 3 : loss : 0.626922, loss_ce: 0.488006, loss_dice: 0.431319
+iteration 4 : loss : 0.623235, loss_ce: 0.509397, loss_dice: 0.396636
+iteration 5 : loss : 0.739779, loss_ce: 0.545601, loss_dice: 0.497853
+iteration 6 : loss : 0.642148, loss_ce: 0.443326, loss_dice: 0.423995
+iteration 7 : loss : 0.623139, loss_ce: 0.462045, loss_dice: 0.426428
+iteration 8 : loss : 0.524816, loss_ce: 0.471245, loss_dice: 0.346366
+iteration 9 : loss : 0.411556, loss_ce: 0.330240, loss_dice: 0.228912
+iteration 10 : loss : 0.437368, loss_ce: 0.373555, loss_dice: 0.224939
+iteration 11 : loss : 0.622517, loss_ce: 0.507026, loss_dice: 0.423007
+iteration 12 : loss : 0.343065, loss_ce: 0.349802, loss_dice: 0.227655
+
+  0%|                             | 1/2143 [00:47<28:06:30, 47.24s/it]
+iteration 14 : loss : 0.314339, loss_ce: 0.297828, loss_dice: 0.270602
+iteration 15 : loss : 0.324017, loss_ce: 0.299729, loss_dice: 0.164691
+iteration 16 : loss : 0.393938, loss_ce: 0.370745, loss_dice: 0.262909
+iteration 17 : loss : 0.284610, loss_ce: 0.250518, loss_dice: 0.240044
+iteration 18 : loss : 0.310309, loss_ce: 0.276938, loss_dice: 0.204208
+iteration 19 : loss : 0.361323, loss_ce: 0.342766, loss_dice: 0.260214
+iteration 20 : loss : 0.327050, loss_ce: 0.281676, loss_dice: 0.261842
+iteration 21 : loss : 0.223146, loss_ce: 0.185993, loss_dice: 0.153248
+iteration 22 : loss : 0.337256, loss_ce: 0.236333, loss_dice: 0.327709
+iteration 23 : loss : 0.281647, loss_ce: 0.227243, loss_dice: 0.270808
+iteration 24 : loss : 0.217732, loss_ce: 0.177080, loss_dice: 0.185474
+iteration 25 : loss : 0.170549, loss_ce: 0.137857, loss_dice: 0.089913
+iteration 26 : loss : 0.241432, loss_ce: 0.189694, loss_dice: 0.194511
+
+  0%|                             | 2/2143 [01:34<28:03:34, 47.18s/it]
+iteration 28 : loss : 0.313328, loss_ce: 0.181984, loss_dice: 0.361748
+iteration 29 : loss : 0.294200, loss_ce: 0.207892, loss_dice: 0.319376
+iteration 30 : loss : 0.271211, loss_ce: 0.258099, loss_dice: 0.169616
+iteration 31 : loss : 0.308404, loss_ce: 0.261820, loss_dice: 0.256876
+iteration 32 : loss : 0.187417, loss_ce: 0.175254, loss_dice: 0.126887
+iteration 33 : loss : 0.241794, loss_ce: 0.193783, loss_dice: 0.227447
+iteration 34 : loss : 0.271759, loss_ce: 0.228367, loss_dice: 0.231688
+iteration 35 : loss : 0.223877, loss_ce: 0.194796, loss_dice: 0.140025
+iteration 36 : loss : 0.206173, loss_ce: 0.161288, loss_dice: 0.123548
+iteration 37 : loss : 0.217426, loss_ce: 0.104042, loss_dice: 0.278554
+iteration 38 : loss : 0.177465, loss_ce: 0.175527, loss_dice: 0.099866
+iteration 39 : loss : 0.218352, loss_ce: 0.180720, loss_dice: 0.108519
+iteration 40 : loss : 0.279782, loss_ce: 0.238258, loss_dice: 0.216262
+
+  0%|                             | 3/2143 [02:10<25:10:08, 42.34s/it]
+iteration 42 : loss : 0.238678, loss_ce: 0.133850, loss_dice: 0.263101
+iteration 43 : loss : 0.144008, loss_ce: 0.115045, loss_dice: 0.096916
+iteration 44 : loss : 0.121420, loss_ce: 0.072026, loss_dice: 0.099058
+iteration 45 : loss : 0.203821, loss_ce: 0.136950, loss_dice: 0.209942
+iteration 46 : loss : 0.139130, loss_ce: 0.104742, loss_dice: 0.114197
+iteration 47 : loss : 0.255171, loss_ce: 0.186671, loss_dice: 0.227811
+iteration 48 : loss : 0.231784, loss_ce: 0.166861, loss_dice: 0.242404
+iteration 49 : loss : 0.257535, loss_ce: 0.179240, loss_dice: 0.242293
+iteration 50 : loss : 0.194948, loss_ce: 0.156987, loss_dice: 0.149392
+iteration 51 : loss : 0.152855, loss_ce: 0.130550, loss_dice: 0.075516
+iteration 52 : loss : 0.128934, loss_ce: 0.111673, loss_dice: 0.084920
+iteration 53 : loss : 0.239158, loss_ce: 0.192205, loss_dice: 0.154468
+iteration 54 : loss : 0.124278, loss_ce: 0.114555, loss_dice: 0.054611
+
+  0%|                             | 4/2143 [02:48<24:07:47, 40.61s/it]
+iteration 56 : loss : 0.142085, loss_ce: 0.129157, loss_dice: 0.100260
+  0%|                             | 4/2143 [02:55<26:02:27, 43.83s/it]
+Traceback (most recent call last):
+  File "Brats2_GDT_MT_kfold.py", line 329, in <module>
+    train(args, snapshot_path)
+  File "Brats2_GDT_MT_kfold.py", line 179, in train
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/SSL_brats/code/utils/util.py", line 141, in compute_sdf
+    posdis = distance(posmask)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/scipy/ndimage/_morphology.py", line 2275, in distance_transform_edt
+    ft = numpy.zeros((input.ndim,) + input.shape, dtype=numpy.int32)
+KeyboardInterrupt
+iteration 58 : loss : 0.268761, loss_ce: 0.212138, loss_dice: 0.247961

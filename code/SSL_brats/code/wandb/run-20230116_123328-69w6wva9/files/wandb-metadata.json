@@ -1,0 +1,27 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-01-16T03:33:34.907808",
+    "startedAt": "2023-01-16T03:33:28.039902",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [
+        "--exp=MT_UA2avg_2task_SDM_dualD",
+        "--model=vnet_3D_112_112_80",
+        "--max_iterations=20000",
+        "--batch_size=4",
+        "--labeled_bs=2",
+        "--labeled_num=16",
+        "--num_classes=2",
+        "--gpu=5"
+    ],
+    "state": "running",
+    "program": "LA_MT_UA2avg_2task_SDM_2Dec.py",
+    "codePath": "LA_MT_UA2avg_2task_SDM_2Dec.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python"
+}

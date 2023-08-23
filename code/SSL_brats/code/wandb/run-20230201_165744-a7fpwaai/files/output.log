@@ -1,0 +1,54 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='Consis1.0_MT_UA2avg_2task_SDM_dualD', gpu='4', labeled_bs=2, labeled_num=25, max_iterations=30000, model='uncertaintyConfirm_vnet_3D_96', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 250 samples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▏                           | 16/2501 [08:34<22:11:03, 32.14s/it]
+Validation begin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▏                           | 16/2501 [10:12<26:25:58, 38.29s/it]█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                | 22/25 [01:15<00:10,  3.42s/it]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_ConfirmUncertainty.py", line 338, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_ConfirmUncertainty.py", line 272, in train
+    avg_metric,uncertainty_val = test_all_case(
+  File "/home/sohui/code/SSL_brats/code/brats_val_3D_2task_ConfirmUncertainty.py", line 101, in test_all_case
+    score_map, prediction = test_single_case(
+  File "/home/sohui/code/SSL_brats/code/brats_val_3D_2task_ConfirmUncertainty.py", line 65, in test_single_case
+    y = y.cpu().data.numpy()
+KeyboardInterrupt

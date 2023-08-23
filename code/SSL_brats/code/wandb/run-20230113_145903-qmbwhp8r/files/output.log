@@ -1,0 +1,13 @@
+
+Namespace(T=6, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT-UA2avg_2task_SDM_2Dec', gpu='4', labeled_bs=2, labeled_num=8, max_iterations=10000, model='test', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=72)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 80 samples
+  0%|                                        | 0/2501 [08:11<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 325, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/LA_MT_UA2avg_2task_SDM_2Dec.py", line 262, in train
+    avg_metric = test_all_case(
+  File "/home/sohui/code/SSL_brats/code/LA_val_3D_2task.py", line 96, in test_all_case
+    print("Validation begin")
+KeyboardInterrupt

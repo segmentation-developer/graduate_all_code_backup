@@ -1,0 +1,11 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='Consis1.0_MT_UA2avg_2task_SDM_dualD_ConsisAllData', gpu='2', labeled_bs=2, labeled_num=25, max_iterations=30000, model='vnet_3D_96', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, total_labeled_num=250)
+  0%|                                        | 0/2501 [00:00<?, ?it/s]
+total 250 samples
+  0%|                                        | 0/2501 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_allDataConsistencyLoss.py", line 322, in <module>
+    train(args, snapshot_path)
+  File "Brats2_MT_UA2avg_2task_SDM_2Dec_allDataConsistencyLoss.py", line 252, in train
+    "consistency_weight": consistency_weight.item()
+AttributeError: 'float' object has no attribute 'item'

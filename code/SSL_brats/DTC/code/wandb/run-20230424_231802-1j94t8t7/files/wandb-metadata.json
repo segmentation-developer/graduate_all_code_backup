@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-04-24T14:18:06.247840",
+    "startedAt": "2023-04-24T14:18:02.417062",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [
+        "--exp=DTC_kfold",
+        "--model=vnet_3D_96_32",
+        "--max_iterations=30000",
+        "--labelnum=56",
+        "--total_data_num=268",
+        "--gpu=5",
+        "--fold=1"
+    ],
+    "state": "running",
+    "program": "Brats_train_dtc_original_kfold.py",
+    "codePath": "Brats_train_dtc_original_kfold.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python"
+}

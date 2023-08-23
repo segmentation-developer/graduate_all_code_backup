@@ -1,0 +1,1 @@
+python LA_test_3D.py --exp='LA/Vnet2TracocoKam_enc4KL_URUM' --exp_test='LA_test/Vnet2TracocoKam_enc4KL_URUM' --model=vnet_newdata_20000_1 --gpu=7 &&

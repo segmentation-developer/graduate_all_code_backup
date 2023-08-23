@@ -1,0 +1,11 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=0.1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='MT_UA2avg_2task_SDM_dualD', gpu='1', labeled_bs=2, labeled_num=16, max_iterations=30000, model='noise0.3_vnet_3D_112_112_80_18_4', num_classes=2, patch_size=[112, 112, 80], root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, total_labeled_num=80)
+  0%|                                        | 0/3751 [00:00<?, ?it/s]
+total 80 samples
+  0%|                                        | 0/3751 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "LA_MT_UA2avg_2task_SDM_2Dec.py", line 325, in <module>
+    train(args, snapshot_path)
+  File "LA_MT_UA2avg_2task_SDM_2Dec.py", line 254, in train
+    "consistency_weight": consistency_weight.item()
+AttributeError: 'float' object has no attribute 'item'

@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-193-generic-x86_64-with-glibc2.17",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-01-26T05:46:51.165088",
+    "startedAt": "2023-01-26T05:46:46.021315",
+    "docker": null,
+    "gpu": "NVIDIA TITAN Xp",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "10.1.105",
+    "args": [],
+    "state": "running",
+    "program": "/home/sohui/code/SSL_brats/DTC/code/LA_train_dtc.py",
+    "codePath": "LA_train_dtc.py",
+    "host": "cvlab-server-56",
+    "username": "sohui",
+    "executable": "/home/sohui/miniconda3/envs/test/bin/python3"
+}

@@ -1,0 +1,38 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=2, class_name=1, consistency=1.0, consistency_rampup=0.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', fold=1, gpu='4', labeled_bs=1, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[256, 256, 128], root_path='/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200', seed=1337, total_labeled_num=290)
+total_prostate train : dataset.json
+Loading dataset:   0%|                                   | 0/24 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/nibabel/loadsave.py", line 42, in load
+    stat_result = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200/label/01776461.nii.gz'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/transform.py", line 89, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/transform.py", line 53, in _apply_transform
+    return transform(parameters)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/io/dictionary.py", line 131, in __call__
+    data = self._loader(d[key], reader)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/io/array.py", line 213, in __call__
+    img = reader.read(filename)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/image_reader.py", line 421, in read
+    img = nib.load(name, **kwargs_)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/nibabel/loadsave.py", line 44, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: '/data/sohui/Prostate/data/trim/ssl_data/centerCrop_200/label/01776461.nii.gz'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 757, in _fill_cache
+    return list(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/multiprocessing/pool.py", line 868, in next
+    raise value
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 777, in _load_cache_item
+    item = apply_transform(_xform, item)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/transform.py", line 113, in apply_transform
+    raise RuntimeError(f"applying transform {transform}") from e
+RuntimeError: applying transform <monai.transforms.io.dictionary.LoadImaged object at 0x7f67d420af70>

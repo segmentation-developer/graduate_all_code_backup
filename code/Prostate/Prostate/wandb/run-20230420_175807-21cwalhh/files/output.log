@@ -1,0 +1,44 @@
+
+Namespace(add=1e-08, aggKernel=11, base_lr=0.01, batch_size=2, class_name=1, deterministic=1, ema_decay=0.99, exp='SL/sameForm_Wssl', fold=1, gpu='4', max_iterations=30000, model='Vnet_3D_256_randomCrop', num_classes=2, overlap=0.5, patch_size=[272, 272, 144], root_path='/data/sohui/Prostate/data/trim/sl_data/centerCrop_350_350_200', seed=1337, sw_batch_size=8)
+Loading dataset:   0%|                                                                                                                                                                                           | 0/24 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 24/24 [00:47<00:00,  1.98s/it]
+
+
+
+Loading dataset: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 6/6 [00:15<00:00,  2.66s/it]
+  0%|                                        | 0/1501 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "Prostate_train_SL_1class_woSlidingW.py", line 405, in <module>
+    train(args, snapshot_path)
+  File "Prostate_train_SL_1class_woSlidingW.py", line 307, in train
+    output = model(volume_batch)        # 2,1,176,176,176 -> 2,2,176,176,176
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/Prostate/Prostate/networks/vnet.py", line 236, in forward
+    out = self.decoder(features)
+  File "/home/sohui/code/Prostate/Prostate/networks/vnet.py", line 221, in decoder
+    x8_up = self.block_eight_up(x8)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/Prostate/Prostate/networks/vnet.py", line 117, in forward
+    x = self.conv(x)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 135, in forward
+    return F.batch_norm(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/torch/nn/functional.py", line 2149, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 1.27 GiB (GPU 0; 11.91 GiB total capacity; 9.89 GiB already allocated; 1.21 GiB free; 9.94 GiB reserved in total by PyTorch)

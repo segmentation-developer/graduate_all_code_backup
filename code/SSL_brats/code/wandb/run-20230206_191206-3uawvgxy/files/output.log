@@ -1,0 +1,13 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, consistency=1, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='0', labeled_bs=2, labeled_num=25, max_iterations=30000, model='test', num_classes=2, patch_size=[96, 96, 96], root_path='/data/sohui/BraTS/data/BraTs2019', seed=1337, tau=0.4, total_data_num=250)
+total 250 samples
+12 iterations per epoch
+
+
+  0%|                             | 2/2501 [01:13<25:36:07, 36.88s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/SSL_brats/code/Brats2_MT_UA2avg_2task_SDM_2Dec_UncertaintyAndSharpening_ConsisModi.py", line 357, in <module>
+    train(args, snapshot_path)
+  File "/home/sohui/code/SSL_brats/code/Brats2_MT_UA2avg_2task_SDM_2Dec_UncertaintyAndSharpening_ConsisModi.py", line 214, in train
+    if torch.mean(total_uncertainty[(iter_num-len_10p_data):iter_num]) > uncertainty_teacher_unlabel : ##확실한 pred
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

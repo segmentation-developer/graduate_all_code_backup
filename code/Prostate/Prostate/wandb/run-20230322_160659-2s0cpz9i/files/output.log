@@ -1,0 +1,41 @@
+
+Namespace(T=8, base_lr=0.01, batch_size=4, class_name=1, consistency=1.0, consistency_rampup=40.0, consistency_type='mse', deterministic=1, ema_decay=0.99, exp='UAMT', gpu='4', labeled_bs=2, labeled_num=40, max_iterations=30000, model='test', num_classes=2, patch_size=[144, 144, 144], root_path='/data/sohui/Prostate/data/trim/ssl_data', seed=1337, total_labeled_num=290)
+total_prostate train : dataset.json
+
+
+
+
+
+
+
+
+
+
+Loading dataset: 100%|██████████████████████████| 24/24 [01:16<00:00,  3.20s/it]
+Loading dataset:   0%|                                   | 0/24 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/transform.py", line 89, in apply_transform
+    return _apply_transform(transform, data, unpack_items)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/transform.py", line 53, in _apply_transform
+    return transform(parameters)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/io/array.py", line 232, in __call__
+    raise RuntimeError(
+RuntimeError: LoadImage cannot find a suitable reader for file: image.
+    Please install the reader libraries, see also the installation instructions:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies.
+   The current registered: [<monai.data.image_reader.NumpyReader object at 0x7fb923be2070>, <monai.data.image_reader.PILReader object at 0x7fb923be20d0>, <monai.data.image_reader.NibabelReader object at 0x7fb923be2160>].
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 757, in _fill_cache
+    return list(
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/multiprocessing/pool.py", line 868, in next
+    raise value
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/data/dataset.py", line 777, in _load_cache_item
+    item = apply_transform(_xform, item)
+  File "/home/sohui/miniconda3/envs/test/lib/python3.8/site-packages/monai/transforms/transform.py", line 113, in apply_transform
+    raise RuntimeError(f"applying transform {transform}") from e
+RuntimeError: applying transform <monai.transforms.io.array.LoadImage object at 0x7fb92828ed60>
